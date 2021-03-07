@@ -1,5 +1,6 @@
 # ashiva Changelog
 
+## 2016
 Jan 2016
 First version of website initialiser created
 First site (Scotia Beauty) created
@@ -16,7 +17,7 @@ First attempt to introduce editable pages (leads to learning PHP Associative Arr
 Dec 2016
 ACSSSS pioneers approach in which CSS Stylesheet is grabbed as a JS String, then parsed and turned into a JS Array, then parsed and turned into a JS Object
 
-
+## 2017
 Oct 2017
  - The name "Ashiva" replaces "CMS3"
  - First attempt at creating Control Pad
@@ -29,6 +30,7 @@ Dec 2017
 Developed first JSON serialisation of HTML
 
 
+## 2018
 Jan 2018
 First attempt to create ashivaModules in PHP with complex filters and ideas to create front-end and back-end modules
 
@@ -43,6 +45,8 @@ Dec 2018
 - Added Service Workers to Ashiva
 - Created JSON SiteManifest
 
+## 2019
+Mar 2019 - JSON GUI
 
 May 2019
 Da3SH Modules invented
@@ -59,7 +63,7 @@ Oct 2019
 - ModuleLogic invented
 - ServerSheets invented
 
-
+## 2020
 Jan 2020
 - Worked on WebWorkers as Da3SH
 - Worked on ESModules as Da3SH
@@ -77,6 +81,7 @@ Created several new routines:
  - SVG to Data URL / Data URL to SVG
  - JSON to Data URL / Data URL to JSON
 
+## 2021
 Jan 2021
 Added support for bidirectional conversion of CSS @Rules in Da3SH Style Components
 
