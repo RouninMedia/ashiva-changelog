@@ -119,3 +119,39 @@ ______
  - New ControlPad
  - SiteModules Tool
  - Languages Tool
+
+
+EVOLUTION OF ASHIVA
+===================
+
+Jan 2016 - Intended as an HTML-first website initialiser
+Mar 2016 - Working Name: CMS3
+         - Initial thoughts about making pages user-editable (using PHP Ordinal Arrays and HTML Forms)
+Jun 2016 - Learned PHP Associative Arrays
+Dec 2016 - Learned JSON, Javascript Objects and Ajax
+
+........ - Long break (learning animation, UI and visual engagement)
+Sep-Dec 2017 - Started work on multiple tools to build the first version of Control Pad (iframe) with obligatory Mobile UI as well as Desktop UI
+Nov 2017 - Devised a way to represent HTML as JSON
+
+Jan 2018 - First version of Client-side Modules and Server-Side Modules (Dead end...)
+Apr 2017 - Devised a way to represent CSS as JSON
+........ - Long break (learning to build crude web apps, PHP+JSON, JS Module Pattern, callbacks and, finally, ES2015+)
+Dec 2018 - Shifted focus from HandsOffHRI to ScotiaBeauty. Updated pageManifests from multiple PHP Associative Arrays to single JSON
+         - Learned WebManifest and Service Workers and developed PWA setup for Ashiva
+
+Jun 2019 - Superlative breakthrough on ashivaModule Architecture using Da3SH Modules
+Sep 2019 - Learned IndexedDB
+Oct 2019 - Devised a way to represent JS as JSON
+Oct-Dec 2019 - Started creating tools which build Da3SH Modules
+
+Apr 2020 - Developed concepts for tools (IM:PACT & APEx) which give Ashiva Decoupled (or Hybrid) CMS Capability
+May 2020 - Added comments and skips (Skip:Comment & Skip:Compress) to HTML, CSS and JS Da3SH Components
+Jun 2020 - Built new Ashiva Control Pad entirely out of JS - much better
+Aug 2020 - Re-designed Henkan 2020
+Sep 2020 - Learned Web Components
+
+--- - Started thinking about ashivaModules which can handle page state (like Redux)
+--- - Started learning Deno
+--- - Started thinking about giving Ashiva JAMStack / Serverless capability
+--- - Started thinking about what ashivaModuleManifests (currently PHP functions) would look like if they were JS functions
