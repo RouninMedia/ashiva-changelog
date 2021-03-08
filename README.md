@@ -2,14 +2,14 @@
 
 ## 2016
 ### Jan 2016
- - First version of website initialiser created - nicknamed "CMS3"
+ - First version of website initialiser created
  - First site (Scotia Beauty) created
 
 ### Feb 2016
  - Second site (HandsOffHRI) created
 
 ### Mar 2016
- - First idea to turn website initialiser into basic CMS with login and ability to edit pages
+ - First idea to turn website initialiser into basic CMS with login and ability to edit pages - nicknamed "CMS3"
 
 ### Jun 2016
  - First attempt to introduce editable pages (leads to my learning PHP Associative Arrays)
