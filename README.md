@@ -79,9 +79,12 @@
  * Created several new routines:
      
      * compressJSON
+     
      * importJSON
-     * SVG to Data URL / Data URL to SVG
-     * JSON to Data URL / Data URL to JSON
+     
+     * SVG to Data URL / Data URL to SVG
+     
+     * JSON to Data URL / Data URL to JSON
 
 ## 2021
 ### Jan 2021
