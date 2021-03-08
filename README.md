@@ -2,7 +2,7 @@
 
 ## 2016
 ### Jan 2016
- - First version of website initialiser created
+ - First version of website initialiser created - nicknamed "CMS3"
  - First site (Scotia Beauty) created
 
 ### Feb 2016
