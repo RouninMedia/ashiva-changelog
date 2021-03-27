@@ -130,6 +130,8 @@ ______
  - New ControlPad
  - SiteModules Tool
  - Languages Tool
+ - New PageManifest format
+ - Social Media / Identity `<link rel="">` element
 
 
 EVOLUTION OF ASHIVA
