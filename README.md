@@ -70,13 +70,13 @@
  - Worked on ESModules as Da3SH
 
 ### May 2020
- - Namespace Access added to CSS Da3SH
+ - Namespace Access added to Da3SH Style Components
 
 ### Sept 2020
  - Concho
 
 ### Dec 2020
- * Created several new routines:
+ * Created several new routines (ultimately destined for *Code Converter UI*):
     * compressJSON
     * importJSON 
     * SVG to Data URL / Data URL to SVG 
@@ -84,21 +84,31 @@
 
 ## 2021
 ### Jan 2021
- - Added support for bidirectional conversion of CSS @Rules in Da3SH Style Components
+ - Added support for bi-directional conversion of CSS @Rules in Da3SH Style Components
 
 ### Feb 2021
- - DataSheets invented (??)
- - queryString operator updatePageModules
- - Introduced JS Namespacing into Da3SH Module Scriptsheet
+ - Introduced "DataSheets" alongside CodeSheets and ServerSheets - but something wasn't quite right
+ - Developed queryString operator `updatePageModules`
+ - First experiments with JS Namespacing into Da3SH Module Scriptsheet
  - Started writing Ashiva in Deno + Oak on Heroku
 
 ### Mar 2021
- - Developed submitData() for Synchronous Serversheet Access
- - Developed Ashiva_Roles Da3SH Module
- - Async-ed Modules Stylesheet - dramatic improvement in page load speed
- - Developed queryString-based noscript flag: ?js=off
+ - Developed `submitData()` for Synchronous Serversheet Access
+ - Developed **Ashiva_Roles** Da3SH Module
+ - Successfully Async-ed Modules Stylesheet - dramatic improvement in page load speed
+ - Developed queryString operator `updatePageComponents`
+ - Completed **JSON Rewriter** (and, by extension, *Code Converter UI*)
+ - Formalised in-Module HTTP Authentication and introduced Protected (after realising *this* is the key feature of "DataSheets")
+ - Wrote **Ashiva Multi-Page Find and Replace Editor**
+ - Developed **SB_Email_Subscribers** Da3SH Module
+ - Re-named / re-framed *ServerSheets* as *SubPages* (or *Substitial Pages*)
+
+ - Established both JSON Rewriter and MultiPage Editor as aSPs (?)
  - Async-ed Modules Scriptsheet (?)
  - Async-ed Main Scriptsheet (?)
+
+
+ 
 
 ______
 
