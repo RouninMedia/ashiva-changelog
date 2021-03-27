@@ -19,30 +19,30 @@
 
 ## 2017
 ### Oct 2017
- - The name "Ashiva" replaces "CMS3"
- - First attempt at creating Control Pad
- - Invention of Roles and Capabilities
+ - The name *Ashiva* (based on *ashiba*, the Japanese word for *scaffolding*) replaces "CMS3"
+ - First attempt at creating a Control Pad for *Ashiva*
+ - Invention of *Ashiva* Roles and Capabilities
 
 ### Nov 2017
  - Created SiteMap Editing Interface (to add / move / delete pages and subpages)
 
 ### Dec 2017
- - Developed first JSON serialisation of HTML
+ - Developed first JSON serialisation of HTML for *Ashiva Console Module*
 
 
 ## 2018
 ### Jan 2018
- - First attempt to create ashivaModules in PHP with complex filters and ideas to create front-end and back-end modules
+ - First attempt to create ashivaModules in PHP with complex PHP-array-based filters and commitment to create separately formatted front-end and back-end modules
 
 ### Apr 2018
  - Developed JSON serialisation of CSS while building hackPad
 
 ### Nov 2018
-- Added WebManifests to Ashiva
+- Added PWA WebManifests to Ashiva
 
 ### Dec 2018
-- PHP PageData... => JSON PageManifest
-- Added Service Workers to Ashiva
+- PHP PageData Arrays evolve into JSON PageManifest
+- Added PWA Service Workers to Ashiva
 - Created JSON SiteManifest
 
 ## 2019
@@ -66,8 +66,8 @@
 
 ## 2020
 ### Jan 2020
- - Worked on WebWorkers as Da3SH
- - Worked on ESModules as Da3SH
+ - Worked on WebWorkers within Da3SH
+ - Worked on ESModules within Da3SH
 
 ### May 2020
  - Namespace Access added to Da3SH Style Components
