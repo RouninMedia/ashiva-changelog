@@ -47,13 +47,13 @@
 
 ## 2019
 ### Mar 2019
- - JSON GUI
+ - Developed JSON GUI
 
 ### May 2019
  - Da3SH Modules invented
 
 ### Jun 2019
- - CodeSheets invented
+ - Da3SH CodeSheets invented (Da3SH Components by any other name)
 
 ### Aug 2019
  - Third site (JamesNHSWalk) created
@@ -87,19 +87,19 @@
  - Added support for bi-directional conversion of CSS @Rules in Da3SH Style Components
 
 ### Feb 2021
- - Introduced "DataSheets" alongside CodeSheets and ServerSheets - but something wasn't quite right
+ - Introduced "DataSheets" alongside CodeSheets and ServerSheets - but since Data CodeSheets already existed, something wasn't quite right
  - Developed queryString operator `updatePageModules`
  - First experiments with JS Namespacing into Da3SH Module Scriptsheet
  - Started writing Ashiva in Deno + Oak on Heroku
 
 ### Mar 2021
- - Developed `submitData()` for Synchronous Serversheet Access
  - Developed **Ashiva_Roles** Da3SH Module
- - Successfully Async-ed Modules Stylesheet - dramatic improvement in page load speed
+ - Developed `submitData()` for Synchronous Serversheet Access (originally for **Ashiva_Roles**)
+ - Successfully Async-ed Modules Stylesheet - leading to *dramatic* improvement in page load speed
  - Developed queryString operator `updatePageComponents`
  - Completed **JSON Rewriter** (and, by extension, *Code Converter UI*)
  - Formalised in-Module HTTP Authentication and introduced Protected (after realising *this* is the key feature of "DataSheets")
- - Wrote **Ashiva Multi-Page Find and Replace Editor**
+ - Wrote **Ashiva Multi-Page Find and Replace Editor** (based on PHP Code from **Kubaru** and Front End Code from **LanguageCompass**)
  - Developed **SB_Email_Subscribers** Da3SH Module
  - Re-named / re-framed *ServerSheets* as *SubPages* (or *Substitial Pages*)
 
