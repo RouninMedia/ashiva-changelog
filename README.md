@@ -123,9 +123,10 @@ ______
  - --- (the other thing alongside IM:PACT)
  - QuadTap
  - Henkan 1
+ - Henkan 2
  - JSON GUI Editor
  - Series Tool
- - PageManifest Editor
+ - Multiple PageManifests Editor (Kubaru)
  - New ControlPad
  - SiteModules Tool
  - Languages Tool
