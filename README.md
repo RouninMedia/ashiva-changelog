@@ -112,7 +112,7 @@
 ### May 2021
 
 ### Jun 2021
- - Changed name from Da3SH to DaNIS3H
+ - Changed name from Da3SH to DaNIS³H
  - Formalised HTML-equivalents of PHP module-call syntax:
 
 ```
