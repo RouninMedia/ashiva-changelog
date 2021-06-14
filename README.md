@@ -111,15 +111,16 @@
  - Changed name from Da3SH to DaNIS3H
  - Formalised HTML-equivalents of PHP module-call syntax:
 
-     danis3hModule(${'<SB_Colour_Charts>'});                                         <!--[ <SB_Colour_Charts> ]-->                         
-     danis3hModule(${'<SB_Notice::Orange::Yellow>'});                                <!--[ <SB_Notice::Orange::Yellow> ]-->                  
-     danis3hModule(${'<SB_Notice::BG:Orange::FG:Yellow>'});                          <!--[ <SB_Notice::BG:Orange::FG:Yellow> ]-->
-     danis3hModule(${'<SB_Body_Data>'}, 'element');                                  <!--[ <SB_Body_Data> element ]-->
-     danis3hModule(${'<SB_Colour_Charts>'}, ['orange', 'yellow']);                   <!--[ <SB_Colour_Charts> (orange yellow) ]-->
-     danis3hModule(${'<SB_Colour_Charts>'}, ['bg' => 'orange', 'fg' => 'yellow']);   <!--[ <SB_Colour_Charts> (bg:orange fg:yellow) ]-->
-     danis3hModule(${'<Markup[@]SB_Translations>'});                                 <!--[ <Markup[@]SB_Translations> ]-->
-     danis3hModule(${'<Language_Folder[@]SB_Translations>'});                        <!--[ <Language_Folder[@]SB_Translations> ]-->   
- 
+```
+danis3hModule(${'<SB_Colour_Charts>'});                                         <!--[ <SB_Colour_Charts> ]-->                         
+danis3hModule(${'<SB_Notice::Orange::Yellow>'});                                <!--[ <SB_Notice::Orange::Yellow> ]-->                  
+danis3hModule(${'<SB_Notice::BG:Orange::FG:Yellow>'});                          <!--[ <SB_Notice::BG:Orange::FG:Yellow> ]-->
+danis3hModule(${'<SB_Body_Data>'}, 'element');                                  <!--[ <SB_Body_Data> element ]-->
+danis3hModule(${'<SB_Colour_Charts>'}, ['orange', 'yellow']);                   <!--[ <SB_Colour_Charts> (orange yellow) ]-->
+danis3hModule(${'<SB_Colour_Charts>'}, ['bg' => 'orange', 'fg' => 'yellow']);   <!--[ <SB_Colour_Charts> (bg:orange fg:yellow) ]-->
+danis3hModule(${'<Markup[@]SB_Translations>'});                                 <!--[ <Markup[@]SB_Translations> ]-->
+danis3hModule(${'<Language_Folder[@]SB_Translations>'});                        <!--[ <Language_Folder[@]SB_Translations> ]-->   
+``` 
 
 ______
 
