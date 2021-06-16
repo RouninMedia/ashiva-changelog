@@ -41,9 +41,9 @@
 - Added PWA WebManifests to Ashiva
 
 ### Dec 2018
-- PHP PageData Arrays evolve into JSON PageManifest
+- PHP PageData Array evolves into JSON **PageManifest**
 - Added PWA Service Workers to Ashiva
-- Created JSON SiteManifest
+- Created JSON **SiteManifest**
 
 ## 2019
 ### Mar 2019
