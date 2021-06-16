@@ -122,20 +122,26 @@
 danis3hModule(${'<SB_Colour_Charts>'});
 danis3hModule(${'<SB_Notice::Orange::Yellow>'});
 danis3hModule(${'<SB_Notice::BG:Orange::FG:Yellow>'});
+danis3hModule(${'<SB_nextPage>'}, 'page');
 danis3hModule(${'<SB_Body_Data>'}, 'element');
+danis3hModule(${'<SB_Body_Data>'}, FALSE, 'element');
 danis3hModule(${'<SB_Colour_Charts>'}, ['orange', 'yellow']);
 danis3hModule(${'<SB_Colour_Charts>'}, ['bg' => 'orange', 'fg' => 'yellow']);
 danis3hModule(${'<Markup[@]SB_Translations>'});
 danis3hModule(${'<Language_Folder[@]SB_Translations>'});
 
-<!--[ <SB_Colour_Charts> ]-->
-<!--[ <SB_Notice::Orange::Yellow> ]-->
-<!--[ <SB_Notice::BG:Orange::FG:Yellow> ]-->
-<!--[ <SB_Body_Data> element ]-->
-<!--[ <SB_Colour_Charts> (orange yellow) ]-->
-<!--[ <SB_Colour_Charts> (bg:orange fg:yellow) ]-->
+<!--[ <SB_Colour_Charts> ]-->                         
+<!--[ <SB_Notice Orange Yellow> ]-->              
+<!--[ <SB_Notice Bg="Orange" Fg="Yellow"> ]-->
+<!--[ <SB_nextPage :context="page"> ]-->
+<!--[ <SB_Body_Data :context="element"> ]-->
+<!--[ <SB_Body_Data :critical="false" :context="element"> ]-->
+<!--[ <SB_Colour_Charts orange yellow> ]-->
+<!--[ <SB_Colour_Charts bg="orange" fg="yellow"> ]-->
 <!--[ <Markup[@]SB_Translations> ]-->
 <!--[ <Language_Folder[@]SB_Translations> ]-->
+
+HTML-comment syntax includes optional signature after the first opening [ (eg. & or ++ etc.)
 ``` 
  - Added `/.hidden/` folder to `/.assets/media/` as a temporary store for user-deleted files
 
