@@ -141,7 +141,7 @@ danis3hModule(${'<Language_Folder[@]SB_Translations>'});
 <!--[ <Markup[@]SB_Translations> ]-->
 <!--[ <Language_Folder[@]SB_Translations> ]-->
 
-HTML-comment syntax includes optional signature after the first opening [ (eg. & or ++ etc.)
+HTML-comment syntax includes optional signature after the opening square bracket (eg. & or ++ etc.)
 ``` 
  - Added `/.hidden/` folder to `/.assets/media/` as a temporary store for user-deleted files
 
