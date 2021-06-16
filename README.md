@@ -125,6 +125,7 @@ danis3hModule(${'<SB_Colour_Charts>'}, ['bg' => 'orange', 'fg' => 'yellow']);   
 danis3hModule(${'<Markup[@]SB_Translations>'});                                 <!--[ <Markup[@]SB_Translations> ]-->
 danis3hModule(${'<Language_Folder[@]SB_Translations>'});                        <!--[ <Language_Folder[@]SB_Translations> ]-->   
 ``` 
+ - Added `/.hidden/` folder to `/.assets/media/` as a temporary store for user-deleted files
 
 ______
 
