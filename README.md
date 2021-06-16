@@ -12,10 +12,10 @@
  - First idea to turn website initialiser into basic CMS with login and ability to edit pages - nicknamed "CMS3"
 
 ### Jun 2016
- - First attempt to introduce editable pages (leads to my learning PHP Associative Arrays)
+ - First attempt to introduce editable pages (leads to learning PHP Associative Arrays)
 
 ### Dec 2016
- - ACSSSS pioneers approach in which CSS Stylesheet is grabbed as a JS String, then parsed and turned into a JS Array, then parsed and turned into a JS Object (in several years time, HTML, CSS, JS and SVG will be turned into Da3SH Components (which are JSON) using the same approach
+ - `axe` (ACSSSS) pioneers approach in which CSS Stylesheet is grabbed as a JS String, then parsed and turned into a JS Array, then parsed and turned into a JS Object (in several years time, HTML, CSS, JS and SVG will all be turned into Da3SH Components (which are JSON) using the same approach
 
 ## 2017
 ### Oct 2017
