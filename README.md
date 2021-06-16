@@ -3,10 +3,10 @@
 ## 2016
 ### Jan 2016
  - First version of website initialiser created
- - First site (Scotia Beauty) created
+ - First site (ScotiaBeauty.com) created using website intialiser
 
 ### Feb 2016
- - Second site (HandsOffHRI) created
+ - Second site (HandsOffHRI.org) created
 
 ### Mar 2016
  - First idea to turn website initialiser into basic CMS with login and ability to edit pages - nicknamed "CMS3"
@@ -56,7 +56,7 @@
  - Da3SH CodeSheets invented (Da3SH Components by any other name)
 
 ### Aug 2019
- - Third site (JamesNHSWalk) created
+ - Third site (JamesNHSWalk.org) created
 
 ### Oct 2019
  - ModuleManifests formalised
@@ -100,6 +100,7 @@
  - Completed **JSON Rewriter** (and, by extension, *Code Converter UI*)
  - Formalised in-Module HTTP Authentication and introduced Protected (after realising *this* is the key feature of "DataSheets")
  - Wrote **Ashiva Multi-Page Find and Replace Editor** (based on PHP Code from **Kubaru** and Front End Code from **LanguageCompass**)
+ - Developed **veSPA** in the course of writing *Ashiva Multi-Page Find and Replace Editor* 
  - Developed **SB_Email_Subscribers** Da3SH Module
  - Re-named / re-framed *ServerSheets* as *SubPages* (or *Substitial Pages*)
 
@@ -112,6 +113,8 @@
 ### May 2021
 
 ### Jun 2021
+ - Fourth site (EtherPhysics.net) created
+ - Started work on bringing Ashiva Installer fully up-to-date
  - Changed name from Da3SH to DaNIS³H
  - Formalised HTML-equivalents of PHP module-call syntax:
 
