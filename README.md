@@ -149,6 +149,7 @@ HTML-comment syntax includes optional signature after the opening square bracket
  - Improved Concho: enabled Boolean conditions (comparing data against FALSE and TRUE) and found a way to replace backticks around operators with spaces
  - Created `link rel-danis3hmodule` to reference the DaNIS3H Modules present on each page
  - Added `link rel-danis3hmodule`, `link rel-ashiva-pagemanifest` and `link rel-ashiva-sitemanifest` to New Scaffold
+ - Added **title folder** to module folders (`/modulename/#%20Module%Name/`) in which to store `modulename-package.json`
 
 
 
