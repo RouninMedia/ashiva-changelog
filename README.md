@@ -87,7 +87,7 @@
  - Added support for bi-directional conversion of CSS @Rules in Da3SH Style Components
 
 ### Feb 2021
- - Introduced "DataSheets" alongside CodeSheets and ServerSheets - but since Data CodeSheets already existed, something wasn't quite right
+ - Introduced *"DataSheets"* alongside CodeSheets and ServerSheets - but since Data CodeSheets already existed, something didn't seem quite right...
  - Developed queryString operator `updatePageModules`
  - First experiments with JS Namespacing into Da3SH Module Scriptsheet
  - Started writing Ashiva in Deno + Oak on Heroku
@@ -95,15 +95,18 @@
 ### Mar 2021
  - Developed **Ashiva_Roles** Da3SH Module
  - Developed `submitData()` for Synchronous Serversheet Access (originally for **Ashiva_Roles**)
- - Successfully Async-ed Modules Stylesheet - leading to *dramatic* improvement in page load speed
+ - Successfully *async-ed* **Modules Stylesheet** - leading to *dramatic* improvement in page load speed
  - Developed queryString operator `updatePageComponents`
- - Completed **JSON Rewriter** (and, by extension, *Code Converter UI*)
- - Formalised in-Module HTTP Authentication and introduced Protected (after realising *this* is the key feature of "DataSheets")
+ - Substantially rewrote **JSON Rewriter** (and, by extension, *Code Converter UI*)
+ - Formalised in-Module HTTP Authentication and introduced `/modulename/protected/` (after realising ***this*** is the key feature of *"DataSheets"*)
  - Wrote **Ashiva Multi-Page Find and Replace Editor** (based on PHP Code from **Kubaru** and Front End Code from **LanguageCompass**)
  - Developed **veSPA** in the course of writing *Ashiva Multi-Page Find and Replace Editor* 
  - Developed **SB_Email_Subscribers** Da3SH Module
  - Re-named / re-framed *ServerSheets* as *SubPages* (or *Substitial Pages*)
 
+### NEXT: Go through i) GitHub, ii) StackOverflow Questions, iii) WorkLog Notes
+
+ - What are *ActionSheets* / *SubPages* / *DataSheets* / *protected* ??
  - Established both JSON Rewriter and MultiPage Editor as aSPs (?)
  - Async-ed Modules Scriptsheet (?)
  - Async-ed Main Scriptsheet (?)
@@ -147,6 +150,7 @@ HTML-comment syntax includes optional signature after the opening square bracket
  - Developed New Scaffold for EtherPhysics.net, using New PageManifest References
  - Incorporated `concho()` statements into New Scaffold
  - Improved `concho()`: enabled conditions using Boolean FALSE and introduced a parameter enabling backticks around operators to be replaced with spaces
+ - In the process of developing New Scaffold for EtherPhysics.net, extended, expanded and improved New PageManifest
  - Created `link rel-danis3hmodule` to reference the DaNIS3H Modules present on each page
  - Added `link rel-danis3hmodule`, `link rel-ashiva-pagemanifest` and `link rel-ashiva-sitemanifest` to New Scaffold
  - Added **title folder** to module folders (`/modulename/#%20Module%Name/`) in which to store `modulename-package.json`
