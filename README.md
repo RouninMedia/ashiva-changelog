@@ -143,7 +143,15 @@ danis3hModule(${'<Language_Folder[@]SB_Translations>'});
 
 HTML-comment syntax includes optional signature after the opening square bracket (eg. & or ++ etc.)
 ``` 
- - Added `/.hidden/` folder to `/.assets/media/` as a temporary store for user-deleted files
+ - Added `/.restore/` folder to `/.assets/media/` as a temporary store to enable undo-ing when users accidentally delete files
+ - Developed New Scaffold for EtherPhysics.net, using New PageManifest References
+ - Incorporated Concho statements into New Scaffold
+ - Improved Concho: enabled Boolean conditions (comparing data against FALSE and TRUE) and found a way to replace backticks around operators with spaces
+ - Created `link rel-danis3hmodule` to reference the DaNIS3H Modules present on each page
+ - Added `link rel-danis3hmodule`, `link rel-ashiva-pagemanifest` and `link rel-ashiva-sitemanifest` to New Scaffold
+
+
+
 
 ______
 
