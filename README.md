@@ -120,7 +120,7 @@
  - Fourth site (EtherPhysics.net) created
  - Started work on bringing Ashiva Installer fully up-to-date
  - Changed name from Da3SH to DaNIS³H
- - Started writing *User Guide to DaNIS³H* at https://app.gitbook.com/@alan-lansdowne/s/danis3h/
+ - Started writing *User Guide to DaNIS³H* at: https://app.gitbook.com/@alan-lansdowne/s/danis3h/
  - Formalised HTML-equivalents of PHP module-call syntax:
 
 ```
