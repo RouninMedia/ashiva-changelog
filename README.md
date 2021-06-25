@@ -10,12 +10,13 @@
 
 ### Mar 2016
  - First idea to turn website initialiser into basic CMS with login and ability to edit pages - nicknamed "CMS3"
+ - First thoughts of using Responsive Web Design + Forms + PHP to build a touchphone-optimised CMS User Interface
 
 ### Jun 2016
  - First attempt to introduce editable pages (leads to learning PHP Associative Arrays)
 
 ### Dec 2016
- - `axe` (ACSSSS) pioneers approach in which CSS Stylesheet is grabbed as a JS String, then parsed and turned into a JS Array, then parsed and turned into a JS Object (in several years time, HTML, CSS, JS and SVG will all be turned into Da3SH Components (which are JSON) using the same approach
+ - `axe` (ACSSSS) pioneers 3-step approach in which CSS Stylesheet is grabbed as a JS String, then parsed and turned into a JS Array, then parsed and turned into a JS Object (in several years time, HTML, CSS, JS and SVG will all be turned into Da3SH Components (which are JSON) using the same approach
 
 ## 2017
 ### Oct 2017
@@ -119,6 +120,7 @@
  - Fourth site (EtherPhysics.net) created
  - Started work on bringing Ashiva Installer fully up-to-date
  - Changed name from Da3SH to DaNIS³H
+ - Started writing *User Guide to DaNIS³H* at https://app.gitbook.com/@alan-lansdowne/s/danis3h/
  - Formalised HTML-equivalents of PHP module-call syntax:
 
 ```
