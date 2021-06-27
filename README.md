@@ -86,7 +86,7 @@
 
 ## 2021
 ### Jan 2021
- - Added support for bi-directional conversion of CSS @Rules in Da3SH Style Components
+ - Added support for bi-directional conversion of CSS `@media` and `@keyframes` in Da3SH Style Components
 
 ### Feb 2021
  - Introduced *"DataSheets"* alongside CodeSheets and ServerSheets - but since Data CodeSheets already existed, something didn't seem quite right...
