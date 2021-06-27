@@ -28,27 +28,28 @@
  - Created SiteMap Editing Interface (to add / move / delete pages and subpages)
 
 ### Dec 2017
- - Developed first JSON serialisation of HTML for *Ashiva Console Module*
+ - Developed first JSON serialisation of HTML for (very early) *Ashiva Console Module*
 
 
 ## 2018
 ### Jan 2018
- - First attempt to create ashivaModules in PHP with complex PHP-array-based filters and commitment to create separately formatted front-end and back-end modules
+ - First attempt to create ashivaModules in PHP with complex PHP-array-based filters
+ - Extensively considered creating separately formatted front-end and back-end modules
 
 ### Apr 2018
  - Developed JSON serialisation of CSS while building hackPad
 
 ### Nov 2018
-- Added PWA WebManifests to Ashiva
+- Inspired by *The Independent*'s save to homescreen icon, learned about and then added PWA WebManifests to Ashiva
 
 ### Dec 2018
-- PHP PageData Array evolves into JSON **PageManifest**
-- Added PWA Service Workers to Ashiva
+- PHP PageData Array (either in `/functions/` File or in PHP file dedicated to current webpage) evolves into JSON **PageManifest**
+- Building on introduction of PWA WebManifests, added PWA Service Workers to Ashiva
 - Created JSON **SiteManifest**
 
 ## 2019
 ### Mar 2019
- - Developed JSON GUI
+ - Developed GUI for building JSON
 
 ### May 2019
  - Da3SH Modules invented
@@ -157,7 +158,10 @@ HTML-comment syntax includes optional signature after the opening square bracket
  - Added `link rel-danis3hmodule`, `link rel-ashiva-pagemanifest` and `link rel-ashiva-sitemanifest` to New Scaffold
  - Added **title folder** to module folders (`/modulename/#%20Module%Name/`) in which to store `modulename-package.json` (amongst other things)
  - The middle level between *DaNIS3H Publisher* and *DaNIS3H Module* had a temporary working title of *DaNIS3H Brand*. Updated to ***DaNIS3H Imprint***
+ - Moved sitemaps section from *New Page Manifest* to *Site Manifest* and rewrote...
  - Improved `concho()` again: enabled the deployment of functions like this: `url___0::Module` (equivalent to `url()` on the output of `'0::Module'`)
+
+ - Need to create **new sitemaps section** for *New Page Manifest*
 
 
 
