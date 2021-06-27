@@ -118,6 +118,7 @@
 ### May 2021
 
 ### Jun 2021
+ - Wrote *Scotia Beauty Document Uploader* (based, initially, on *Ashiva Multi-Page Find and Replace Editor*) and, by extension, most of *Ashiva Media Uploader*
  - Fourth site (EtherPhysics.net) created
  - Started work on bringing Ashiva Installer fully up-to-date
  - Changed name from Da3SH to DaNIS³H
