@@ -16,7 +16,7 @@
  - First attempt to introduce editable pages (leads to learning PHP Associative Arrays)
 
 ### Dec 2016
- - `axe` (ACSSSS) pioneers 3-step approach in which CSS Stylesheet is grabbed as a JS String, then parsed and turned into a JS Array, then parsed and turned into a JS Object (in several years time, HTML, CSS, JS and SVG will all be turned into Da3SH Components (which are JSON) using the same approach
+ - `axe` (ACSSSS) pioneers 3-step approach in which CSS Stylesheet is grabbed as a JS String, then parsed and turned into a JS Array, then parsed and turned into a JS Object (in a - very long - two and a half years time, HTML, CSS, JS and SVG will all be turned into Da3SH Components (which are JSON) using the same approach
 
 ## 2017
 ### Oct 2017
