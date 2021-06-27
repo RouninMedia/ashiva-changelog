@@ -20,9 +20,9 @@
 
 ## 2017
 ### Oct 2017
- - The name *Ashiva* (based on *ashiba*, the Japanese word for *scaffolding*) replaces "CMS3"
- - First attempt at creating a Control Pad for *Ashiva*
- - Invention of *Ashiva* Roles and Capabilities
+ - The name *Ashiva* (based on *ashiba*, the Japanese word for *scaffolding*) replaces "CMS3"
+ - First attempt at creating a Control Pad for *Ashiva*
+ - Invention of *Ashiva* Roles and Capabilities
 
 ### Nov 2017
  - Created SiteMap Editing Interface (to add / move / delete pages and subpages)
