@@ -160,7 +160,7 @@ HTML-comment syntax includes optional signature after the opening square bracket
  - Added **title folder** to module folders (`/modulename/#%20Module%Name/`) in which to store `modulename-package.json` (amongst other things)
  - Updated *DaNIS3H Brand* (the middle level between *DaNIS3H Publisher* and *DaNIS3H Module*) to ***DaNIS3H Imprint***
  - Moved **sitemaps section** from *New Page Manifest* to *Site Manifest*. Wrote new **sitemaps section** for *New Page Manifest*
- - Improved `concho()` again: enabled the deployment of functions like this: `url(0::Module)` (equivalent to applying `url()` to the output of `'0::Module'`)
+ - Enabled deployment of simple functions IN `concho()`: `url(0::Module)` is the equivalent to applying `url()` to the output of `'0::Module'`
  - Added `/protocols/`, `/manifest/` & `/serviceworker/` subfolders to `/.well-known/` folder and updated `.htaccess` file
 
 
