@@ -153,14 +153,14 @@ HTML-comment syntax includes optional signature after the opening square bracket
  - Added `/.restore/` folder to `/.assets/media/` as a temporary store to enable undo-ing when users accidentally delete files
  - Developed *New Scaffold* for EtherPhysics.net, using *New PageManifest* References
  - Incorporated `concho()` statements into New Scaffold
- - Improved `concho()`: enabled conditions using Boolean FALSE and introduced a parameter enabling backticks around operators to be replaced with spaces
+ - In `concho()`, enabled Boolean FALSE condition and introduced parameter enabling backticks around operators to be replaced with spaces
  - In the process of developing *New Scaffold* for EtherPhysics.net, extended, expanded and improved *New PageManifest*
  - Created `link rel-danis3hmodule` to reference the DaNIS3H Modules present on each page
  - Added `link rel-danis3hmodule`, `link rel-ashiva-pagemanifest` and `link rel-ashiva-sitemanifest` to New Scaffold
  - Added **title folder** to module folders (`/modulename/#%20Module%Name/`) in which to store `modulename-package.json` (and other things)
  - Updated *DaNIS3H Brand* (the middle level between *DaNIS3H Publisher* and *DaNIS3H Module*) to ***DaNIS3H Imprint***
  - Moved **sitemaps section** from *New Page Manifest* to *Site Manifest*. Wrote new **sitemaps section** for *New Page Manifest*
- - Enabled deployment of simple functions IN `concho()`: `url(0::Module)` is the equivalent to applying `url()` to the output of `'0::Module'`
+ - Enabled simple functions in `concho()` statements: `url(0::Module)` is the equivalent to applying `url()` to the output of `'0::Module'`
  - Added `/protocols/`, `/manifest/` & `/serviceworker/` subfolders to `/.well-known/` folder and updated `.htaccess` file
 
 
