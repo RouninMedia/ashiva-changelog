@@ -153,7 +153,7 @@ HTML-comment syntax includes optional signature after the opening square bracket
  - Added `/.restore/` folder to `/.assets/media/` as a temporary store to enable undo-ing when users accidentally delete files
  - Developed *New Scaffold* for EtherPhysics.net, using *New PageManifest* References
  - Incorporated `concho()` statements into New Scaffold
- - In `concho()`, enabled Boolean FALSE condition and introduced parameter enabling backticks around operators to be replaced with spaces
+ - In `concho()`, enabled Boolean `FALSE` condition; introduced parameter enabling replacement of backticks around operators with spaces
  - In the process of developing *New Scaffold* for EtherPhysics.net, extended, expanded and improved *New PageManifest*
  - Created `link rel-danis3hmodule` to reference the DaNIS3H Modules present on each page
  - Added `link rel-danis3hmodule`, `link rel-ashiva-pagemanifest` and `link rel-ashiva-sitemanifest` to New Scaffold
