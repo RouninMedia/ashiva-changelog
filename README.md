@@ -159,10 +159,9 @@ HTML-comment syntax includes optional signature after the opening square bracket
  - Added `link rel-danis3hmodule`, `link rel-ashiva-pagemanifest` and `link rel-ashiva-sitemanifest` to New Scaffold
  - Added **title folder** to module folders (`/modulename/#%20Module%Name/`) in which to store `modulename-package.json` (amongst other things)
  - The middle level between *DaNIS3H Publisher* and *DaNIS3H Module* had a temporary working title of *DaNIS3H Brand*. Updated to ***DaNIS3H Imprint***
- - Moved sitemaps section from *New Page Manifest* to *Site Manifest* and rewrote...
- - Improved `concho()` again: enabled the deployment of functions like this: `url___0::Module` (equivalent to `url()` on the output of `'0::Module'`)
-
- - Need to create **new sitemaps section** for *New Page Manifest*
+ - Moved **sitemaps section** from *New Page Manifest* to *Site Manifest*. Wrote new **sitemaps section** for *New Page Manifest*
+ - Improved `concho()` again: enabled the deployment of functions like this: `url(0::Module)` (equivalent to applying `url()` to the output of `'0::Module'`)
+ - Added `/protocols/`, `/manifest/` & `/serviceworker/` subfolders to `/.well-known/` folder and updated `.htaccess` file
 
 
 
