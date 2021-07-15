@@ -160,10 +160,15 @@ HTML-comment syntax includes optional signature after the opening square bracket
  - Added **title folder** to module folders (`/modulename/#%20Module%Name/`) in which to store `modulename-package.json` (and other things)
  - Updated *DaNIS3H Brand* (the middle level between *DaNIS3H Publisher* and *DaNIS3H Module*) to ***DaNIS3H Imprint***
  - Moved **sitemaps section** from *New Page Manifest* to *Site Manifest*. Wrote new **sitemaps section** for *New Page Manifest*
- - Enabled simple functions in `concho()` statements: `url(0::Module)` is the equivalent to applying `url()` to the output of `'0::Module'`
+ - Enabled simple string-formatting functions in `concho()` statements: `url(0::Module)` is the equivalent to applying `url()` to the output of `'0::Module'`
  - Added `/protocols/`, `/manifest/` & `/serviceworker/` subfolders to `/.well-known/` folder and updated `.htaccess` file
 
 
+### Jul 2021
+
+- Got my head around the difference between `FileSystem Paths` and `URL Paths` which means that any file which needs a `URL-path` pointing to the root folder or the `/.well-known/` folder, can actually reside *anywhere* in the `FileSystem` and simply have a redirect (e.g. in `.htaccess`) to its true location in the `FileSystem`. Consequently... created `/.assets/scheme/meta/protocols/` (for all protocols) and then moved `/.assets/theme/` to `/.assets/scheme/theme/` and then added `/.assets/scheme/social/`, `/.assets/scheme/progressive-web-apps/`, `/.assets/scheme/meta/api/`, `/.assets/scheme/meta/manifests/` and  `/.assets/scheme/meta/sitemaps/`
+
+ - Came up with the concept of **DA**: **UX** (*User Experience*) and **UA** (*User Accessibility*) are concepts which have been around for quite a while now. **DX** (*Developer Experience*) is newer but also well-established. At the core of **DaNIS3H** (alongside *code-as-data*) is the concept of **DA** (*Developer Accessibility*) which means making sophisticated, unlimited web-development accessible to the approximately 50% of web page developers who are not conversant and entirely at ease with javascript. This level of **DA** is only otherwise available via **Declarative WebComponents** - and often not even then.
 
 
 ______
