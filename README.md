@@ -231,4 +231,4 @@ Sep 2020 - Learned Web Components
 --- - Started thinking about what ashivaModuleManifests (currently PHP functions) would look like if they were JS functions
 
 
-Thought: Why does DaNIS3H have *Modules* rather than *Components*? Is it partly because *React Components* and *Vue Components* and *WebComponents* are all **UI Components** with UI Logic and UI Data. Whereas *DaNIS3H Modules* can represent anything on the front-end or the back-end. They are more than just **UI Components**.
+Thought: Why does DaNIS3H have *Modules* rather than *Components*? Is it partly because *React Components* and *Vue Components* and *WebComponents* are all **UI Components** with Display Logic and Display Data. Whereas *DaNIS3H Modules* can represent anything on the front-end or the back-end. They are more than just **UI Components**.
