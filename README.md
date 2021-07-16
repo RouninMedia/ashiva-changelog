@@ -170,6 +170,9 @@ HTML-comment syntax includes optional signature after the opening square bracket
 
  - Came up with the concept of **DA**. **UX** (*User Experience*) and **UA** (*User Accessibility*) are concepts which have been around for quite a while now. **DX** (*Developer Experience*) is newer but also well-established. At the core of **DaNIS3H** (alongside *code-as-data* and *coding environment agnosticism*) is the concept of **DA** (*Developer Accessibility*) which means making sophisticated, unlimited web-development accessible to the approximately 50% of web page developers who are not conversant and entirely at ease with javascript. This level of **DA** is only otherwise available via **Declarative WebComponents** - and often not even then.
 
+- [2021-07-16] Became aware of https://mavo.io/ after running across a link to it in https://github.com/whatwg/html/issues/2271
+
+- 
 
 ______
 
