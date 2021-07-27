@@ -172,7 +172,7 @@ HTML-comment syntax includes optional signature after the opening square bracket
 
  - [2021-07-16] Became aware of https://mavo.io/ after running across a link to it in https://github.com/whatwg/html/issues/2271
 
- - Massively improved sophistication of Ashiva ControlPad Module by introducing Ajax-based multi-level menus *and* a Document Viewer
+ - Massively improved sophistication of *Ashiva ControlPad Module* by introducing Ajax-based **Multi-Level Menus** *and* a **Document Viewer**
  - Added *moduleMedia* folder to **DaNIS³H Modules**. Started implementing process where *moduleMedia* SVG Components convert into inline Data URLs in CSS & HTML
 
 ______
