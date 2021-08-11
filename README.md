@@ -90,6 +90,7 @@
 
 ### Feb 2021
  - Introduced *"DataSheets"* alongside CodeSheets and ServerSheets - but since Data CodeSheets already existed, something didn't seem quite right...
+ - Made a number of improvements to packaged `ModuleManifest`
  - Developed queryString operator `updatePageModules`
  - First experiments with JS Namespacing into Da3SH Module Scriptsheet
  - Started writing Ashiva in Deno + Oak on Heroku
@@ -116,6 +117,7 @@
 ### Apr 2021
 
 ### May 2021
+ - Renamed `moduleLogic` as `ActionSheets`
 
 ### Jun 2021
  - Wrote *Scotia Beauty Document Uploader* (based, initially, on *Ashiva Multi-Page Find and Replace Editor*) and, by extension, most of *Ashiva Media Uploader*
@@ -182,9 +184,7 @@ HTML-comment syntax includes optional signature after the opening square bracket
   - Removed `$Critical` parameter from `danis3hModule()` function (I've never used it and if I ever did, it would make bugs harder to track)
 
   - Expanded `danis3hModule()` function's `$Context` parameter (briefly renamed as `$Setting`) - kept `element` the same, renamed `'page'` as `'pagefix'` and added 2 new **Contexts**: `'pageflow'` and `'unstyled'`
-  
   - Made further improvements to packaged `ModuleManifest`
-  
   - Added `ModuleAttributes` to `ModuleManifest`, like this: `$moduleBlock['Attributes'] = ['Position' => 'Off'];`
   - Swapped `'pagefix'` and `'pageflow'` **Contexts** so that `'pageflow'` is now the default **Context** and `'pagefix'` needs to be explicitly stated
   - **Leap Forward:** Realised `$Context` parameter in `danis3hModule()` can now be eliminated entirely and replaced with `$Properties = ['Attributes' = [], 'Light_Modifiers' = []]` (!!)
