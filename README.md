@@ -172,8 +172,23 @@ HTML-comment syntax includes optional signature after the opening square bracket
 
  - [2021-07-16] Became aware of https://mavo.io/ after running across a link to it in https://github.com/whatwg/html/issues/2271
 
- - Massively improved sophistication of *Ashiva ControlPad Module* by introducing Ajax-based **Multi-Level Menus** *and* a **Document Viewer**
+ - Massively improved sophistication of *Ashiva ControlPad Module* by introducing both Ajax-based **Multi-Level Menus** *and* a **Document Viewer**
  - Added *moduleMedia* folder to **DaNIS³H Modules**. Started implementing process where *moduleMedia* SVG Components convert into inline Data URLs in CSS & HTML
+
+### Aug 2021
+
+  - Finally (after two years!) turned JSON-LD Structured Data into DaNIS3H Modules. Slimmed down Ashiva folder structure, Core, Scaffold and Site Manifest.
+  - Re-conceptualised DaNIS3H Module Parameters as _String Parameters_ and introduced _Array Parameters_ and _Object Parameters_ to DaNIS3H Module Notation 
+  - Removed `$Critical` parameter from `danis3hModule()` function (I've never used it and if I ever did, it would make bugs harder to track)
+
+  - Expanded `danis3hModule()` function's `$Context` parameter (briefly renamed as `$Setting`) - kept `element` the same, renamed `'page'` as `'pagefix'` and added 2 new **Contexts**: `'pageflow'` and `'unstyled'`
+  
+  - Made further improvements to packaged `ModuleManifest`
+  
+  - Added `ModuleAttributes` to `ModuleManifest`, like this: `$moduleBlock['Attributes'] = ['Position' => 'Off'];`
+  - Swapped `'pagefix'` and `'pageflow'` **Contexts** so that `'pageflow'` is now the default **Context** and `'pagefix'` needs to be explicitly stated
+  - **Leap Forward:** Realised `$Context` parameter in `danis3hModule()` can now be eliminated entirely and replaced with `$Properties = ['Attributes' = [], 'Light_Modifiers' = []]` (!!)
+  - Updated Module Registration: Removed `Parameters` Entry from Register if no Parameters; added `Requires` to Register, added `Attributes` to Register
 
 ______
 
