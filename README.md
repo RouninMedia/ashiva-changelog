@@ -101,7 +101,7 @@
  - Successfully *async-ed* **Modules Stylesheet** - leading to *dramatic* improvement in page load speed
  - Developed queryString operator `updatePageComponents`
  - Substantially rewrote **JSON Rewriter** (and, by extension, *Code Converter UI*)
- - Formalised in-Module HTTP Authentication and introduced `/modulename/protected/` (after realising ***this*** is the key feature of *"DataSheets"*)
+ - Formalised in-Module HTTP Authentication and reconceptualised *"DataSheets"* as *"Protected DataSheets"* stored in: `/modulename/protected/`
  - Wrote **Ashiva Multi-Page Find and Replace Editor** (based on PHP Code from **Kubaru** and Front End Code from **LanguageCompass**)
  - Developed **veSPA** in the course of writing *Ashiva Multi-Page Find and Replace Editor* 
  - Developed **SB_Email_Subscribers** Da3SH Module
@@ -165,7 +165,6 @@ HTML-comment syntax includes optional signature after the opening square bracket
  - Enabled simple string-formatting functions in `concho()` statements: `url(0::Module)` is the equivalent to applying `url()` to the output of `'0::Module'`
  - Added `/protocols/`, `/manifest/` & `/serviceworker/` subfolders to `/.well-known/` folder and updated `.htaccess` file
 
-
 ### Jul 2021
 
  - Got my head around the difference between `FileSystem Paths` and `URL Paths` which means that any file which needs a `URL Path` pointing to the root folder or the `/.well-known/` folder, can actually reside *anywhere* in the `FileSystem` and simply have a redirect (e.g. in `.htaccess`) to its true location in the `FileSystem`. Consequently... created `/.assets/scheme/meta/protocols/` (for all protocols) and then moved `/.assets/theme/` to `/.assets/scheme/theme/` and then added `/.assets/scheme/social/`, `/.assets/scheme/progressive-web-apps/`, `/.assets/scheme/meta/api/`, `/.assets/scheme/meta/manifests/` and  `/.assets/scheme/meta/sitemaps/`
@@ -174,21 +173,31 @@ HTML-comment syntax includes optional signature after the opening square bracket
 
  - [2021-07-16] Became aware of https://mavo.io/ after running across a link to it in https://github.com/whatwg/html/issues/2271
 
- - Massively improved sophistication of *Ashiva ControlPad Module* by introducing both Ajax-based **Multi-Level Menus** *and* a **Document Viewer**
+ - Massively improved sophistication and utility of *Ashiva ControlPad Module* by introducing both Ajax-based **Multi-Level Menus** *and* a **Document Viewer**
  - Added *moduleMedia* folder to **DaNIS³H Modules**. Started implementing process where *moduleMedia* SVG Components convert into inline Data URLs in CSS & HTML
 
 ### Aug 2021
 
-  - Finally (after two years!) turned JSON-LD Structured Data into DaNIS3H Modules. Slimmed down Ashiva folder structure, Core, Scaffold and Site Manifest.
+  - Finally (after two years!) turned JSON-LD Structured Data into DaNIS3H Modules. Consequently slimmed down Ashiva folder structure, Core, Scaffold and Site Manifest.
   - Re-conceptualised DaNIS3H Module Parameters as _String Parameters_ and introduced _Array Parameters_ and _Object Parameters_ to DaNIS3H Module Notation 
   - Removed `$Critical` parameter from `danis3hModule()` function (I've never used it and if I ever did, it would make bugs harder to track)
-
   - Expanded `danis3hModule()` function's `$Context` parameter (briefly renamed as `$Setting`) - kept `element` the same, renamed `'page'` as `'pagefix'` and added 2 new **Contexts**: `'pageflow'` and `'unstyled'`
-  - Made further improvements to packaged `ModuleManifest`
-  - Added `ModuleAttributes` to `ModuleManifest`, like this: `$moduleBlock['Attributes'] = ['Position' => 'Off'];`
+  - Made more small improvements to `ModuleManifest` JSON Package
+  - Added optional `ModuleAttributes` entry to `ModuleManifest`, like this: `$moduleBlock['Attributes'] = ['Position' => 'Off'];`
   - Swapped `'pagefix'` and `'pageflow'` **Contexts** so that `'pageflow'` is now the default **Context** and `'pagefix'` needs to be explicitly stated
-  - **Leap Forward:** Realised `$Context` parameter in `danis3hModule()` can now be eliminated entirely and replaced with `$Properties = ['Attributes' = [], 'Light_Modifiers' = []]` (!!)
-  - Updated Module Registration: Removed `Parameters` Entry from Register if no Parameters; added `Requires` to Register, added `Attributes` to Register
+  - **Leap Forward:** Realised `$Context` parameter in `danis3hModule()` can now be eliminated entirely and replaced with `$ModuleProperties = ['Attributes' = [], 'LightModifiers' = []]` (!!)
+  - Updated Module Registration: Removed `Parameters` Entry from Register when no Parameters; added `Requires` to Register, added `Attributes` to Register
+  - Discovered something similar to `$ModuleProperties` (attributesJSON) in `renderMarkup()` and updated it to be consistent with `$ModuleProperties` in `danis3hModule()`
+  
+  - Created Dynamic Menus for *Ashiva ControlPad Module* using PHP-pre-preprocesed JSON
+  - Created two custom `<meta>` elements for Ashiva, **DaNIS³H Modules Profile** and **DaNIS³H Assets Profile**:
+
+```
+<meta name="danis3h-modules-profile" content="{«ModulesProfile»: {«Module_A»: [«Markup», «Styles», «Module_C»], «Module_B»: [«Markup», «Styles»], «Module_C»: [«Markup», «Scripts»]}" />
+<meta name="danis3h-assets-profile" content="{«AssetsProfile»: {«Markup»: [«Module_A», «Module_B», «Module_C»], «Styles»: [«Module_A», «Module_B»], «Scripts»: [«Module_B», «Module_C»]}" />
+```
+
+  - Thanks to the two innovations above, made it possible to view single *Style Components*, *Script Components* and *ESModule Components* via the *Ashiva ControlPad Module*
 
 ______
 
