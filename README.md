@@ -198,6 +198,11 @@ HTML-comment syntax includes optional signature after the opening square bracket
 ```
 
   - Thanks to the two innovations above, made it possible to view single *Style Components*, *Script Components* and *ESModule Components* via the *Ashiva ControlPad Module*
+  - Added SVG icons to *Ashiva ControlPad Module*
+
+### Sept 2021
+
+ - Added `modulefound="false"` attribute to invalid module calls
 
 ______
 
