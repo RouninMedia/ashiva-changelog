@@ -22,10 +22,10 @@
 ### Oct 2017
  - The name *Ashiva* (based on *ashiba*, the Japanese word for *scaffolding*) replaces "CMS3"
  - First attempt at creating a Control Pad for *Ashiva*
- - Invention of *Ashiva* Roles and Capabilities
+ - Invention of *Ashiva* *User Roles* and associated *User Capabilities*
 
 ### Nov 2017
- - Created SiteMap Editing Interface (to add / move / delete pages and subpages)
+ - Created responsive **SiteMap Editor Interface** (to add / move / delete pages and subpages)
 
 ### Dec 2017
  - Developed first JSON serialisation of HTML for (very early) *Ashiva Console Module*
@@ -34,7 +34,7 @@
 ## 2018
 ### Jan 2018
  - First attempt to create ashivaModules in PHP with complex PHP-array-based filters
- - Extensively considered creating separately formatted front-end and back-end modules
+ - Spent a long time considering creating two different categories of module: separately-formatted for the front-end and back-end
 
 ### Apr 2018
  - Developed JSON serialisation of CSS while building hackPad
@@ -179,7 +179,7 @@ HTML-comment syntax includes optional signature after the opening square bracket
 ### Aug 2021
 
   - Finally (after two years!) turned JSON-LD Structured Data into DaNIS3H Modules. Consequently slimmed down Ashiva folder structure, Core, Scaffold and Site Manifest.
-  - Re-conceptualised DaNIS3H Module Parameters as _String Parameters_ and introduced _Array Parameters_ and _Object Parameters_ to DaNIS3H Module Notation 
+  - Re-conceptualised DaNIS3H Module Parameters as _String Parameters_ and introduced _Array Parameters_ and _Object Parameters_ to DaNIS3H Module Notation, allowing each of the three types of parameter to be *unnamed* or *named*
   - Removed `$Critical` parameter from `danis3hModule()` function (I've never used it and if I ever did, it would make bugs harder to track)
   - Expanded `danis3hModule()` function's `$Context` parameter (briefly renamed as `$Setting`) - kept `element` the same, renamed `'page'` as `'pagefix'` and added 2 new **Contexts**: `'pageflow'` and `'unstyled'`
   - Made more small improvements to `ModuleManifest` JSON Package
