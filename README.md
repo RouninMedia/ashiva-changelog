@@ -203,9 +203,8 @@ HTML-comment syntax includes optional signature after the opening square bracket
 ### Sept 2021
 
  - Added `modulefound="false"` attribute to both types of invalid module calls:
-    
-    i) when `ModuleName` is absent from the **PageManifest**
-    ii) when `ModuleName` is present in the **PageManifest** but the url path built from the `ModulePublisher` and `ModuleName` set referenced in the **PageManifest** doesn't exist
+    i. when `ModuleName` is absent from the **PageManifest**
+    ii. when `ModuleName` is present in the **PageManifest** but the url path built from the `ModulePublisher` and `ModuleName` set referenced in the **PageManifest** doesn't exist
 
 ______
 
