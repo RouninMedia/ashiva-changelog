@@ -189,7 +189,7 @@ HTML-comment syntax includes optional signature after the opening square bracket
   - Updated Module Registration: Removed `Parameters` Entry from Register when no Parameters; added `Requires` to Register, added `Attributes` to Register
   - Discovered something similar to `$ModuleProperties` (attributesJSON) in `renderMarkup()` and updated it to be consistent with `$ModuleProperties` in `danis3hModule()`
   
-  - Created Dynamic Menus for *Ashiva ControlPad Module* using PHP-pre-preprocesed JSON
+  - Created **Dynamic Menus** for *Ashiva ControlPad Module* using PHP-preprocessed JSON
   - Created two custom `<meta>` elements for Ashiva, **DaNIS³H Modules Profile** and **DaNIS³H Assets Profile**:
 
 ```
