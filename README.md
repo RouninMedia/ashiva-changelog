@@ -207,6 +207,7 @@ HTML-comment syntax includes optional signature after the opening square bracket
    - when `ModuleName` is *absent* from the **PageManifest**
    - when `ModuleName` is *present* in the **PageManifest** but the URL path built from the `ModuleName` (and associated `ModulePublisher`) doesn't exist
 
+- Added `/.assets/scheme/meta/well-known/` folder as a home for all `/.well-known/` files and folders (and added corresponding `mod_rewrite` rule in `.htaccess`)
 ______
 
 ## Developments to Add...
