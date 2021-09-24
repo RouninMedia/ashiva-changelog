@@ -197,15 +197,21 @@ HTML-comment syntax includes optional signature after the opening square bracket
 <meta name="danis3h-assets-profile" content="{«AssetsProfile»: {«Markup»: [«Module_A», «Module_B», «Module_C»], «Styles»: [«Module_A», «Module_B»], «Scripts»: [«Module_B», «Module_C»]}" />
 ```
 
-  - Thanks to the two innovations above, made it possible to view single *Style Components*, *Script Components* and *ESModule Components* via the *Ashiva ControlPad Module*
+  - Thanks to the two innovations above, made it possible for the *Ashiva ControlPad Module* to display page-relevant menus for *Style Components*, *Script Components* and *ESModule Components*
   - Added SVG icons to *Ashiva ControlPad Module*
 
 ### Sept 2021
 
  - Added `modulefound="false"` attribute to both types of invalid module calls:
  
-   - when `ModuleName` is *absent* from the **PageManifest**
-   - when `ModuleName` is *present* in the **PageManifest** but the URL path built from the `ModuleName` (and associated `ModulePublisher`) doesn't exist
+   - when `ModuleName` is *absent* from the `ModuleList` in the **PageManifest**
+   - when `ModuleName` is *present* in the `ModuleList` in the **PageManifest** but the DaNIS3H Module isn't installed / uploaded
+
+- Started building *Ashiva Desktop* in **Atom**
+
+- Adapted *Ashiva ControlPad Document Viewer* so that it can now show individual *Style Components*, *Script Components* and *ESModule Components* excerpted from their dynamically-generated parent files: `/modules/styles/styles.css`, `/modules/scripts/scripts.js`, `/modules/esmodules/esmodules.js`
+
+- Adapted `View HTML Source` script so that it works in the *Ashiva ControlPad Document Viewer*
 
 - Added `/.assets/scheme/meta/well-known/` folder as a home for all `/.well-known/` files and folders (and added corresponding `mod_rewrite` rule in `.htaccess`)
 ______
