@@ -197,7 +197,7 @@ HTML-comment syntax includes optional signature after the opening square bracket
 <meta name="danis3h-assets-profile" content="{«AssetsProfile»: {«Markup»: [«Module_A», «Module_B», «Module_C»], «Styles»: [«Module_A», «Module_B»], «Scripts»: [«Module_B», «Module_C»]}" />
 ```
 
-  - Thanks to the two innovations above, made it possible for the *Ashiva ControlPad Module* to display page-relevant menus for *Style Components*, *Script Components* and *ESModule Components*
+  - The two innovations immediately above (*Ashiva ControlPad Dynamic Menus* and *ModulesProfile / AssetsProfile*), made it possible for the *Ashiva ControlPad Module* to display page-relevant menus for *Style Components*, *Script Components* and *ESModule Components*
   - Added SVG icons to *Ashiva ControlPad Module*
 
 ### Sept 2021
