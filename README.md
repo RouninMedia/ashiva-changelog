@@ -223,7 +223,7 @@ HTML-comment syntax includes optional signature after the opening square bracket
 
  - Added Options Console to Ashiva Control Pad, with Select User, Mute/Unmute, Toggle Screen/Fullscreen, Tools, Notes and SwitchOff controls
 
- - Widely adopted CSS pseudo-class `:root` across DaNIS3H Module stylesheets to replace the more ambiguous empty selector \[`""`\] and leading space selector: \[`" .my-class"`\], the latter of which is much more easily missed when debugging
+ - Replaced the ambiguous *empty root selector* \[`""`\] and the *leading space selector* \[`" .my-class"`\], (the latter of which is particularly easily missed when debugging) with the CSS pseudo-class `:root` across DaNIS3H Module stylesheets
 
 
 ______
