@@ -197,7 +197,7 @@ HTML-comment syntax includes optional signature after the opening square bracket
 <meta name="danis3h-assets-profile" content="{«AssetsProfile»: {«Markup»: [«Module_A», «Module_B», «Module_C»], «Styles»: [«Module_A», «Module_B»], «Scripts»: [«Module_B», «Module_C»]}" />
 ```
 
-  - The two innovations immediately above (*Ashiva ControlPad Dynamic Menus* and *ModulesProfile / AssetsProfile*), made it possible for the *Ashiva ControlPad Module* to display page-relevant menus for *Style Components*, *Script Components* and *ESModule Components*
+  - The two innovations immediately above (*Ashiva ControlPad Dynamic Menus* and *ModulesProfile / AssetsProfile*), made it possible for the *Ashiva ControlPad Module* to display *dynamic* and *page-relevant* menus for *Style Components*, *Script Components* and *ESModule Components*
   - Added SVG icons to *Ashiva ControlPad Module*
 
 ### Sept 2021
@@ -216,6 +216,10 @@ HTML-comment syntax includes optional signature after the opening square bracket
 - Added `/.assets/scheme/meta/well-known/` folder as a home for all `/.well-known/` files and folders (and added corresponding `mod_rewrite` rule in `.htaccess`)
 
 ### Oct 2021
+
+ - Added Namespace Toggle to *Ashiva ControlPad Document Viewer*
+
+ - Added Web Workers to *Ashiva ControlPad Main Assets Menu*
 
  - Added Options Console to Ashiva Control Pad, with Select User, Mute/Unmute, Toggle Screen/Fullscreen, Tools, Notes and SwitchOff controls
 
