@@ -221,9 +221,9 @@ HTML-comment syntax includes optional signature after the opening square bracket
 
  - Added Web Workers to *Ashiva ControlPad Main Assets Menu*
 
- - Added Options Console to Ashiva Control Pad, with Select User, Mute/Unmute, Toggle Screen/Fullscreen, Tools, Notes and SwitchOff controls
+ - Added Options Console to Ashiva Control Pad, with *Select User*, *Mute/Unmute*, *Toggle Screen/Fullscreen*, *Tools*, *Notes* and *Switch Off* controls
 
- - Replaced the ambiguous *empty root selector* \[`""`\] and the *leading space selector* \[`" .my-class"`\], (the latter of which is particularly easily missed when debugging) with the CSS pseudo-class `:root` across DaNIS3H Module stylesheets
+ - Replaced the ambiguous *empty root selector* \[`""`\] and the *leading space selector* \[`" .my-class"`\], (particularly easily missed when debugging) with the CSS pseudo-class `:root` across DaNIS3H Module stylesheets
 
 
 ______
