@@ -198,7 +198,7 @@ HTML-comment syntax includes optional signature after the opening square bracket
 ```
 
   - The two innovations immediately above (*Ashiva ControlPad Dynamic Menus* and *ModulesProfile / AssetsProfile*), made it possible for the *Ashiva ControlPad Module* to display *dynamic* and *page-relevant* menus for *Style Components*, *Script Components* and *ESModule Components*
-  - Added SVG icons to *Ashiva ControlPad Module*
+  - Added SVG icons across *Ashiva ControlPad Module*
 
 ### Sept 2021
 
