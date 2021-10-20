@@ -214,6 +214,14 @@ HTML-comment syntax includes optional signature after the opening square bracket
 - Adapted `View HTML Source` script to build a version which displays code in the *Ashiva ControlPad Document Viewer* (rather than in a new tab)
 
 - Added `/.assets/scheme/meta/well-known/` folder as a home for all `/.well-known/` files and folders (and added corresponding `mod_rewrite` rule in `.htaccess`)
+
+### Oct 2021
+
+ - Added Options Console to Ashiva Control Pad, with Select User, Mute/Unmute, Toggle Screen/Fullscreen, Tools, Notes and SwitchOff controls
+
+ - Widely adopted CSS pseudo-class `:root` across DaNIS3H Module stylesheets (to replace empty selector \[`""`\] and leading space selector: \[`" .my-class"`\])  
+
+
 ______
 
 ## Developments to Add...
