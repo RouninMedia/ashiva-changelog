@@ -219,11 +219,13 @@ HTML-comment syntax includes optional signature after the opening square bracket
 
  - Added Namespace Toggle to *Ashiva ControlPad Document Viewer*
 
- - Added Web Workers to *Ashiva ControlPad Main Assets Menu*
+ - Added Web Workers option to *Ashiva ControlPad Main Assets Menu*
 
- - Added **Options Console** to Ashiva Control Pad, with 1) *Select User*, 2) *Mute/Unmute*, 3) *Toggle Screen/Fullscreen*, 4) *Tools*, 5) *Notes* and 6) *Switch Off* controls
+ - Added **Settings Console** to Ashiva Control Pad, with 1) *Select User*, 2) *Mute/Unmute*, 3) *Toggle Screen/Fullscreen*, 4) *Tools*, 5) *Notes* and 6) *Switch Off* controls
 
  - Replaced the ambiguous *empty root selector* \[`""`\] and the *leading space selector* \[`" .my-class"`\], (particularly easily missed when debugging) with the CSS pseudo-class `:root` across DaNIS3H Module stylesheets
+
+- Updated `/.assets/content/scaffold/` to `/.assets/content/scaffolds/` to indicate that a single **Ashiva Site** may deploy more than one *Scaffold*
 
 
 ______
