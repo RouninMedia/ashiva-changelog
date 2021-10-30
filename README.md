@@ -187,7 +187,7 @@ HTML-comment syntax includes optional signature after the opening square bracket
   - Swapped `'pagefix'` and `'pageflow'` **Contexts** so that `'pageflow'` is now the default **Context** and `'pagefix'` needs to be explicitly stated
   - **Leap Forward:** Realised `$Context` parameter in `danis3hModule()` can now be eliminated entirely and replaced with `$ModuleProperties = ['Attributes' = [], 'LightModifiers' = []]` (!!)
   - Updated Module Registration: Removed `Parameters` Entry from Register when no Parameters; added `Requires` to Register, added `Attributes` to Register
-  - Discovered something similar to `$ModuleProperties` (attributesJSON) in `renderMarkup()` and updated it to be consistent with `$ModuleProperties` in `danis3hModule()`
+  - Discovered something similar to `$ModuleProperties` (attributesJSON) in `renderMarkup()` (!) and updated it to be consistent with `$ModuleProperties` in `danis3hModule()`
   
   - Created **Dynamic Menus** for *Ashiva ControlPad Module* using PHP-preprocessed JSON
   - Created two custom `<meta>` elements for Ashiva, **DaNIS³H Modules Profile** and **DaNIS³H Assets Profile**:
@@ -217,15 +217,19 @@ HTML-comment syntax includes optional signature after the opening square bracket
 
 ### Oct 2021
 
- - Added Namespace Toggle to *Ashiva ControlPad Document Viewer*
+ - Added **Namespace Toggle** to *Ashiva ControlPad Document Viewer*
 
  - Added Web Workers option to *Ashiva ControlPad Main Assets Menu*
 
- - Added **Settings Console** to Ashiva Control Pad, with 1) *Select User*, 2) *Mute/Unmute*, 3) *Toggle Screen/Fullscreen*, 4) *Tools*, 5) *Notes* and 6) *Switch Off* controls
+ - Added **Settings Console** to Ashiva Control Pad, with 1) *Select User*, 2) *Mute/Unmute*, 3) *Fullscreen Toggle*, 4) *Tools*, 5) *Notes* and 6) *Switch Off* controls
 
  - Replaced the ambiguous *empty root selector* \[`""`\] and the *leading space selector* \[`" .my-class"`\], (particularly easily missed when debugging) with the CSS pseudo-class `:root` across DaNIS3H Module stylesheets
 
 - Updated `/.assets/content/scaffold/` to `/.assets/content/scaffolds/` to indicate that a single **Ashiva Site** may deploy more than one *Scaffold*
+
+- Renamed **DaNIS³H Modules** as **DaNIS³H Capsules**
+
+- Added **Capsule Toggle** to *View HTML Source* in *Ashiva ControlPad*
 
 
 ______
