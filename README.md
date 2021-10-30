@@ -89,7 +89,7 @@
  - Added support for bi-directional conversion of CSS `@media` and `@keyframes` in Da3SH Style Components
 
 ### Feb 2021
- - Introduced *"DataSheets"* alongside CodeSheets and ServerSheets - but since Data CodeSheets already existed, something didn't seem quite right...
+ - Experimented with introducing *"DataSheets"* alongside CodeSheets and ServerSheets. *(But since Data CodeSheets already existed, something didn't seem quite right...)*
  - Made a number of improvements to packaged `ModuleManifest`
  - Developed queryString operator `updatePageModules`
  - First experiments with JS Namespacing into Da3SH Module Scriptsheet
