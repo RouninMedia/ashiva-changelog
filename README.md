@@ -229,9 +229,13 @@ HTML-comment syntax includes optional signature after the opening square bracket
 
 - Renamed **DaNIS³H Modules** as **DaNIS³H Capsules**
 
-- Added **Capsule Toggle** to *View HTML Source* in *Ashiva ControlPad*
+- Added **Expand Capsule Toggle** to *View HTML Source* in *Ashiva ControlPad*
 
 - Added script which appends *Empty Component Notice* to those **DaNIS³H Markup Components** which (by design) contain no markup
+
+### Nov 2021
+
+ - created `conquire($CapsuleName, $Attributes = [], $LightModifiers = [], $Conditions = [])` as a sister function to `concho()` for **DaNIS³H Markup Caplets** and **DaNIS³H Vector Caplets** 
 
 
 ______
