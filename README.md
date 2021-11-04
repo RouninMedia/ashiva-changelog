@@ -229,9 +229,9 @@ HTML-comment syntax includes optional signature after the opening square bracket
 
 - Renamed **DaNIS³H Modules** as **DaNIS³H Capsules**
 
-- Added **Expand Capsule Toggle** to *View HTML Source* in *Ashiva ControlPad*
+- Added **Expand Capsule Toggle** to *View HTML Source* **DocumentView** in *Ashiva ControlPad*
 
-- Added script which appends *Empty Component Notice* to those **DaNIS³H Markup Components** which (by design) contain no markup
+- Added script which appends *Empty Component Notice* to those **DaNIS³H Markup Components** which (intentionally) contain no markup
 
 ### Nov 2021
 
