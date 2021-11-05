@@ -235,8 +235,17 @@ HTML-comment syntax includes optional signature after the opening square bracket
 
 ### Nov 2021
 
+ - Changed *Light Modifier Indicators* from **Custom Data-* Attributes** (`data-°orange`) to **Custom Attributes (`°orange`)
+
+ - Moved *Light Modifier Indicators* to end of **Capsule Declaration**
+
  - introduced `['Attributes' => ['Conditional' => TRUE]]` to `danis3hModule` function (as a gentler replacement for the obsoleted `$Critical` - see Aug 2021)
- - determined to work on Concho Condition-String syntax (which will also be used in `['Attributes' => ['Conditional' => TRUE]]`)
+
+ - determined to work on Concho **Condition-String Syntax** (which will also be used in `['Attributes' => ['Conditional' => TRUE]]`)
+
+ - enabled **Light Modifiers** to handle *single values* as well as *key-value pairs*
+
+
 
 
 ______
