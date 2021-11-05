@@ -235,7 +235,8 @@ HTML-comment syntax includes optional signature after the opening square bracket
 
 ### Nov 2021
 
- - created `conquire($CapsuleName, $Attributes = [], $LightModifiers = [], $Conditions = [])` as a sister function to `concho()` for **DaNIS³H Markup Caplets** and **DaNIS³H Vector Caplets** 
+ - introduced `['Attributes' => ['Conditional' => TRUE]]` to `danis3hModule` function (as a gentler replacement for the obsoleted `$Critical` - see Aug 2021)
+ - determined to work on Concho Condition-String syntax (which will also be used in `['Attributes' => ['Conditional' => TRUE]]`)
 
 
 ______
