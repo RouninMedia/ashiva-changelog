@@ -239,7 +239,7 @@ HTML-comment syntax includes optional signature after the opening square bracket
 
  - Moved *Light Modifier Indicators* to end of **Capsule Declaration**
 
- - introduced `['Attributes' => ['Conditional' => TRUE]]` to `danis3hModule` function (as a gentler replacement for the obsoleted `$Critical` - see Aug 2021)
+ - introduced `['Attributes' => ['Conditional' => TRUE]]` to `danis3hModule` function (as a gentler implementation of the Capsule-skipping functionality originally executed by the now-obsoleted `$Critical` - see Aug 2021)
 
  - determined to work on Concho **Condition-String Syntax** (which will also be used in `['Attributes' => ['Conditional' => TRUE]]`)
 
