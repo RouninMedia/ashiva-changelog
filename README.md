@@ -235,7 +235,7 @@ HTML-comment syntax includes optional signature after the opening square bracket
 
 ### Nov 2021
 
- - Changed *Light Modifier Indicators* from **Custom Data-* Attributes** (`data-°orange`) to **Custom Attributes (`°orange`)
+ - Changed *Light Modifier Indicators* from **Custom Data-* Attributes** (`data-°orange`) to **Custom Attributes** (`°orange`)
 
  - Moved *Light Modifier Indicators* to end of **Capsule Declaration**
 
