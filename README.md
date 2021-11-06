@@ -241,9 +241,11 @@ HTML-comment syntax includes optional signature after the opening square bracket
 
  - introduced `['Attributes' => ['Conditional' => TRUE]]` to `danis3hModule` function (as a gentler implementation of the Capsule-skipping functionality originally executed by the now-obsoleted `$Critical` - see Aug 2021)
 
- - determined to work on Concho **Condition-String Syntax** (which will also be used in `['Attributes' => ['Conditional' => TRUE]]`)
+ - determined to formalise Concho **Condition-String Syntax** (which will also be used in `['Attributes' => ['Conditional' => TRUE]]`)
 
- - enabled **Light Modifiers** to handle *single values* as well as *key-value pairs*
+ - enabled **Light Modifiers** to consume *single values* as well as *key-value pairs*
+ 
+ - updated `getMarkup($Module, $Attributes, $LightModifiers)` to enable proper **HTML Markup** rendering of **Light Modifier** *key-value pairs*
 
 
 
