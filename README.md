@@ -217,9 +217,11 @@
 
  - determined to formalise Concho **Condition-String Syntax** (which will also be used in `['Attributes' => ['Conditional' => TRUE]]`)
 
- - enabled **Light Modifiers** to consume *single values* as well as *key-value pairs*
+ - enabled **Light Modifiers** to parse *single values* (ie. indexed array items) as well as *key-value pairs* (associative array items)
  
- - updated `getMarkup($Module, $Attributes, $LightModifiers)` to enable proper **HTML Markup** rendering of **Light Modifier** *key-value pairs*
+ - updated `getMarkup($Module, $Attributes, $LightModifiers)` to enable **Light Modifier** *key-value pairs* to be rendered properly in **HTML Markup**
+ 
+ - re-labelled **Ashiva Console:** as **DaNIS³H Console:** everywhere
 
 
 
