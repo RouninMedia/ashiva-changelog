@@ -232,20 +232,20 @@
    - `/.assets/capsules/`
    - `/.assets/site/`
   
-  <li>renamed:
+<li>renamed:
   
-    <ul>
-      <li>`/.assets/modules/`</li>
-      <li>`/.assets/scheme/`</li>
-    </ul>
+<ul>
+<li>`/.assets/modules/`</li>
+<li>`/.assets/scheme/`</li>
+</ul>
     
-    and then...
+and then...
     
-    <ul>
-      <li>`/.assets/capsules/`</li>
-      <li>`/.assets/site/`</li>
-    </ul>
-  </li>
+<ul>
+<li>`/.assets/capsules/`</li>
+<li>`/.assets/site/`</li>
+</ul>
+</li>
 
 
 
