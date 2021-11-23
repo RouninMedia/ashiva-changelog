@@ -223,14 +223,6 @@
  
  - re-labelled **Ashiva Console:** as **DaNIS³H Console:** everywhere
  - Fourth Ashiva site (`OurFlag.uk`) created
- - renamed:
-   - `/.assets/modules/`
-   - `/.assets/scheme/`
- 
-  as:
- 
-   - `/.assets/capsules/`
-   - `/.assets/site/`
   
 <ul>
 <li>  renamed:
@@ -240,11 +232,11 @@
  <li><code>/.assets/scheme/</code></li>
 </ul>
     
-  as:
+as:
     
 <ul>
-<li>  <code>/.assets/capsules/</code></li>
-<li>  <code>/.assets/site/</code></li>
+<li><code>/.assets/capsules/</code></li>
+<li><code>/.assets/site/</code></li>
 </ul>
 </li>
 </ul>
