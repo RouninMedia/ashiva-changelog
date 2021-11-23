@@ -232,6 +232,7 @@
    - `/.assets/capsules/`
    - `/.assets/site/`
   
+<ul>
 <li>  renamed:
   
 <ul>
@@ -246,6 +247,7 @@
 <li>  <code>/.assets/site/</code></li>
 </ul>
 </li>
+</ul>
 
 
 
