@@ -235,15 +235,15 @@
 <li>renamed:
   
 <ul>
-<li>`/.assets/modules/`</li>
-<li>`/.assets/scheme/`</li>
+ <li><code>/.assets/modules/</code></li>
+ <li><code>/.assets/scheme/</code></li>
 </ul>
     
 and then...
     
 <ul>
-<li>`/.assets/capsules/`</li>
-<li>`/.assets/site/`</li>
+<li><code>/.assets/capsules/</code></li>
+<li><code>/.assets/site/</code></li>
 </ul>
 </li>
 
