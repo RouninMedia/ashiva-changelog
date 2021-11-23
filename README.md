@@ -232,18 +232,18 @@
    - `/.assets/capsules/`
    - `/.assets/site/`
   
-<li>renamed:
+<li>  renamed:
   
 <ul>
- <li><code>/.assets/modules/</code></li>
- <li><code>/.assets/scheme/</code></li>
+ <li>  <code>/.assets/modules/</code></li>
+ <li>  <code>/.assets/scheme/</code></li>
 </ul>
     
-and then...
+  and then...
     
 <ul>
-<li><code>/.assets/capsules/</code></li>
-<li><code>/.assets/site/</code></li>
+<li>  <code>/.assets/capsules/</code></li>
+<li>  <code>/.assets/site/</code></li>
 </ul>
 </li>
 
