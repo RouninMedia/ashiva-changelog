@@ -226,7 +226,7 @@
  - renamed:
    - `/.assets/modules/`
    - `/.assets/scheme/`
-   as:
+ as:
    - `/.assets/capsules/`
    - `/.assets/site/`
 
