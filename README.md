@@ -58,7 +58,7 @@
  - Da3SH CodeSheets invented (Da3SH Components by any other name)
 
 ### Aug 2019
- - Third site (JamesNHSWalk.org) created
+ - Third Ashiva site (`JamesNHSWalk.org`) created
 
 ### Oct 2019
  - ModuleManifests formalised
@@ -121,7 +121,7 @@
 
 ### Jun 2021
  - Wrote *Scotia Beauty Document Uploader* (based, initially, on *Ashiva Multi-Page Find and Replace Editor*) and, by extension, most of *Ashiva Media Uploader*
- - Fourth site (EtherPhysics.net) created
+ - Fourth Ashiva site (`EtherPhysics.net`) created
  - Started work on bringing Ashiva Installer fully up-to-date
  - Changed name from Da3SH to DaNIS³H
  - Started writing *User Guide to DaNIS³H* at: https://app.gitbook.com/@alan-lansdowne/s/danis3h/
@@ -222,7 +222,7 @@
  - updated `getMarkup($Module, $Attributes, $LightModifiers)` to enable **Light Modifier** *key-value pairs* to be rendered properly in **HTML Markup**
  
  - re-labelled **Ashiva Console:** as **DaNIS³H Console:** everywhere
- - set up : `OurFlag.uk`
+ - Fourth Ashiva site (`OurFlag.uk`) created
  - renamed:
    - `/.assets/modules/`
    - `/.assets/scheme/`
