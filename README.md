@@ -231,6 +231,21 @@
  
    - `/.assets/capsules/`
    - `/.assets/site/`
+  
+  <li>renamed:
+  
+    <ul>
+      <li>`/.assets/modules/`</li>
+      <li>`/.assets/scheme/`</li>
+    </ul>
+    
+    and then...
+    
+    <ul>
+      <li>`/.assets/capsules/`</li>
+      <li>`/.assets/site/`</li>
+    </ul>
+  </li>
 
 
 
