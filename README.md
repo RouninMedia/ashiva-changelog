@@ -236,11 +236,11 @@
 <li>  renamed:
   
 <ul>
- <li>  <code>/.assets/modules/</code></li>
- <li>  <code>/.assets/scheme/</code></li>
+ <li><code>/.assets/modules/</code></li>
+ <li><code>/.assets/scheme/</code></li>
 </ul>
     
-  and then...
+  as:
     
 <ul>
 <li>  <code>/.assets/capsules/</code></li>
