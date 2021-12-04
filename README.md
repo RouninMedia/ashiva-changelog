@@ -215,14 +215,14 @@
 
  - introduced `['Attributes' => ['Conditional' => TRUE]]` to `danis3hModule` function (as a gentler implementation of the Capsule-skipping functionality originally executed by the now-obsoleted `$Critical` - see Aug 2021)
 
- - determined to formalise Concho **Condition-String Syntax** (which will also be used in `['Attributes' => ['Conditional' => TRUE]]`)
+ - made a plan to formalise Concho **Condition-String Syntax** (which will also be used in `['Attributes' => ['Conditional' => TRUE]]`)
 
  - enabled **Light Modifiers** to parse *single values* (ie. indexed array items) as well as *key-value pairs* (associative array items)
  
  - updated `getMarkup($Module, $Attributes, $LightModifiers)` to enable **Light Modifier** *key-value pairs* to be rendered properly in **HTML Markup**
  
  - re-labelled **Ashiva Console:** as **DaNIS³H Console:** everywhere
- - Fourth Ashiva site (`OurFlag.uk`) created
+ - Fifth Ashiva site (`OurFlag.uk`) created
   
 <ul>
 <li>  renamed:
@@ -241,7 +241,14 @@ as:
 </li>
 </ul>
 
+### Dec 2021
 
+  - Activated **Concho** in New Scaffold of `OurFlag.uk`. (In the New Scaffold of `EtherPhysics.net` **Concho** is still theoretical.)
+  - In **Concho**, updated the query demarcators from `|` to `¦`
+  - Made a number of changes to New PageManifest and New SiteManifest
+  - Significantly updated Build Process for Main Scripts, Main ESModules, Capsule Scripts and Capsule ESModules and moved to `Core`
+  - Significantly updated Build Process for Main Styles and Capsule Styles and moved to `Core`
+  - Made a large number of changes to New Scaffold and successfully reduced length of `OurFlag.uk` Scaffold to just over *120 lines* 
 
 
 ______
