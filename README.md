@@ -248,7 +248,12 @@ as:
   - Made a number of changes to New PageManifest and New SiteManifest
   - Significantly updated Build Process for Main Scripts, Main ESModules, Capsule Scripts and Capsule ESModules and moved to `Core`
   - Significantly updated Build Process for Main Styles and Capsule Styles and moved to `Core`
-  - Made a large number of changes to New Scaffold and successfully reduced length of `OurFlag.uk` Scaffold to just over *120 lines* 
+  - Made a large number of changes to New Scaffold and successfully reduced length of `OurFlag.uk` Scaffold to just over *120 lines*
+  
+  - Added new OpenGraph and Twitter prefixed meta tags to New Scaffold:
+  - Reduced Social Media meta tag footprint, following suggestion by Jeremy Keith
+  - Added `Social_Media::Protocols` section to New PageManifest
+  - Added `oEmbed`
 
 
 ______
