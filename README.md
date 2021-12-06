@@ -245,17 +245,17 @@ as:
 
   - Activated **Concho** in New Scaffold of `OurFlag.uk`. (In the New Scaffold of `EtherPhysics.net` **Concho** is still theoretical.)
   - In **Concho**, updated the query demarcators from `|` to `¦`
-  - Made a number of changes to New PageManifest and New SiteManifest
-  - Significantly updated Build Process for Main Scripts, Main ESModules, Capsule Scripts and Capsule ESModules and moved to `Core`
-  - Significantly updated Build Process for Main Styles and Capsule Styles and moved to `Core`
-  - Made a large number of changes to New Scaffold and successfully reduced length of `OurFlag.uk` Scaffold to just over *120 lines*
+  - Made a number of changes to **New PageManifest** and **New SiteManifest**
+  - Significantly updated Build Process for *Main Scripts*, *Main ESModules*, *Capsule Scripts* and *Capsule ESModules* and moved to `Core`
+  - Significantly updated Build Process for *Main Styles* and *Capsule Styles* and moved to `Core`
+  - Made a large number of changes to **New Scaffold** and successfully reduced length of `OurFlag.uk` Scaffold to just over *120 lines*
   
-  - Adopted clever suggestion by Jeremy Keith to reduce number of individual social media meta tags in New Scaffold
-  - Added to New Scaffold several new social media prefixed meta tags: `og:type`, `twitter:image:alt`, `twitter:site:id`
-  - Added `<meta name="format-detection" />` entry to New PageManifest to handle `telephone` | `email` | `date` | `address` | `url` detection
+  - Adopted clever suggestion by Jeremy Keith to reduce number of individual social media meta tags in **New Scaffold**
+  - Added to **New Scaffold** several new social media prefixed meta tags: `og:type`, `twitter:image:alt`, `twitter:site:id`
+  - Added `<meta name="format-detection" />` entry to **New PageManifest** to handle `telephone` | `email` | `date` | `address` | `url` detection
   - 
-  - Added `<link rel="license" />` entry to New PageManifest
-  - Added `Protocols` section (alongside `Channels` section) to `Meta_Information::Social_Media` in New PageManifest
+  - Added `<link rel="license" />` entry to **New PageManifest**
+  - Added `Protocols` section (alongside `Channels` section) to `Meta_Information::Social_Media` in **New PageManifest**
   
   - Added `oEmbed`
 
