@@ -253,9 +253,8 @@ as:
   - Adopted clever suggestion by Jeremy Keith to reduce number of individual social media meta tags in **New Scaffold**
   - Added `<meta name="format-detection" />` entry to **New PageManifest** to handle `telephone` | `email` | `date` | `address` | `url` detection
   - Added `Protocols` section (alongside `Channels` section) to `Meta_Information::Social_Media` in **New PageManifest**
-
-  - 
   - Added to **New Scaffold** several new social media prefixed meta tags: `og:type`, `twitter:image:alt`, `twitter:site:id`
+  - 
   - Added `<link rel="license" />` entry to **New PageManifest**
   
   - Added `oEmbed`
