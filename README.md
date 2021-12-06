@@ -250,9 +250,11 @@ as:
   - Significantly updated Build Process for Main Styles and Capsule Styles and moved to `Core`
   - Made a large number of changes to New Scaffold and successfully reduced length of `OurFlag.uk` Scaffold to just over *120 lines*
   
-  - Added new OpenGraph and Twitter prefixed meta tags to New Scaffold:
-  - Reduced Social Media meta tag footprint, following suggestion by Jeremy Keith
-  - Added `Social_Media::Protocols` section to New PageManifest
+  - Adopted clever suggestion by Jeremy Keith to reduce number of individual social media meta tags in New Scaffold
+  - Added several new social media prefixed meta tags to New Scaffold: `og:type`, `twitter:image:alt`, `twitter:site:id`
+  - Added `<link rel="license" />` entry to New PageManifest
+  - Added `Protocols` section (alongside `Channels` section) to `Meta_Information::Social_Media` in New PageManifest
+  
   - Added `oEmbed`
 
 
