@@ -259,7 +259,7 @@ as:
   - Added `<link rel="license" />` entry to **New PageManifest**
   
   - Added `oEmbed`
-  - Added `oEmbed` Provider List to 
+  - Added `oEmbed` Provider List to `Ashiva SiteManifest`
 
 
 ______
