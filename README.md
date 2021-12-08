@@ -254,7 +254,7 @@ as:
   - Added `<meta name="format-detection" />` entry to **New PageManifest** to handle `telephone` | `email` | `date` | `address` | `url` detection
   - Added `Protocols` section (alongside `Channels` section) to `Meta_Information::Social_Media` in **New PageManifest**
   - Added to **New Scaffold** several new social media prefixed meta tags: `og:type`, `twitter:image:alt`, `twitter:site:id`
-  - Added `/.my-capsule/` admin subfolder to each `/my-capsule/` capsule folder
+  - Added `/.my-capsule/` admin subfolder to the top of each `/my-capsule/` capsule folder
 
   - Added `<link rel="license" />` entry to **New PageManifest**
   
