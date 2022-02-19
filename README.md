@@ -246,9 +246,9 @@ as:
   - Activated **Concho** in New Scaffold of `OurFlag.uk`. (In the New Scaffold of `EtherPhysics.net` **Concho** is still theoretical.)
   - In **Concho**, updated the query demarcators from `|` to `¦`
   - Made a number of changes to **New PageManifest** and **New SiteManifest**
-  - Significantly updated Build Process for *Main Scripts*, *Main ESModules*, *Capsule Scripts* and *Capsule ESModules* and moved to `Core`
-  - Significantly updated Build Process for *Main Styles* and *Capsule Styles* and moved to `Core`
-  - Made a large number of changes to **New Scaffold** and successfully reduced length of `OurFlag.uk` Scaffold to *under 100 lines*
+  - Significantly updated Scaffold Build Process for *Main Scripts*, *Main ESModules*, *Capsule Scripts* and *Capsule ESModules* and moved to `Core`
+  - Significantly updated Scaffold Build Process for *Main Styles* and *Capsule Styles* and moved to `Core`
+  - Made a *large* number of changes to **New Scaffold** and successfully reduced length of `OurFlag.uk` Scaffold to *under 100 lines*
   
   - Adopted clever suggestion by Jeremy Keith to reduce number of individual social media meta tags in **New Scaffold**
   - Added `<meta name="format-detection" />` entry to **New PageManifest** to handle `telephone` | `email` | `date` | `address` | `url` detection
@@ -260,6 +260,16 @@ as:
   
   - Added `oEmbed`
   - Added `oEmbedProviderList` to `Ashiva SiteManifest`
+
+### Jan 2022
+  - Spent all month working on the JS-to-JSON (2021) and JSON-to-JS (2021) conversion scripts (started in Dec 2021, substantially completed in Feb 2022)
+
+### Feb 2022
+  - Integrated the JSON-to-JS (2021) DaNIS³H conversion with Ashiva, alongside the legacy JSON-to-JS (2019) DaNIS³H conversion
+  - Came up with the idea of *Wordlash* (ie. the *ash* library implementation of *Wordle*) to showcase to **IndieWeb** (and others) what **DaNIS³H** is capable of
+  - Wrote my *first* DaNIS³H script integrant using JS-to-JSON (2021): `Ashiva:::Ashiva_roleQuery` (to evolve into `Ashiva:::Ashiva_Open_Control_Pad`)
+  - Replaced `Ashiva:::Ashiva_Control_Pad` Capsule on all **ScotiaBeauty** pages with `Ashiva:::Ashiva_Open_Control_Pad` Capsule
+  - Added **ControlPadSettings JSON** as a semi-persistent entry in `sessionStorage` with (at present) a single setting: `audio: true / false`
 
 
 ______
