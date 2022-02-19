@@ -265,9 +265,9 @@ as:
   - Spent all month working on the JS-to-JSON (2021) and JSON-to-JS (2021) conversion scripts (started in Dec 2021, substantially completed in Feb 2022)
 
 ### Feb 2022
-  - Integrated the JSON-to-JS (2021) DaNIS³H conversion with Ashiva, alongside the legacy JSON-to-JS (2019) DaNIS³H conversion
+  - Integrated the JSON-to-JS (2021) DaNIS³H conversion into *Ashiva*, alongside the legacy JSON-to-JS (2019) DaNIS³H conversion
   - Came up with the idea of *Wordlash* (ie. the *ash* library implementation of *Wordle*) to showcase to **IndieWeb** (and others) what **DaNIS³H** is capable of
-  - Wrote my *first* DaNIS³H script integrant using JS-to-JSON (2021): `Ashiva:::Ashiva_roleQuery` (to evolve into `Ashiva:::Ashiva_Open_Control_Pad`)
+  - Wrote my *first* DaNIS³H script integrant using JS-to-JSON (2021): `Ashiva:::Ashiva_roleQuery` (which promptly evolves into `Ashiva:::Ashiva_Open_Control_Pad`)
   - Replaced `Ashiva:::Ashiva_Control_Pad` Capsule on all **ScotiaBeauty** pages with `Ashiva:::Ashiva_Open_Control_Pad` Capsule
   - Added **ControlPadSettings JSON** as a semi-persistent entry in `sessionStorage` with (at present) a single setting: `audio: true / false`
 
