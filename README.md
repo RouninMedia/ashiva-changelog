@@ -281,7 +281,7 @@ as:
  - Started designing the process for parsing *Capsules* directly from HTML Markup - amongst other things, this makes *nested Capsules* possible
  - Stephen H very helpfully suggested *cell* as an alternative to *integrant*. It's perfectly ambiguous. *CodeCell*, *PageCell* etc.
  - Made strides on the *Triangular Signature* process for authenticating **distributed capsules**, so that *Capsules* can be reliably imported from anywhere 
- - Introduced logical `⊤` symbol as a markup value to indicate boolean `attributes` and `data-* attributes`. This replaces: `test="test"` & `data-test = ""`
+ - Introduced logical `⊤` symbol as a markup value to indicate boolean `attributes` and `data-* attributes`. This replaces: `test="test"` & `data-test=""`
 ______
 
 ## Developments to Add...
