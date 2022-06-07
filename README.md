@@ -280,6 +280,7 @@ as:
 
 ### May 2022
  - **DaNIS³H Standard Library:** renamed *Standard Library for DaNIS³H Capsules* from *Ash* to *DSL* (pronounced *diesel*) 
+ - Conceived of *Blueis³h* - a full screen `<iframe>` with JS / Bluetooth functionality enabling inter-device sharing of `data://` URIs
 
 ### Jun 2022
  - Started designing the process for parsing *Capsules* directly from HTML Markup - amongst other things, this makes *nested Capsules* possible
