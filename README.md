@@ -39,6 +39,9 @@
 ### Apr 2018
  - Developed JSON serialisation of CSS while building hackPad
 
+### Jun 2018
+ - Speculated randomly and then confirmed that PHP *can* convert JSON into PHP arrays (and classes) and vice versa. Used first in NHS app and, several months later, adopted in place of PHP PageData Array
+
 ### Nov 2018
 - Inspired by *The Independent*'s save to homescreen icon, learned about and then added PWA WebManifests to Ashiva
 
