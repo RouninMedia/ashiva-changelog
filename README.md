@@ -271,7 +271,9 @@ as:
   - Replaced `Ashiva:::Ashiva_Control_Pad` Capsule on all **ScotiaBeauty** pages with `Ashiva:::Ashiva_Open_Control_Pad` Capsule
   - Added **ControlPadSettings JSON** as a semi-persistent entry in `sessionStorage` with (at present) a single setting: `audio: true / false`
 
+### Jun 2022
 
+ - Introduced `⊤` symbol as a markup value to indicate boolean `attributes` and `data-* attributes`. This replaces: `test="test"` & `data-test = ""`
 ______
 
 ## Developments to Add...
