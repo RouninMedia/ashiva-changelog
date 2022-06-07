@@ -275,7 +275,7 @@ as:
  - Fixed some source-viewing functionality within the `Ashiva:::Ashiva_Control_Pad` Capsule 
 
 ### Late March to June 2022
-  - Worked on *Wordis³h* (and learned a lot about iOS compatibility in the process)
+  - Worked *a lot* on *Wordis³h* (and also learned a lot about iOS compatibility in the process)
   - Invented *ServiceShield* - a low-tech, manually operated stand-in for **Service Worker**
 
 ### May 2022
