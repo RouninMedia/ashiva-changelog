@@ -272,6 +272,7 @@ as:
   - Added **ControlPadSettings JSON** as a semi-persistent entry in `sessionStorage` with (at present) a single setting: `audio: true / false`
 
 ### Mar 2022
+ - Fixed some source-viewing functionality within the `Ashiva:::Ashiva_Control_Pad` Capsule 
 
 ### Late March to June 2022
   - Worked on *Wordis³h* (and learned a lot about iOS compatibility in the process)
