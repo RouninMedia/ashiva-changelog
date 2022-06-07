@@ -277,6 +277,9 @@ as:
   - Worked on *Wordis³h* (and learned a lot about iOS compatibility in the process)
   - Invented *ServiceShield* - a low-tech, manually operated stand-in for **Service Worker**
 
+### May 2022
+ - **DaNIS³H Standard Library:** renamed *Standard Library for DaNIS³H Capsules* from *Ash* to *DSL* (pronounced *diesel*) 
+
 ### Jun 2022
  - Started designing the process for parsing *Capsules* directly from HTML Markup - amongst other things, this makes *nested Capsules* possible
  - Stephen H very helpfully suggested *cell* as an alternative to *integrant*. It's perfectly ambiguous. *CodeCell*, *PageCell* etc.
