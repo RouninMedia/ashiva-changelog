@@ -276,7 +276,7 @@ as:
 
 ### Late March to June 2022
   - Worked *a lot* on *Wordis³h* (and also learned a lot about iOS compatibility in the process)
-  - Invented *ServiceShield* - a low-tech, manually operated stand-in for **Service Worker**
+  - Invented *ServiceShield for URA / SDA* - a low-tech, manually operated stand-in for **Service Worker** in Single Document Apps and Uniform Resource Apps
 
 ### May 2022
  - **DaNIS³H Standard Library:** renamed *Standard Library for DaNIS³H Capsules* from *Ash* to *DSL* (pronounced *diesel*) 
