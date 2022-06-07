@@ -262,7 +262,7 @@ as:
   - Added `oEmbedProviderList` to `Ashiva SiteManifest`
 
 ### Jan 2022
-  - Spent all month working on the JS-to-JSON (2021) and JSON-to-JS (2021) conversion scripts (started in Dec 2021, substantially completed in Feb 2022)
+  - Spent all month working on the JS-to-JSON (2021) and JSON-to-JS (2021) conversion scripts (started in Dec 2021, substantially completed by Feb 2022)
 
 ### Feb 2022
   - Integrated the JSON-to-JS (2021) DaNIS³H conversion into *Ashiva*, alongside the legacy JSON-to-JS (2019) DaNIS³H conversion
@@ -271,9 +271,17 @@ as:
   - Replaced `Ashiva:::Ashiva_Control_Pad` Capsule on all **ScotiaBeauty** pages with `Ashiva:::Ashiva_Open_Control_Pad` Capsule
   - Added **ControlPadSettings JSON** as a semi-persistent entry in `sessionStorage` with (at present) a single setting: `audio: true / false`
 
-### Jun 2022
+### Mar 2022
 
- - Introduced `⊤` symbol as a markup value to indicate boolean `attributes` and `data-* attributes`. This replaces: `test="test"` & `data-test = ""`
+### Late March to June 2022
+  - Worked on *Wordis³h* (and learned a lot about iOS compatibility in the process)
+  - Invented *ServiceShield* - a low-tech, manually operated stand-in for **Service Worker**
+
+### Jun 2022
+ - Started designing the process for parsing *Capsules* directly from HTML Markup - amongst other things, this makes *nested Capsules* possible
+ - Stephen H very helpfully suggested *cell* as an alternative to *integrant*. It's perfectly ambiguous. *CodeCell*, *DataCell*
+ - Made strides on the *Triangular Signature* process for authenticating **distributed capsules**, so that *Capsules* can be reliably imported from anywhere 
+ - Introduced logical `⊤` symbol as a markup value to indicate boolean `attributes` and `data-* attributes`. This replaces: `test="test"` & `data-test = ""`
 ______
 
 ## Developments to Add...
