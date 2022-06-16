@@ -290,15 +290,16 @@ as:
  - Stephen H very helpfully suggested ***cell*** as an alternative to *integrant*. It's perfectly ambiguous. *CodeCell*, *PageCell* etc.
  - Made strides on the *Triangular Signature* process for authenticating **distributed capsules**, so that *Capsules* can be reliably imported from anywhere 
  - Introduced logical `⊤` symbol as a markup value to indicate boolean `attributes` and `data-* attributes`. This replaces: `test="test"` & `data-test=""`
- - In *DaNIS³H* renamed `System Attributes` as `Directives`
- - In *DaNIS³H Capsule Manifests* renamed `moduleParameters` as `StrongModifiers`
- - In *DaNIS³H Capsule Manifests* renamed `moduleBlock` as `CapsuleBlock`
- - In *DaNIS³H Capsule Manifests* renamed `$Module` variable as `$Capsule`
- - In *DaNIS³H Capsule Manifests* categorised `CodeSheets` and `Dynamic CodeSheets` as `codeCells`
- - In *DaNIS³H Capsule Manifests* renamed `ModuleLogic` (aka `ActionSheet` / `sculptModule` / `Refine`) as `logicCells`
- - In *DaNIS³H Capsule Manifests* renamed `ServerSheets` (aka `Substitial Pages` / `SubPages`) as `pageCells`
- - In *DaNIS³H Capsule Manifests* renamed `Protected` as `lockCells`
- - In *DaNIS³H Capsule Manifests* renamed `moduleMedia` as `mediaCells`
+ - In *DaNIS³H*, renamed `System Attributes` as `Directives`
+ - In *Ashiva*, renamed `/.assets/capsules/ash/` Standard Library Capsules folder as `/.assets/capsules/.standard-library/`
+ - In *DaNIS³H Capsule Manifests*, renamed `moduleParameters` as `StrongModifiers`
+ - In *DaNIS³H Capsule Manifests*, renamed `moduleBlock` as `CapsuleBlock`
+ - In *DaNIS³H Capsule Manifests*, renamed `$Module` variable as `$Capsule`
+ - In *DaNIS³H Capsule Manifests*, categorised `CodeSheets` and `Dynamic CodeSheets` as `codeCells`
+ - In *DaNIS³H Capsule Manifests*, renamed `ModuleLogic` (aka `ActionSheet` / `sculptModule` / `Refine`) as `logicCells`
+ - In *DaNIS³H Capsule Manifests*, renamed `ServerSheets` (aka `Substitial Pages` / `SubPages`) as `pageCells`
+ - In *DaNIS³H Capsule Manifests*, renamed `Protected` as `lockCells`
+ - In *DaNIS³H Capsule Manifests*, renamed `moduleMedia` as `mediaCells`
 
 ______
 
