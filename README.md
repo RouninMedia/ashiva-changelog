@@ -303,12 +303,11 @@ as:
  - Introduced *Ashiva Console* in all environments (Markup, Stylesheets, Scripts, ESModules, SVG, Data) to report undownloaded CodeSheet
  - Updated `LightModifier` indicator in attributeNotation from `#` to `##`
  - Comprehensive update of all Unicode symbols used in *Capsule Class* syntax.
-
-   `StrongModifiers`: • ▸ ▪ ▾ ﴾ ﴿
-   `LightModifiers`: ◦ ▹ ▫ ▿ ﴾ ﴿
-   `Directives`: ● ► ✦ ⧫ ﴾ ﴿
-   `Attributes`: ○ ▻ ✧ ◊ ﴾ ﴿
-   `Space Separator` (used in `ClassLists` etc.): ▵
+   - `StrongModifiers`: • ▸ ▪ ▾ ﴾ ﴿
+   - `LightModifiers`: ◦ ▹ ▫ ▿ ﴾ ﴿
+   - `Directives`: ● ► ✦ ⧫ ﴾ ﴿
+   - `Attributes`: ○ ▻ ✧ ◊ ﴾ ﴿
+   - `Space Separator` (used in `ClassLists` etc.): ▵
  
  - Updated *Capsule ClassSpace* syntax from `sb-consoles»by»scotiaBeauty»»»veil` to `sb-consoles◈by◈scotiaBeauty◈◈◈veil`
 
