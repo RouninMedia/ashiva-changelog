@@ -300,6 +300,7 @@ as:
  - In *DaNIS³H Capsule Manifests*, renamed `ServerSheets` (aka `Substitial Pages` / `SubPages`) as `pageCells`
  - In *DaNIS³H Capsule Manifests*, renamed `Protected` as `lockCells`
  - In *DaNIS³H Capsule Manifests*, renamed `moduleMedia` as `mediaCells`
+ - Updated Capsule ClassSpace syntax from `sb-consoles»by»scotiaBeauty»»»veil` to `sb-consoles◈by◈scotiaBeauty◈◈◈veil`
 
 ______
 
