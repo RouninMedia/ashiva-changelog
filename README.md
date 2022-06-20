@@ -200,7 +200,7 @@
 
  - Added **Settings Console** to Ashiva Control Pad, with 1) *Select User*, 2) *Mute/Unmute*, 3) *Fullscreen Toggle*, 4) *Tools*, 5) *Notes* and 6) *Switch Off* controls
 
- - Replaced the ambiguous *empty root selector* \[`""`\] and the *leading space selector* \[`" .my-class"`\], (particularly easily missed when debugging) with the CSS pseudo-class `:root` across DaNIS3H Module stylesheets
+ - Replaced both the ambiguous *empty root selector* \[`""`\] and the *leading space selector* \[`" .my-class"`\], (particularly easily missed when debugging) with the CSS pseudo-class `:root` across DaNIS3H Module stylesheets
 
 - Updated `/.assets/content/scaffold/` to `/.assets/content/scaffolds/` to indicate that a single **Ashiva Site** may deploy more than one *Scaffold*
 
@@ -300,7 +300,8 @@ as:
  - In *DaNIS³H Capsule Manifests*, renamed `ServerSheets` (aka `Substitial Pages` / `SubPages`) as `pageCells`
  - In *DaNIS³H Capsule Manifests*, renamed `Protected` as `lockCells`
  - In *DaNIS³H Capsule Manifests*, renamed `moduleMedia` as `mediaCells`
- - Updated Capsule ClassSpace syntax from `sb-consoles»by»scotiaBeauty»»»veil` to `sb-consoles◈by◈scotiaBeauty◈◈◈veil`
+ - Introduced *Ashiva Console* in all environments (Markup, Stylesheets, Scripts, ESModules, SVG, Data) to report unfound / undownloaded CodeSheet
+ - Updated *Capsule ClassSpace* syntax from `sb-consoles»by»scotiaBeauty»»»veil` to `sb-consoles◈by◈scotiaBeauty◈◈◈veil`
 
 ______
 
