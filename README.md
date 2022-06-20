@@ -300,7 +300,14 @@ as:
  - In *DaNIS³H Capsule Manifests*, renamed `ServerSheets` (aka `Substitial Pages` / `SubPages`) as `pageCells`
  - In *DaNIS³H Capsule Manifests*, renamed `Protected` as `lockCells`
  - In *DaNIS³H Capsule Manifests*, renamed `moduleMedia` as `mediaCells`
- - Introduced *Ashiva Console* in all environments (Markup, Stylesheets, Scripts, ESModules, SVG, Data) to report unfound / undownloaded CodeSheet
+ - Introduced *Ashiva Console* in all environments (Markup, Stylesheets, Scripts, ESModules, SVG, Data) to report undownloaded CodeSheet
+ - Updated `LightModifier` indicator in attributeNotation from `#` to `##`
+ - Updated *Capsule Class* syntax.
+
+   Complete example:
+   
+     `ash-toggle-input•position▸off○class▻test-class-1▵test-class-2▵test-class-3▵test-class-4○test-attribute-1▻test-value-1○test-attribute-2▻test-value-2○test-attribute-3▻test-attribute-3○test-attribute-4▻○test-attribute-5○data-test-data-1▻test-value-1○data-test-data-2▻test-value-2○data-test-data-3▻data-test-data-3○data-test-data-4▻○data-test-data-5○data-test-data-6●pagecontext►pagefix●settingslisted►﴾strongmodifiers✦classes✦attributes✦dataset✦directives✦lightmodifiers﴿◦theme▹light»by»ash`
+ 
  - Updated *Capsule ClassSpace* syntax from `sb-consoles»by»scotiaBeauty»»»veil` to `sb-consoles◈by◈scotiaBeauty◈◈◈veil`
 
 ______
