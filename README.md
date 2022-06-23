@@ -309,7 +309,9 @@ as:
    - `Attributes`: ○ ▻ ✧ ◊ ﴾ ﴿
    - `Space Separator` (used in `ClassLists` etc.): ▵
  
- - Updated *Capsule ClassSpace* syntax from `sb-consoles»by»scotiaBeauty»»»veil` to `sb-consoles◈by◈scotiaBeauty◈◈◈veil`
+ - Updated *Capsule ClassSpace* syntax from:
+   -  `sb-consoles»by»scotiaBeauty»»»veil` to `sb-consoles◈by◈scotiaBeauty◈◈◈veil`
+   -  `sb-consoles»by»scotiaBeauty:my-imprint»»»veil` to `sb-consoles◈by◈scotiaBeauty◈my-imprint◈◈◈veil`
 
 ______
 
