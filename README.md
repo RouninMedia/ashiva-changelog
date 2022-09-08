@@ -313,6 +313,18 @@ as:
    -  `sb-consoles»by»scotiaBeauty»»»veil` to `sb-consoles◈by◈scotiaBeauty◉veil`
    -  `sb-consoles»by»scotiaBeauty:my-imprint»»»veil` to `sb-consoles◈by◈scotiaBeauty▣my-imprint◉veil`
 
+
+### Aug 2022
+
+ - Added `templates` to `/.assets/content/ in Ashiva
+
+### Sept 2022
+
+ - Fixed error in DaNIS³H Conversion from JS to JSON when the JS source contains more than one `;` in a row (either adjacent or separate by whitespace)
+ - Enabled pseudo-elements like `::before` and `::after` in DaNIS³H Conversion from CSS to JSON
+
+
+
 ______
 
 ## Developments to Add...
