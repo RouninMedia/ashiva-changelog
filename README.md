@@ -321,7 +321,9 @@ as:
 ### Sept 2022
 
  - Fixed error in DaNIS³H Conversion from JS to JSON when the JS source contains more than one `;` in a row (either adjacent or separate by whitespace)
- - Enabled pseudo-elements like `::before` and `::after` in DaNIS³H Conversion from CSS to JSON
+ - Enabled pseudo-elements and pseudo-classes like `::before`, `::after`, `:fullscreen` etc. in DaNIS³H Conversion from CSS to JSON
+ - Enabled conversion of complex, nested `ObjectLiterals` in DaNIS³H Conversion from JS to JSON
+ - Wrote `Resolve_Nested_Group()` PHP function to reliably convert nested groups in DaNIS³H Conversion from JSON to JS in contexts like indexes
 
 
 
