@@ -310,8 +310,7 @@ as:
    - `Space Separator` (used in `ClassLists` etc.): ▵
  
  - Updated *Capsule ClassSpace* syntax from:
-   -  `sb-consoles»by»scotiaBeauty»»»veil` to `sb-consoles◈by◈scotiaBeauty◉veil`
-   -  `sb-consoles»by»scotiaBeauty:my-imprint»»»veil` to `sb-consoles◈by◈scotiaBeauty▣my-imprint◉veil`
+   -  `sb-consoles»by»scotiaBeauty»»»veil` to `sb-consoles◈by◈scotiaBeauty◆veil`
    -  `sb-consoles»by»scotiaBeauty:my-imprint»»»veil` to `sb-consoles◈by◈scotiaBeauty◇my-imprint◆veil`
 
 
