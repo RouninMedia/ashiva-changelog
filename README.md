@@ -311,8 +311,6 @@ as:
  
  - Updated *Capsule ClassSpace* syntax from:
  
- to:
- 
    -  `sb-consoles»by»scotiaBeauty»»»veil` to `sb-consoles◈by◈scotiaBeauty◉veil`
    -  `sb-consoles»by»scotiaBeauty:my-imprint»»»veil` to `sb-consoles◈by◈scotiaBeauty▣my-imprint◉veil`
 
@@ -327,9 +325,11 @@ as:
  - Enabled pseudo-elements and pseudo-classes like `::before`, `::after`, `:fullscreen` etc. in DaNIS³H Conversion from CSS to JSON
  - Enabled conversion of complex, nested `ObjectLiterals` in DaNIS³H Conversion from JS to JSON
  - Wrote `Resolve_Nested_Group()` PHP function to reliably convert nested groups in DaNIS³H Conversion from JSON to JS in contexts like indexes
- - Updated *Capsule ClassSpace* syntax (again) to:
-   -  `sb-consoles»by»scotiaBeauty»»»veil` to `sb-consoles◈by◈scotiaBeauty◆veil`
-   -  `sb-consoles»by»scotiaBeauty:my-imprint»»»veil` to `sb-consoles◈by◈scotiaBeauty◇my-imprint◆veil`
+ 
+ - Updated *Capsule ClassSpace* syntax (again) from:
+ 
+   -  `sb-consoles◈by◈scotiaBeauty◉veil` to `sb-consoles◈by◈scotiaBeauty◆veil`
+   -  `sb-consoles◈by◈scotiaBeauty▣my-imprint◉veil` to `sb-consoles◈by◈scotiaBeauty◇my-imprint◆veil`
 
 
 
