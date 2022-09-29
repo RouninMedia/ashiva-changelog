@@ -331,7 +331,9 @@ as:
    -  `sb-consoles◈by◈scotiaBeauty◉veil` to `sb-consoles◈by◈scotiaBeauty◆veil`
    -  `sb-consoles◈by◈scotiaBeauty▣my-imprint◉veil` to `sb-consoles◈by◈scotiaBeauty◇my-imprint◆veil`
 
-
+ - Added `Undefined` and `Null` types to DaNIS³H Conversion from JS to JSON
+ - Invented `danishPack` (or `danis³hPack`) - a *Dictionary Replacement + Brotli* compression process for **DaNIS³H** and **Ashiva**
+ - Invented *Compression for Humans* which converts `danishPack` into _percent-encoding_ and then into _Zero Width Characters_ to produce small, copyable strings
 
 ______
 
