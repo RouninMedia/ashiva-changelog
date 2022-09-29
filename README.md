@@ -333,7 +333,7 @@ as:
 
  - Added `Undefined` and `Null` types to DaNIS³H Conversion from JS to JSON
  - Invented `danishPack` (or `danis³hPack`) - a *Dictionary Replacement + Brotli* compression process for **DaNIS³H** and **Ashiva**
- - Invented *Compression for Humans* which converts `danishPack` into _percent-encoding_ and then into _Zero Width Characters_ to produce small, copyable strings
+ - Invented *Compression for Humans* which converts `danishPack` into _Percent Encoding_ and then into _Zero-Width Characters_ to produce small, easy-to-copy strings
 
 ______
 
