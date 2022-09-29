@@ -283,7 +283,7 @@ as:
 
 ### May 2022
  - **DaNIS³H Standard Library:** renamed *Standard Library for DaNIS³H Capsules* from *Ash* to *DSL* (pronounced *diesel*) 
- - Conceived of *Blueis³h* - a full screen `<iframe>` with JS / Bluetooth functionality enabling inter-device sharing of `data://` URIs
+ - Conceived of *Blueish* (or *Blueis³h*) - a full screen `<iframe>` with JS / Bluetooth functionality enabling inter-device sharing of `data://` URIs
 
 ### Jun 2022
  - Started designing the process for parsing *Capsules* directly from HTML Markup - amongst other things, this makes *nested Capsules* possible
@@ -317,14 +317,14 @@ as:
 
 ### Aug 2022
 
- - Added `templates` to `/.assets/content/ in Ashiva
+ - Added `templates` to `/.assets/content/` in Ashiva
 
 ### Sept 2022
 
  - Fixed error in DaNIS³H Conversion from JS to JSON when the JS source contains more than one `;` in a row (either adjacent or separate by whitespace)
  - Enabled pseudo-elements and pseudo-classes like `::before`, `::after`, `:fullscreen` etc. in DaNIS³H Conversion from CSS to JSON
  - Enabled conversion of complex, nested `ObjectLiterals` in DaNIS³H Conversion from JS to JSON
- - Wrote `Resolve_Nested_Group()` PHP function to reliably convert nested groups in DaNIS³H Conversion from JSON to JS in contexts like indexes
+ - Wrote `Resolve_Nested_Group()` PHP function to reliably convert nested groups in DaNIS³H Conversion from JSON to JS in contexts like *array indexes*
  
  - Updated *Capsule ClassSpace* syntax (again) from:
  
@@ -334,6 +334,7 @@ as:
  - Added `Undefined` and `Null` types to DaNIS³H Conversion from JS to JSON
  - Invented `danishPack` (or `danis³hPack`) - a *Dictionary Replacement + Brotli* compression process for **DaNIS³H** and **Ashiva**
  - Invented *Compression for Humans* which converts `danishPack` into _Percent Encoding_ and then into _Zero-Width Characters_ to produce small, easy-to-copy strings
+ - Invented Dynamic Short URLs using *Compression for Humans*. Good generally for sharing URLs on (some forms of) Social Media, but especially good for *Blueis³h* Data URI sharing
 
 ______
 
