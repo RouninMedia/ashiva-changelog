@@ -333,8 +333,12 @@ as:
 
  - Added `Undefined` and `Null` types to DaNIS³H Conversion from JS to JSON
  - Invented `danishPack` (or `danis³hPack`) - a *Dictionary Replacement + Brotli* compression process for **DaNIS³H** and **Ashiva**
- - Invented *Compression for Humans* which converts `danishPack` into _Percent Encoding_ and then into _Zero-Width Characters_ to produce small, easy-to-copy strings
- - Invented Dynamic Short URLs using *Compression for Humans*. Good generally for sharing URLs on (some forms of) Social Media, but especially good for *Blueis³h* Data URI sharing
+ - Invented **Invisible Compression** which converts `danishPack` into _Percent Encoding_ and then into _Zero-Width Characters_ to produce small, easy-to-copy strings
+ - Invented Dynamic Short URLs using **Invisible Compression**. Good generally for sharing URLs on (some forms of) Social Media and *especially* good for *Blueis³h* Data URI sharing
+ 
+ ### Oct 2022
+ - Added `HostObject` and `BuiltInObject` types to DaNIS³H Conversion from JS to JSON
+ - Added `Undefined`, `Null`, `HostObject` and `BuiltInObject` types to DaNIS³H Conversion from JSON to JS
 
 ______
 
