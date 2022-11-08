@@ -336,9 +336,12 @@ as:
  - Invented **Invisible Compression** which converts `danishPack` into _Percent Encoding_ and then into _Zero-Width Characters_ to produce small, easy-to-copy strings
  - Invented Dynamic Short URLs using **Invisible Compression**. Good generally for sharing URLs on (some forms of) Social Media and *especially* good for *Blueis³h* Data URI sharing
  
- ### Oct 2022
+### Oct 2022
  - Added `HostObject` and `BuiltInObject` types to DaNIS³H Conversion from JS to JSON
  - Added `Undefined`, `Null`, `HostObject` and `BuiltInObject` types to DaNIS³H Conversion from JSON to JS
+
+### Nov 2022
+ - In **Danis³h Style Cells**, updated the shorthand `:root` to `:capsule-root` to avoid ambiguity with the CSS pseudo-class which represents the HTML document 
 
 ______
 
