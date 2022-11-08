@@ -341,7 +341,7 @@ as:
  - Added `Undefined`, `Null`, `HostObject` and `BuiltInObject` types to DaNIS³H Conversion from JSON to JS
 
 ### Nov 2022
- - In **Danis³h Style Cells**, updated the shorthand `:root` to `:capsule-root` to avoid ambiguity with the CSS pseudo-class which represents the HTML document 
+ - In **Danis³h Style Cells**, updated the shorthand which represents the Capsule from `:root` to `:capsule-root` (to avoid ambiguity with the standard CSS pseudo-class which represents the HTML document) 
 
 ______
 
