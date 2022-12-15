@@ -342,15 +342,15 @@ as:
 
 ### Nov 2022
  - In **Danis³h Style Cells**, updated the shorthand which represents the Capsule from `:root` to `:capsule-root` (to avoid ambiguity with the standard CSS pseudo-class which represents the HTML document)
+ 
+### Dec 2022
  - Considerably re-worked (until fixed) bi-directional conversion of `Object Literals` and `Array Literals` in *danis³h script codecells*
  - Corrected `sameLine` notation for short `arrow functions` in *danis³h script codecells*
  - Corrected bi-directional conversion of `try / catch` statements in *danis³h script codecells*
- 
-### Dec 2022
-- improved bi-directional conversion of `self-closing elements` in *danis³h markup codecells*
-- enabled correct bi-directional conversion of `[for="id"]` and `[form="id"]` etc. attribute selectors in *danis³h style codecells*
-- Formalised **dON** (*danis³h object notation*), long-used, in `data-danis3h-events`
-- extended `addEventListener()` method in **Ashiva** *Main Script* such that it declares a label on any element to which an  `EventListener` is added
+ - improved bi-directional conversion of `self-closing elements` in *danis³h markup codecells*
+ - enabled correct bi-directional conversion of `[for="id"]` and `[form="id"]` etc. attribute selectors in *danis³h style codecells*
+ - Formalised **dON** (*danis³h object notation*), long-used, in `data-danis3h-events`
+ - extended `addEventListener()` method in **Ashiva** *Main Script* such that it declares a label on any element to which an  `EventListener` is added
 
 ______
 
