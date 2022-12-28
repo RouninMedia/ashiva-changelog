@@ -1,4 +1,4 @@
-# ashiva Changelog
+# CMS3 (2016), ashiva (2016) & Danis³h (2019) Changelog
 
 ## 2016
 ### Jan 2016
@@ -352,6 +352,8 @@ as:
  - Formalised **dON** (*danis³h object notation*), long-used, in `data-danis3h-events`
  - updated `data-danis3h-attached-events` so that it now reads: `data-eventlisteners`
  - extended `addEventListener()` method in **Ashiva** *Main Script* such that it declares `data-eventlisteners` on *any* element to which an  `EventListener` is added
+ - updated Danis³h declarative EventListeners so that the `data` field returns `objects` of parameter-values rather than `arrays` of parameter-values
+ - updated `Capsules` with `EventAction` functions using declarative EventListener `data`, so they can handle `objects` instead of `arrays`
 
 ______
 
