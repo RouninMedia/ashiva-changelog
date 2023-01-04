@@ -353,7 +353,10 @@ as:
  - updated `data-danis3h-attached-events` so that it now reads: `data-eventlisteners`
  - extended `addEventListener()` method in **Ashiva** *Main Script* such that it declares `data-eventlisteners` on *any* element to which an  `EventListener` is added
  - updated `Danis³h Declarative EventListeners` so that their `data` fields return `parameter-value objects` rather than `parameter-value arrays`
- - updated two `Capsules` (`SB_Consoles` & `Ashiva_Control_Pad`) whose `EventAction Functions` use `data` from `Danis³h Declarative EventListeners`, so they can handle `objects` instead of `arrays`
+ - updated the only two `Capsules` (`SB_Consoles` & `Ashiva_Control_Pad`) which currently have `EventAction Functions` which use `data` from `Danis³h Declarative EventListeners`. Now, `EventAction Functions` handle `objects` (with named entries) instead of `arrays` (with numerical entries)
+ 
+ ### Jan 2023
+  - Upgraded `@sameLineComments`, `@singleLineComments` & `@multiLineComments` in **Danis³h Markup Cells** and added `@codeComments`
 
 ______
 
