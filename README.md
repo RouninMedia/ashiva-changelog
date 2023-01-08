@@ -359,8 +359,8 @@ as:
   - Upgraded `@sameLineComments`, `@singleLineComments` & `@multiLineComments` in **Danis³h Markup Cells** and added `@codeComments`
   - Used ␂ and ␃ characters to demarcate `characterData` when building **Danis³h Markup Cells** to enable `<![CDATA[ ... ]]>` blocks
   - **Danis³h Markup Cells** now insert the relevant `NameSpace` into `href` attribute values starting with `#` 
-  - **Danis³h Markup Cells** already pre-pend `NameSpaces` to `for` attribute values - applied the same rule to the following attributes: `form`, `aria-activedescendant`, `aria-controls`, `aria-describedby`, `aria-flowto`, `aria-labelledby`, `aria-owns`
-  - The `@codeComments`, `<![CDATA[ ... ]]>` and attribute-related additions above now mean that **Danis³h** can now bi-directionally convert **`SVG`**
+  - **Danis³h** already pre-pended `NameSpaces` to `for` attribute values. **Danis³h** now additionally applies the same `NameSpace` pre-pend to the following seven attributes: `form`, `aria-activedescendant`, `aria-controls`, `aria-describedby`, `aria-flowto`, `aria-labelledby`, `aria-owns`
+  - The additions above (`@codeComments`, `<![CDATA[ ... ]]>` and attribute processing) mean that **Danis³h** can now bi-directionally convert **`SVG`**
 
 ______
 
