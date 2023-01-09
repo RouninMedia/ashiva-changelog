@@ -357,11 +357,12 @@ as:
  
  ### Jan 2023
   - Upgraded `@sameLineComments`, `@singleLineComments` & `@multiLineComments` in **Danis³h Markup Cells** and added `@codeComments`
-  - Used ␂ and ␃ characters to demarcate `characterData` when building **Danis³h Markup Cells** to enable `<![CDATA[ ... ]]>` blocks
+  - Used `␂` and `␃` characters to demarcate **HTML Character Data** when building **Danis³h Markup Cells** to enable `<![CDATA[ ... ]]>` blocks
   - **Danis³h** now inserts the relevant `NameSpace` into `href` attribute values starting with `#` in **Markup Cells**
   - In a manner similar to the item immediately above, **Danis³h** *already* pre-pended `NameSpaces` to `for` attribute values. **Danis³h** now additionally applies the same `NameSpace` pre-pend to the following seven attributes: `form`, `aria-activedescendant`, `aria-controls`, `aria-describedby`, `aria-flowto`, `aria-labelledby`, `aria-owns`
   - **Danis³h** bi-directional parsing of `CSS` nested in **Markup** via `<style>...</style>` (uncommon in **HTML**, but very common in **SVG**)
-  - **Danis³h** now bi-directionally converts **`SVG`**  with these additions (`@codeComments`, `<![CDATA[...]]>`, `Namespaced` targets, nested `CSS`)
+  - **Danis³h** parses `<![CDATA[...]]>` as CSS-native: **HTML Character Data** may be included inside `<style>...</style>` and still treated as CSS 
+  - With these additions (`@codeComments`, `<![CDATA[...]]>`, `Namespaced` targets, nested `CSS`), **Danis³h** now bi-directionally converts **`SVG`**
 
 ______
 
