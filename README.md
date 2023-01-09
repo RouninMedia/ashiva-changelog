@@ -358,7 +358,7 @@ as:
  ### Jan 2023
   - Upgraded `@sameLineComments`, `@singleLineComments` & `@multiLineComments` in **Danis³h Markup Cells** and added `@codeComments`
   - Used ␂ and ␃ characters to demarcate `characterData` when building **Danis³h Markup Cells** to enable `<![CDATA[ ... ]]>` blocks
-  - **Danis³h Markup Cells** now insert the relevant `NameSpace` into `href` attribute values starting with `#` 
+  - **Danis³h** now inserts the relevant `NameSpace` into `href` attribute values starting with `#` in **Markup Cells**
   - **Danis³h** already pre-pended `NameSpaces` to `for` attribute values. **Danis³h** now additionally applies the same `NameSpace` pre-pend to the following seven attributes: `form`, `aria-activedescendant`, `aria-controls`, `aria-describedby`, `aria-flowto`, `aria-labelledby`, `aria-owns`
   - **Danis³h** bi-directional parsing of `CSS` nested in **Markup** via `<style>...</style>` (uncommon in **HTML**, but very common in **SVG**)
   - **Danis³h** now converts **`SVG`** bi-directionally with these additions (`@codeComments`, `<![CDATA[ ... ]]>`, `href` etc., nested `CSS` etc.)
