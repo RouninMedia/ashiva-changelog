@@ -363,6 +363,11 @@ as:
   - **Danis³h** bi-directional parsing of `CSS` nested inside **Markup** via `<style>...</style>` (uncommon in **HTML**, but very common in **SVG**)
   - **Danis³h** parses `<![CDATA[...]]>` as CSS-native. So **HTML CData Markers** included inside `<style>...</style>` are still treated as CSS 
   - With these additions (`@codeComments`, `<![CDATA[...]]>`, `Namespaced` targets, nested `CSS`), **Danis³h** now bi-directionally converts **`SVG`**
+  
+
+ ### Feb 2023
+  - Moved `/.assets/content/scaffolds/` to `/.assets/site/theme/scaffolds/`
+  - Moved `/.assets/system/` to `/.assets/site/system/`
 
 ______
 
