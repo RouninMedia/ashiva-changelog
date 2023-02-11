@@ -368,6 +368,9 @@ as:
  ### Feb 2023
   - Moved `/.assets/content/scaffolds/` to `/.assets/site/theme/scaffolds/`
   - Moved `/.assets/system/` to `/.assets/site/system/`
+  - Added `Site_Editorial` to `SiteManifest`
+  - Added optional `Section_Editorial` to `PageManifest`
+  - Moved `/.assets/site/system/core/` to `/.assets/site/core/`
 
 ______
 
