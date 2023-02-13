@@ -374,6 +374,18 @@ as:
 
 ______
 
+
+ASHIVA WEBSITES OVER TIME
+2016 - (1) Scotia Beauty (Ashiva revamped in late 2018)
+2016 - (2) HandsOffHRI (Version 1 [2016-17] & Version 2 [2017-18])
+2019 - (3) James NHS Walk (No Capsules)
+2021 - (4) EtherPhysics (Full PageManifest)
+2021 - (5) OurFlag.uk (Concho & Revamped Scaffold)
+2022 - (6) HuddersfieldForUkraine (First virtual theme-based site)
+2023 - (7) ReadyWriteWeb (Ashiva 0.9!)
+
+______
+
 ## Developments to Add...
 
  - First JSON serialisation of Javascript (2019)
