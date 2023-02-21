@@ -371,7 +371,7 @@ as:
   - Added `Site_Editorial` to `SiteManifest`
   - Added optional `Section_Editorial` to `PageManifest`
   - Moved `/.assets/site/system/core/` to `/.assets/site/core/`
-  - Linux Nautilus lists files differently from Windows FileManager. Title Folder now prefixed with `$`. Can be updated to `#` in Windows and `@` in Linux
+  - Linux lists files differently from Windows. Title Folder now prefixed with `$`. Can be updated to `#` in Windows and `@` in Linux.
   
 
 ______
