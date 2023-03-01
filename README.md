@@ -392,7 +392,7 @@ as:
          2. the *FilePath* assumed to be `Styles`
       5. If the *FileType* is `SCSS` and / or the *FilePath* is `New_Styles___2023___Feb` then these will need to be explicitly stated
       6. If the *CodeSheet Name* does not end in a recognised suffix, then *FileType* and *FilePath* will need to be explicitly stated
-      7. Note that the *CodeSheet Name* is *not* obliged to end in a recognised suffix, only the *Capsule `CodeCell` Name* is
+      7. **N.B.** the *CodeSheet Name* is *not obliged* to end in a recognised suffix; only the *Capsule `CodeCell` Name* is
       8. To clarify terminology:
          1. the **CapsuleManifest** imports the *CodeSheet Source File* etc.
          2. the **CapsuleManifest** builds the *CodeSheet*
