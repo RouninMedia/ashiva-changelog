@@ -384,14 +384,14 @@ as:
   - After several years of intermittent review, completed second, much-revamped version of **henkan** (initially named *"Henkan 2020"*...!)
   - Redesigned **CodeSheet References** in **CapsuleManifests**
       1. There are now *three* parameters:
-        1. *CodeSheet Name*
-        2. *CodeSheet Source FileName* + *CodeSheet Source FileType*
-        3. *CodeSheet Source FilePath*
+         1. *CodeSheet Name*
+         2. *CodeSheet Source FileName* + *CodeSheet Source FileType*
+         3. *CodeSheet Source FilePath*
       3. Of these, if e.g. the *CodeSheet Name* ends in `Styles`, then the *FileType* will be assumed to be `__CSS` and the *FilePath* assumed to be `Styles`
       4. If the *FileType* is `SCSS` and / or the *FilePath* is `New_Styles___2023___Feb` then these will need to be explicitly stated
       5. If the *CodeSheet Name* does not end in a recognised suffix, then *FileType* and *FilePath* will need to be explicitly stated
       6. Note that the *CodeSheet Name* is *not* obliged to end in a recognised suffix, only the *Capsule `CodeCell` Name* is
-      7. To clarify terminology: a **CapsuleManifest** imports *CodeSheet Source File* etc., builds a *CodeSheet*, locks it into the **Capsule** as a `CodeCell`
+      7. To clarify terminology: **CapsuleManifest** imports *CodeSheet Source File* etc., builds *CodeSheet*, locks it into **Capsule** as `CodeCell`
   
 
 ______
