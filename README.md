@@ -387,11 +387,16 @@ as:
          1. *CodeSheet Name*
          2. *CodeSheet Source FileName* + *CodeSheet Source FileType*
          3. *CodeSheet Source FilePath*
-      3. Of these, if e.g. the *CodeSheet Name* ends in `Styles`, then the *FileType* will be assumed to be `__CSS` and the *FilePath* assumed to be `Styles`
-      4. If the *FileType* is `SCSS` and / or the *FilePath* is `New_Styles___2023___Feb` then these will need to be explicitly stated
-      5. If the *CodeSheet Name* does not end in a recognised suffix, then *FileType* and *FilePath* will need to be explicitly stated
-      6. Note that the *CodeSheet Name* is *not* obliged to end in a recognised suffix, only the *Capsule `CodeCell` Name* is
-      7. To clarify terminology: **CapsuleManifest** imports *CodeSheet Source File* etc., builds *CodeSheet*, locks it into **Capsule** as `CodeCell`
+      3. Of these, if e.g. the *CodeSheet Name* ends in `Styles`:
+         1. the *FileType* will be assumed to be `__CSS`
+         2. the *FilePath* assumed to be `Styles`
+      5. If the *FileType* is `SCSS` and / or the *FilePath* is `New_Styles___2023___Feb` then these will need to be explicitly stated
+      6. If the *CodeSheet Name* does not end in a recognised suffix, then *FileType* and *FilePath* will need to be explicitly stated
+      7. Note that the *CodeSheet Name* is *not* obliged to end in a recognised suffix, only the *Capsule `CodeCell` Name* is
+      8. To clarify terminology:
+         1. the **CapsuleManifest** imports the *CodeSheet Source File* etc.
+         2. the **CapsuleManifest** builds the *CodeSheet*
+         3. the **CapsuleManifest** locks the *CodeSheet* into the **Capsule** as a `CodeCell`
   
 
 ______
