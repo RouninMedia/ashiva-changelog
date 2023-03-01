@@ -371,7 +371,17 @@ as:
   - Added `Site_Editorial` to `SiteManifest`
   - Added optional `Section_Editorial` to `PageManifest`
   - Moved `/.assets/site/system/core/` to `/.assets/site/core/`
-  - Linux lists files differently from Windows. Consequently, Title Folder prefix now `$`. In Windows, `$` may still be updated to `#`.
+  - Linux Nautilus orders files differently from Windows. Experimented with prefixing Title Folder with `$` instead of `#`. // <= NEEDS WORK
+  - Updated danis3hModule() PHP function in Core: every **CodeSheet** name must now end in `'Markup'`, `'Styles'`, `'Scripts'`, `'Vectors'`, or `'Data'`
+    1. Not least, this now allows *any* cell to be `**PrimeCell**`
+    2. It may also mean that `Custom Cells` are now redundant, since **CodeSheets** may now be named anything, as long as they have a valid suffix
+  - Less keen on `::` as a prefix to `LightModifiers` in HTML Markup, since it's *identical* to the prefix of `StrongModifiers` in Capsule References
+    1. Replaced `::` as LightModifier prefix in HTML Element Markup with `:`
+    2. Replaced `:--:` as LightModifier prefix in HTML Element Markup with `:...`
+  - In front-end capsule references, replaced `CellName References` with `Inline CapsuleManifests`
+  - Renamed `CapsuleLogic` / `Casts` / `LogicCells` / `Logic` etc. as `Transformers` (hopefully this will settle now)
+  - Renamed `LockCells` / `Locks` as `Vaults`
+  - After several years of intermittent review, completed second, much-revamped version of **henkan** (initially named *"Henkan 2020"*!)
   
 
 ______
