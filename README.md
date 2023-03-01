@@ -383,12 +383,15 @@ as:
   - Renamed `LockCells` / `Locks` as `Vaults`
   - After several years of intermittent review, completed second, much-revamped version of **henkan** (initially named *"Henkan 2020"*...!)
   - Redesigned **CodeSheet References** in **CapsuleManifests**
-      1. There are now *three* parameters: i) CodeSheet Name, ii) CodeSheet Source FileName + Source FileType, iii) CodeSheet Source FilePath
-      2. Of these, if e.g. the CodeSheet Name ends in `Styles`, then the FileType will be assumed to be `__CSS` and the FilePath assumed to be `Styles`
-      3. If the FileType is `SCSS` and / or the FilePath is `New_Styles___2023___Feb` then these will need to be explicitly stated
-      4. If the CodeSheet Name does not end in a recognised suffix, then FileType and FilePath will need to be explicitly stated
-      5. Note that the CodeSheet Name is *not* obliged to end in a recognised suffix, only the Capsule CodeCell Name is
-      6. To clarify terminology: a **CapsuleManifest** pulls in *CodeSheet Source File* etc., builds a *CodeSheet*, then locks it into the **Capsule** as a `CodeCell`
+      1. There are now *three* parameters:
+        1. *CodeSheet Name*
+        2. *CodeSheet Source FileName* + *CodeSheet Source FileType*
+        3. *CodeSheet Source FilePath*
+      3. Of these, if e.g. the *CodeSheet Name* ends in `Styles`, then the *FileType* will be assumed to be `__CSS` and the *FilePath* assumed to be `Styles`
+      4. If the *FileType* is `SCSS` and / or the *FilePath* is `New_Styles___2023___Feb` then these will need to be explicitly stated
+      5. If the *CodeSheet Name* does not end in a recognised suffix, then *FileType* and *FilePath* will need to be explicitly stated
+      6. Note that the *CodeSheet Name* is *not* obliged to end in a recognised suffix, only the *Capsule `CodeCell` Name* is
+      7. To clarify terminology: a **CapsuleManifest** imports *CodeSheet Source File* etc., builds a *CodeSheet*, locks it into the **Capsule** as a `CodeCell`
   
 
 ______
@@ -455,7 +458,7 @@ Oct-Dec 2019 - Started creating tools which build Da3SH Modules
 Apr 2020 - Developed concepts for tools (IM:PACT & APEx) which give Ashiva Decoupled (or Hybrid) CMS Capability
 May 2020 - Added comments and skips (Skip:Comment & Skip:Compress) to HTML, CSS and JS Da3SH Components
 Jun 2020 - Built new Ashiva Control Pad entirely out of JS - much better
-Aug 2020 - Re-designed Henkan 2020
+Aug 2020 - Started re-designing Henkan 2020 (returned to it occasionally in 2020/2021, mostly left it in 2022 and completed it in Feb 2023)
 Sep 2020 - Learned Web Components
 
 --- - Started thinking about ashivaModules which can handle page state (like Redux)
