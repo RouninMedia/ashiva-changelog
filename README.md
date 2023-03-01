@@ -381,7 +381,7 @@ as:
   - SIGNIFICANT STEP FORWARD: In front-end capsule references, replaced `CellName References` with **Inline CapsuleManifests**
   - Renamed `CapsuleLogic` / `Casts` / `LogicCells` / `Logic` etc. as `Transformers` (hopefully this will settle now)
   - Renamed `LockCells` / `Locks` as `Vaults`
-  - After several years of intermittent review, completed second, much-revamped version of **henkan** (initially named *"Henkan 2020"*!)
+  - After several years of intermittent review, completed second, much-revamped version of **henkan** (initially named *"Henkan 2020"*...!)
   
 
 ______
