@@ -372,9 +372,9 @@ as:
   - Added optional `Section_Editorial` to `PageManifest`
   - Moved `/.assets/site/system/core/` to `/.assets/site/core/`
   - Linux Nautilus orders files differently from Windows. Experimented with prefixing Title Folder with `$` instead of `#`. // *<= NEEDS WORK*
-  - Updated `danis3hModule()` PHP function in **Core**: every **CodeSheet** name must now end in `'Markup'`, `'Styles'`, `'Scripts'`, `'Vectors'` or `'Data'`
+  - Updated `danis3hModule()` PHP function in **Core**: every **CodeCell** name must now end in `'Markup'`, `'Styles'`, `'Scripts'`, `'Vectors'` or `'Data'`
     1. Not least, this now allows *any* cell to be `**PrimeCell**`
-    2. It may also mean that `Custom Cells` are now redundant, since **CodeSheets** may now be named *anything*, as long as they have a valid suffix
+    2. It may also mean that `Custom CodeCells` are now redundant, since **CodeCells** may now be named *anything*, as long as they have a valid suffix
   - Less keen on `::` as a prefix to `LightModifiers` in HTML Markup, since it's *identical* to the prefix of `StrongModifiers` in Capsule References
     1. Replaced `::` as LightModifier prefix in HTML Element Markup with `:`
     2. Replaced `:--:` as LightModifier prefix in HTML Element Markup with `:...`
@@ -382,6 +382,13 @@ as:
   - Renamed `CapsuleLogic` / `Casts` / `LogicCells` / `Logic` etc. as `Transformers` (hopefully this will settle now)
   - Renamed `LockCells` / `Locks` as `Vaults`
   - After several years of intermittent review, completed second, much-revamped version of **henkan** (initially named *"Henkan 2020"*...!)
+  - Redesigned **CodeSheet References** in **CapsuleManifests**
+      1. There are now *three* parameters: i) CodeSheet Name, ii) CodeSheet Source FileName + Source FileType, iii) CodeSheet Source FilePath
+      2. Of these, if e.g. the CodeSheet Name ends in `Styles`, then the FileType will be assumed to be `__CSS` and the FilePath assumed to be `Styles`
+      3. If the FileType is `SCSS` and / or the FilePath is `New_Styles___2023___Feb` then these will need to be explicitly stated
+      4. If the CodeSheet Name does not end in a recognised suffix, then FileType and FilePath will need to be explicitly stated
+      5. Note that the CodeSheet Name is *not* obliged to end in a recognised suffix, only the Capsule CodeCell Name is
+      6. To clarify terminology: a **CapsuleManifest** pulls in *CodeSheet Source File* etc., builds a *CodeSheet*, then locks it into the **Capsule** as a `CodeCell`
   
 
 ______
