@@ -412,8 +412,8 @@ as:
       
      can now be a *single* Capsule, where, e.g.:
 
-       - `Ashiva_Menu` first loads the intial *button markup*, *button styles* and *button scripts* (according to the initial, static, ServerSide CapsuleManifest); and later
-       - `Ashiva_Menu` later loads the *menu markup*, *menu styles* and *menu scripts* after the user interacts with the button
+       - `Ashiva_Menu` first loads the intial `Button_Markup`, `Button_Styles` and `Button_Scripts` *CapsuleCells* (according to the initial, static, server-side CapsuleManifest); and later
+       - when the user interacts with the button, the `Button_Scripts` *CapsuleCell* of `Ashiva_Menu` dynamically inserts a `CapsuleReference` into the page (which contains its own inline `CapsuleManifest`) and then parses that `CapsuleReference` which leads to the asynchronous loading of several new `CapsuleCells` from the *same Capsule* (albeit `CapsuleCells` which weren't initially loaded): *menu markup*, *menu styles* and *menu scripts*
 
   Not least, this can take a lot of pressure off the initial page load (which is why `Ashiva_Open_Control_Pad` and `Ashiva_Control_Pad` were separated in the first place.
           
