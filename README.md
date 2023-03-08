@@ -378,10 +378,10 @@ as:
   - Less keen on `::` as a prefix to `LightModifiers` in HTML Markup, since it's *identical* to the prefix of `StrongModifiers` in Capsule References
     1. Replaced `::` as LightModifier prefix in HTML Element Markup with `:`
     2. Replaced `:--:` as LightModifier prefix in HTML Element Markup with `:...`
-  - SIGNIFICANT STEP FORWARD: In front-end capsule references, replaced `CellName References` with **Inline CapsuleManifests**
+  - SIGNIFICANT STEP FORWARD: In front-end capsule references, replaced `CellName References` with **Dynamic Inline CapsuleManifests**
   - Renamed `CapsuleLogic` / `Casts` / `LogicCells` / `Logic` etc. as `Transformers` (hopefully this will settle now)
   - Renamed `LockCells` / `Locks` as `Vaults`
-  - After several years of intermittent review, completed second, much-revamped version of **henkan** (initially named *"Henkan 2020"*...!)
+  - After several years of intermittent review, completed second, much-revamped version of **henkan** (provisionally named *"Henkan 2020"*...!)
   - Redesigned **CodeSheet References** in **CapsuleManifests**
       1. There are now *three* parameters:
          1. *CodeSheet Name*
@@ -390,14 +390,21 @@ as:
       3. Of these, if e.g. the *CodeSheet Name* ends in `Styles`:
          1. the *FileType* will be assumed to be `__CSS`
          2. the *FilePath* assumed to be `Styles`
-      5. If the *FileType* is `SCSS` and / or the *FilePath* is `New_Styles___2023___Feb` then these will need to be explicitly stated
+      5. If the *FileType* is `SCSS` and / or the *FilePath* is `New_Styles___2023___Feb` then 1) & 2) will need to be explicitly stated
       6. If the *CodeSheet Name* does not end in a recognised suffix, then *FileType* and *FilePath* will need to be explicitly stated
       7. **N.B.** the *CodeSheet Name* is *not obliged* to end in a recognised suffix; only the *Capsule `CodeCell` Name* is
       8. To clarify terminology:
-         1. the **CapsuleManifest** imports the *CodeSheet Source File* etc.
-         2. the **CapsuleManifest** builds the *CodeSheet*
-         3. the **CapsuleManifest** locks the *CodeSheet* into the **Capsule** as a `CodeCell`
+         1. the **CapsuleManifest** imports the named *CodeSheet Source File* (which usually includes a suffix and may include a filepath or filetype)
+         2. the **CapsuleManifest** builds the *CodeSheet* (from the static or dynamic *CodeSheet SourceFile* and any *Transformers*)
+         3. the **CapsuleManifest** saves the built *CodeSheet* as a namespaced `CodeCell`
+         4. the **CapsuleManifest** locks the `CodeCell` into the **Capsule** 
   
+  ### Mar 2023
+   - Updated `Custom Components` to **Namespace-Suffixed CodeCells** to allow all sorts of formerly unavailable versatility
+     e.g. *before*, a Capsule might have had `['Markup']`, `['Styles']`, `['Scripts']` and then `['Markup'['CustomComponents']['Menu']`
+          *but now*, a Capsule can have `['Markup']['Button_Markup']`, `['Markup']['Menu_Markup']`, `['Styles']['Button_Styles']`, `['Styles']['Menu_Styles']`, `['Scripts']['Button_Scripts']`, `['Scripts']['Menu_Scripts']`
+   - Added `CellName`, `CellType` & `PrimeCell` entries to individual Danis3h Cells for self-identification
+   - Added `pageinsert`, a fourth Capsule Directive (System Attribute) alongside `pagecontext`, `settingslisted` & `conditional` 
 
 ______
 
