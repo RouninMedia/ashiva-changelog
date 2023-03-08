@@ -1,4 +1,4 @@
-# CMS3 (2016), ashiva (2016) & Danis³h (2019) Changelog
+# CMS3 (2016), ashiva (2017) & ashivaModules (2019), Da3SH Modules (2020), Danis³h Modules (2021), Danis³h Capsules (2021) Changelog
 
 ## 2016
 ### Jan 2016
@@ -400,9 +400,23 @@ as:
          4. the **CapsuleManifest** locks the `CodeCell` into the **Capsule** 
   
   ### Mar 2023
-   - Updated `Custom Components` to **Namespace-Suffixed CodeCells** to allow all sorts of formerly unavailable versatility
+   - Updated `Custom Components` (and all other CodeCells) to **Namespace-Suffixed CodeCells** to allow all sorts of formerly unavailable versatility
      e.g. *before*, a Capsule might have had `['Markup']`, `['Styles']`, `['Scripts']` and then `['Markup'['CustomComponents']['Menu']`
-          *but now*, a Capsule can have `['Markup']['Button_Markup']`, `['Markup']['Menu_Markup']`, `['Styles']['Button_Styles']`, `['Styles']['Menu_Styles']`, `['Scripts']['Button_Scripts']`, `['Scripts']['Menu_Scripts']`
+          *but now*, a Capsule can have `['Markup']['Button_Markup']`, `['Markup']['Menu_Markup']`, `['Styles']['Button_Styles']`, `['Styles']['Menu_Styles']`, `['Scripts']['Button_Scripts']`, `['Scripts']['Menu_Scripts']`, `['Vectors']['Vectors']`
+    
+     Amongst other things, this enables a much cleverer setup where what used to be two separate Capsules:
+
+       - `Ashiva_Open_Control_Pad` for the inital button; and then
+       - `Ashiva_Control_Pad` for the asynchronously loaded interface
+      
+     can now be a *single* Capsule, where, e.g.:
+
+       - `Ashiva_Menu` first loads the intial *button markup*, *button styles* and *button scripts* (according to the initial, static, ServerSide CapsuleManifest); and later
+       - `Ashiva_Menu` later loads the *menu markup*, *menu styles* and *menu scripts* after the user interacts with the button
+
+    Not least, this can take a lot of pressure off the initial page load (which is why `Ashiva_Open_Control_Pad` and `Ashiva_Control_Pad` were separated in the first place.
+          
+   - Updated *Capsule Styles* and *Capsule Scripts* to handle the new structure of `Capsule CodeCells`
    - Added `CellName`, `CellType` & `PrimeCell` entries to individual Danis3h Cells for self-identification
    - Added `pageinsert`, a fourth Capsule Directive (System Attribute) alongside `pagecontext`, `settingslisted` & `conditional` 
 
