@@ -378,7 +378,7 @@ as:
   - Less keen on `::` as a prefix to `LightModifiers` in HTML Markup, since it's *identical* to the prefix of `StrongModifiers` in Capsule References
     1. Replaced `::` as LightModifier prefix in HTML Element Markup with `:`
     2. Replaced `:--:` as LightModifier prefix in HTML Element Markup with `:...`
-  - SIGNIFICANT STEP FORWARD: In front-end capsule references, replaced `CellName References` with an **Inline CapsuleManifest** which overrides any *CapsuleManifest* which already exists and, in situations where there is no pre-existing *CapsuleManifest*, provides one
+  - SIGNIFICANT STEP FORWARD: In front-end capsule references, considered using something similar to the`CellName Reference` syntax used when inspecting / debugging individual Cells, but then realised that a much more sophisticated and more capable shorthand would be an **Inline CapsuleManifest** (using **xHan**) which plays the same role on the front-end as played by the actual CapsuleManifest file on the server-side filesystem for when *Capsules* are invoked server-side 
   - Renamed `CapsuleLogic` / `Casts` / `LogicCells` / `Logic` etc. as `Transformers` (hopefully this will settle now)
   - Renamed `LockCells` / `Locks` as `Vaults`
   - After several years of intermittent review, completed second, much-revamped version of **henkan** (provisionally named *"Henkan 2020"*...!)
@@ -419,7 +419,9 @@ as:
           
    - Updated *Capsule Styles* and *Capsule Scripts* to handle the new structure of `Capsule CodeCells`
    - Added `CellName`, `CellType` & `PrimeCell` entries to individual Danis3h Cells for self-identification
-   - Added `pageinsert`, a fourth Capsule Directive (System Attribute) alongside `pagecontext`, `settingslisted` & `conditional` 
+   - Added `pageinsert`, a fourth Capsule Directive (System Attribute) alongside `pagecontext`, `settingslisted` & `conditional`
+
+  In client-side *Capsule References*, updated Publisher Syntax from `<(Ash:::My_Imprint:::My_Capsule>` to `<My_Capsule (Ash:My_Imprint)>`
 
 ______
 
