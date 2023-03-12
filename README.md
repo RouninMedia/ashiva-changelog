@@ -425,7 +425,7 @@ as:
   - In client-side *Capsule References*, updated Publisher Syntax from `<(Ash:::My_Imprint:::Ash_My_Capsule>` to `<Ash_My_Capsule (Ash:My_Imprint)>`
 
   - Realised I could re-use the syntax of the new *inline CapsuleManifest* to inspect **all** *CapsuleCells* both on the front-end *and* server-side:
-    - ***Capsule Reference** with inline CapsuleManifest*: `<Ash_My_Capsule (Ash:My_Imprint) [@][Markup="Navigation" Styles="Navigation"]>`
+    - ***Capsule Reference***: `<Ash_My_Capsule (Ash:My_Imprint) [@][Markup="Navigation" Styles="Navigation"]>`
     - ***Cell Inspection 1***: `inspectCapsuleCell('<[Markup="Navigation"][@]Ash_My_Capsule (Ash:My_Imprint)>');`
     - ***Cell Inspection 2***: `inspectCapsuleCell('<[Styles="Navigation"][@]Ash_My_Capsule (Ash:My_Imprint)>');`
 
