@@ -378,7 +378,7 @@ as:
   - Less keen on `::` as a prefix to `LightModifiers` in HTML Markup, since it's *identical* to the prefix of `StrongModifiers` in Capsule References
     1. Replaced `::` as LightModifier prefix in HTML Element Markup with `:`
     2. Replaced `:--:` as LightModifier prefix in HTML Element Markup with `:...`
-  - SIGNIFICANT STEP FORWARD: In front-end capsule references, replaced `CellName References` with **Dynamic Inline CapsuleManifests**
+  - SIGNIFICANT STEP FORWARD: In front-end capsule references, replaced `CellName References` with an **Inline CapsuleManifest** which overrides any *CapsuleManifest* which already exists and, in situations where there is no pre-existing *CapsuleManifest*, provides one
   - Renamed `CapsuleLogic` / `Casts` / `LogicCells` / `Logic` etc. as `Transformers` (hopefully this will settle now)
   - Renamed `LockCells` / `Locks` as `Vaults`
   - After several years of intermittent review, completed second, much-revamped version of **henkan** (provisionally named *"Henkan 2020"*...!)
