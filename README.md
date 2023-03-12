@@ -421,7 +421,7 @@ as:
    - Added `CellName`, `CellType` & `PrimeCell` entries to individual Danis3h Cells for self-identification
    - Added `pageinsert`, a fourth Capsule Directive (System Attribute) alongside `pagecontext`, `settingslisted` & `conditional`
 
-  In client-side *Capsule References*, updated Publisher Syntax from `<(Ash:::My_Imprint:::My_Capsule>` to `<My_Capsule (Ash:My_Imprint)>`
+  - In client-side *Capsule References*, updated Publisher Syntax from `<(Ash:::My_Imprint:::My_Capsule>` to `<My_Capsule (Ash:My_Imprint)>`
 
 ______
 
