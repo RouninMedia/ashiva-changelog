@@ -372,31 +372,32 @@ as:
   - Added optional `Section_Editorial` to `PageManifest`
   - Moved `/.assets/site/system/core/` to `/.assets/site/core/`
   - Linux Nautilus orders files differently from Windows. Experimented with prefixing Title Folder with `$` instead of `#`. // *<= NEEDS WORK*
-  - Updated `danis3hModule()` PHP function in **Core**: every **CodeCell** name must now end in `'Markup'`, `'Styles'`, `'Scripts'`, `'Vectors'` or `'Data'`
+  - Updated `danis3hModule()` PHP function in **Core**: every **CodeCell** name must now end in a suffix: `'Markup'`, `'Styles'`, `'Scripts'`, `'Vectors'` or `'Data'`
     1. Not least, this now allows *any* cell to be `**PrimeCell**`
     2. It may also mean that `Custom CodeCells` are now redundant, since **CodeCells** may now be named *anything*, as long as they have a valid suffix
   - Less keen on `::` as a prefix to `LightModifiers` in HTML Markup, since it's *identical* to the prefix of `StrongModifiers` in Capsule References
     1. Replaced `::` as LightModifier prefix in HTML Element Markup with `:`
     2. Replaced `:--:` as LightModifier prefix in HTML Element Markup with `:...`
-  - SIGNIFICANT STEP FORWARD: In front-end capsule references, considered using something similar to the`CellName Reference` syntax used when inspecting / debugging individual Cells, but then realised that a much more sophisticated and more capable shorthand would be an **Inline CapsuleManifest** (using **xHan**) which plays the same role on the front-end as played by the actual CapsuleManifest file on the server-side filesystem for when *Capsules* are invoked server-side 
+    
+  - SIGNIFICANT STEP FORWARD: In front-end capsule references, wondered if I could use something similar to the`CellName Reference` syntax used when inspecting / debugging individual Cells, but then realised that a much more sophisticated, concise and more capable shorthand would be an **Inline CapsuleManifest** (using **xHan**) which plays the same role on the front-end as played by the actual CapsuleManifest file on the server-side filesystem for when *Capsules* are invoked server-side 
   - Renamed `CapsuleLogic` / `Casts` / `LogicCells` / `Logic` etc. as `Transformers` (hopefully this will settle now)
   - Renamed `LockCells` / `Locks` as `Vaults`
   - After several years of intermittent review, completed second, much-revamped version of **henkan** (provisionally named *"Henkan 2020"*...!)
   - Redesigned **CodeSheet References** in **CapsuleManifests**
-      1. There are now *three* parameters:
+      1. There are now *three* parameters (instead of two):
          1. *CodeSheet Name*
          2. *CodeSheet Source FileName* + *CodeSheet Source FileType*
          3. *CodeSheet Source FilePath*
-      3. Of these, if e.g. the *CodeSheet Name* ends in `Styles`:
+      2. Of these, *if* the *CodeSheet Name* ends in `Styles`:
          1. the *FileType* will be assumed to be `__CSS`
          2. the *FilePath* assumed to be `Styles`
-      5. If the *FileType* is `SCSS` and / or the *FilePath* is `New_Styles___2023___Feb` then 1) & 2) will need to be explicitly stated
-      6. If the *CodeSheet Name* does not end in a recognised suffix, then *FileType* and *FilePath* will need to be explicitly stated
-      7. **N.B.** the *CodeSheet Name* is *not obliged* to end in a recognised suffix; only the *Capsule `CodeCell` Name* is
-      8. To clarify terminology:
+      3. If the *FileType* is `.scss` and / or the *FilePath* is `New_Styles___2023___Feb` then one and / or both will need to be explicitly stated
+      4. Alternatively, if the *CodeSheetName* does not end in a recognised suffix, then *FileType* and *FilePath* will need to be explicitly stated
+      5. **N.B.** the *CodeSheetName* (and *CodeSheet Filename*) are *not obliged* to end in a recognised suffix; but the *Capsule `CodeCell` Name* is
+      6. To clarify terminology:
          1. the **CapsuleManifest** imports the named *CodeSheet Source File* (which usually includes a suffix and may include a filepath or filetype)
-         2. the **CapsuleManifest** builds the *CodeSheet* (from the static or dynamic *CodeSheet SourceFile* and any *Transformers*)
-         3. the **CapsuleManifest** saves the built *CodeSheet* as a namespaced `CodeCell`
+         2. the **CapsuleManifest** names and builds the *CodeSheet* (from the static or dynamic *CodeSheet SourceFile* and any *Transformers*)
+         3. the **CapsuleManifest** saves the named, built *CodeSheet* as a namespaced `CodeCell`
          4. the **CapsuleManifest** locks the `CodeCell` into the **Capsule** 
   
   ### Mar 2023
@@ -405,7 +406,7 @@ as:
      e.g. *before*, a Capsule might have had `['Markup']`, `['Styles']`, `['Scripts']` and then `['Markup'['CustomComponents']['Menu']`
           *but now*, a Capsule can have `['Markup']['Button_Markup']`, `['Markup']['Menu_Markup']`, `['Styles']['Button_Styles']`, `['Styles']['Menu_Styles']`, `['Scripts']['Button_Scripts']`, `['Scripts']['Menu_Scripts']`, `['Vectors']['Vectors']`
     
-     Amongst other things, this enables a much cleverer setup where what used to be two separate Capsules:
+     Amongst other things, this enables a much cleverer setup, where, what used to be two separate Capsules:
 
        - `Ashiva_Open_Control_Pad` for the inital button; and then
        - `Ashiva_Control_Pad` for the asynchronously loaded interface
@@ -415,13 +416,17 @@ as:
        - `Ashiva_Menu` first loads the intial `Button_Markup`, `Button_Styles` and `Button_Scripts` *CapsuleCells* (according to the initial, static, server-side CapsuleManifest); and later
        - when the user interacts with the button, the `Button_Scripts` *CapsuleCell* of `Ashiva_Menu` dynamically inserts a `CapsuleReference` into the page (which contains its own inline `CapsuleManifest`) and then parses that `CapsuleReference` which leads to the asynchronous loading of several new `CapsuleCells` from the *same Capsule* (`CapsuleCells` which weren't initially loaded): *menu markup*, *menu styles* and *menu scripts*
 
-  Not least, this can take a lot of pressure off the initial page load (which is why `Ashiva_Open_Control_Pad` and `Ashiva_Control_Pad` were separated in the first place.
+  Not least, this can take a lot of pressure off the initial page load - the precise issue which led to `Ashiva_Open_Control_Pad` and `Ashiva_Control_Pad` being separated in the first place.
           
-   - Updated *Capsule Styles* and *Capsule Scripts* to handle the new structure of `Capsule CodeCells`
-   - Added `CellName`, `CellType` & `PrimeCell` entries to individual Danis3h Cells for self-identification
+   - Updated `page-styles.php` and `page-scripts.php` to handle the new structure of `Capsule CodeCells`
+   - Added `CellName`, `CellType` & `PrimeCell` entries to the `JSON` of individual Danis3h Cells for self-identification
    - Added `pageinsert`, a fourth Capsule Directive (System Attribute) alongside `pagecontext`, `settingslisted` & `conditional`
 
-  - In client-side *Capsule References*, updated Publisher Syntax from `<(Ash:::My_Imprint:::My_Capsule>` to `<My_Capsule (Ash:My_Imprint)>`
+  - In client-side *Capsule References*, updated Publisher Syntax from `<(Ash:::My_Imprint:::Ash_My_Capsule>` to `<Ash_My_Capsule (Ash:My_Imprint)>`
+
+  - Realised that I could use a similar syntax to that of the new *inline CapsuleManifest* to inspect *CapsuleCells*:
+    - ***Capsule Reference** with inline CapsuleManifest*: `<Ash_My_Capsule (Ash:My_Imprint)>`
+    - ***Cell Inspection**: `<Ash_My_Capsule (Ash:My_Imprint)>`
 
 ______
 
