@@ -428,6 +428,10 @@ as:
     - ***Capsule Reference***: `<Ash_My_Capsule (Ash:My_Imprint) [@][Markup="Navigation" Styles="Navigation"]>`
     - ***Cell Inspection 1***: `inspectCapsuleCell('<Ash_My_Capsule (Ash:My_Imprint) Markup="Navigation">');`
     - ***Cell Inspection 2***: `inspectCapsuleCell('<Ash_My_Capsule (Ash:My_Imprint) Styles="Navigation">');`
+    - ***Cell Inspection 3***: `inspectCapsuleCell('<SB_Translations (Scotia_Beauty) Markup="Nail_Products_Menu_ES__PUG">');`
+    - ***Cell Inspection 4***: `inspectCapsuleCell('<SB_Translations (Scotia_Beauty) Markup="nail-products-menu-es--pug">');`
+    - ***Cell Inspection 5***: `inspectCapsuleCell('<SB_Translations (Scotia_Beauty) Markup="Menu___Speisekarte___Barsnacks___Nail_Products_Menu_ES">');`
+    - ***Cell Inspection 6***: `inspectCapsuleCell('<SB_Translations (Scotia_Beauty) Markup="menu/speisekarte/barsnacks/nail-products-menu-es">');`
 
 ______
 
