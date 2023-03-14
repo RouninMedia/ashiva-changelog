@@ -427,10 +427,15 @@ as:
   - Realised I could utilise the syntax of the new *inline CapsuleManifest* to inspect **any existing** *CapsuleCell* on the front-end:
 
     - `<SB_nextPage>` // *reference to a **PrimeCell** for a Manifested Capsule*
+    - 
     - `<Markup[@]SB_nextPage>` // *reference to a **Named Cell** for a Manifested Capsule*
+    - `<SB_nextPage [@]Markup>` // *alternative reference to a **Named Cell** for a Manifested Capsule*
+    - 
     - `<SB_nextPage (Scotia_Beauty)>` // *reference to a **PrimeCell** (or implicit Cell) for an Unmanifested Capsule, with an implicit inline Manifest*
     - `<SB_nextPage (Scotia_Beauty) [#][Markup, Styles, Scripts]>` // *reference to a **PrimeCell** for an Unmanifested Capsule*
+    - 
     - `<Markup[@]SB_nextPage (Scotia_Beauty) [#][Markup, Styles, Scripts]>` // *reference to a **Named Cell** for a Unmanifested Capsule*
+    - `<SB_nextPage (Scotia_Beauty) [@]Markup [#][Markup, Styles, Scripts]>` // *alternative reference to a **Named Cell** for a Unmanifested Capsule*
 
 
     - ***Capsule Reference***: `<Ash_My_Capsule (Ash:My_Imprint) [@][Markup="Navigation" Styles="Navigation"]>`
