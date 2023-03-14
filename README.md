@@ -441,7 +441,7 @@ as:
     - `<SB_nextPage (Scotia_Beauty) [@]Button_Markup [#][Markup, Styles, Scripts]>` // *alternative reference to a **Named Cell** for a Unmanifested Capsule*
 
 
-    - ***Capsule Reference***: `<Ash_My_Capsule (Ash:My_Imprint) [@][Markup="Navigation" Styles="Navigation"]>`
+    - ***Capsule Reference***: `<Ash_My_Capsule (Ash:My_Imprint) [#][Markup="Navigation" Styles="Navigation"]>`
     - ***Cell Inspection 1***: `inspectCapsuleCell('<Ash_My_Capsule (Ash:My_Imprint) Markup="Navigation">');`
     - ***Cell Inspection 2***: `inspectCapsuleCell('<Ash_My_Capsule (Ash:My_Imprint) Styles="Navigation">');`
     - ***Cell Inspection 3***: `inspectCapsuleCell('<SB_Translations (Scotia_Beauty) Markup="Nail_Products_Menu_ES__PUG">');`
