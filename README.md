@@ -434,19 +434,14 @@ as:
 
        NEXT QUESTION: HOW CAN UNMANIFESTED CAPSULES HAVE PRIMECELLS? CAN THEY? CAN THEY HAVE IMPLICITCELLS INSTEAD? OR NEITHER? OR BOTH?
        
-       IS IT TIME TO CHANGE PRIMECELLS, SUCH THAT THEY NO LONGER NEED TO BE EXPLICITLY STATED (AND CAN BE REMOVED FROM CAPSULEMANIFESTS) AND ARE NOW IMPLICIT?
-       
-         1) IN AN UNMANIFESTED CAPSULE, IN BOTH IMPLICIT *AND* EXPLICIT INLINE MANIFESTS, THERE WILL BE AN IMPLICIT `PrimeCell` ATTRIBUTE
-         2) IF THE DOCUMENT IS HTML, THE IMPLICIT PRIMECELL WILL BE MARKUP. IF THE DOCUMENT IS SVG, THE IMPLICIT PRIMECELL WILL BE VECTORS
-         3) IF THERE IS ONE HTML (OR SVG) CELL, IT WILL BE THAT ONE
-         4) IF THERE IS MORE THAN ONE, BUT ONE IS /code/markup/markup--html.json OR /code/markup/markup--html.json
+       I THINK THE ANSWER IS THAT WHILE PRIMECELLS IN CAPSULEMANIFEST FILES CAN HAVE ANY NAME: `/code/markup/button-markup--html.json`
+       PRIMECELLS IN INLINE CAPSULEMANIFESTS CAN ONLY BE IMPLICIT: `/code/markup/markup--html.json`
+       IF THE DOCUMENT IS HTML, THE IMPLICIT PRIMECELL WILL BE MARKUP. IF THE DOCUMENT IS SVG, THE IMPLICIT PRIMECELL WILL BE VECTORS
 
-    - `<SB_nextPage (Scotia_Beauty)>` // *reference to the implicit **PrimeCell** (/code/markup/markup--html.json) for an Unmanifested Capsule, with an implicit inline Manifest*
-    - `<SB_nextPage (Scotia_Beauty) [#][Markup, Styles, Scripts]>` // *reference to an **ImplicitCell** for an Unmanifested Capsule*
-    - `<SB_nextPage (Scotia_Beauty) [@]Button_Markup [#][Markup, Styles, Scripts]>` // *reference to a **PrimeCell** for an Unmanifested Capsule*
-    - 
-    - `<Button_Markup[@]SB_nextPage (Scotia_Beauty) [#][Markup, Styles, Scripts]>` // *reference to a **Named Cell** for a Unmanifested Capsule*
-    - `<SB_nextPage (Scotia_Beauty) [@]Button_Markup [#][Markup, Styles, Scripts]>` // *alternative reference to a **Named Cell** for a Unmanifested Capsule*
+    - `<SB_nextPage (Scotia_Beauty)>` // *reference to the Implicit **PrimeCell** for an Unmanifested Capsule, with an implicit inline Manifest*
+    - `<SB_nextPage (Scotia_Beauty) [@]Button_Markup>` // *reference to a **Named Cell** for a Unmanifested Capsule, with an implicit inline Manifest*
+    - `<SB_nextPage (Scotia_Beauty) [#][Markup, Styles, Scripts]>` // *reference to the Implicit **PrimeCell** for an Unmanifested Capsule*
+    - `<SB_nextPage (Scotia_Beauty) [@]Button_Markup [#][Markup="Button_Markup", Styles, Scripts]>` // *reference to a **Named Cell** for a Unmanifested Capsule*
 
 
     - ***Capsule Reference***: `<Ash_My_Capsule (Ash:My_Imprint) [#][Markup="Navigation" Styles="Navigation"]>`
