@@ -438,16 +438,16 @@ as:
        PRIMECELLS IN INLINE CAPSULEMANIFESTS ARE IMPLICITLY NAMED AFTER THE CAPSULENAME: `/ashiva-menu/code/markup/ashiva-menu--html.json`
        IF THE DOCUMENT IS HTML, THE IMPLICIT PRIMECELL WILL BE IN `/markup/`. IF THE DOCUMENT IS SVG, THE IMPLICIT PRIMECELL WILL BE IN `/vectors/`
        
-       BY THE SAME TOKEN, THE IMPLICIT INLINE MANIFEST IS: `[#][Markup="SB_NextPage"]` // *OR SHOULD IT BE ALL FIVE ??*
+       BY THE SAME TOKEN, THE IMPLICIT INLINE MANIFEST IS: `[#][Markup="SB_NextPage"]` // ***OR SHOULD IT BE ALL FIVE ??***
        AND THE SEMI-IMPLICIT INLINE MANIFEST (BELOW) IS: `[#][Markup="SB_NextPage", Styles="SB_NextPage", Scripts="SB_NextPage"]`
 
     - `<SB_nextPage (Scotia_Beauty)>` // *reference to the Implicit **PrimeCell** for an Unmanifested Capsule, with an implicit inline Manifest*
-    - `<SB_nextPage (Scotia_Beauty) [@]Button_Markup>` // *reference to a **Named Cell** for a Unmanifested Capsule, with an implicit inline Manifest*
+    - `<SB_nextPage (Scotia_Beauty) [@]Button_Markup>` // *reference to a **Named Cell** for a Unmanifested Capsule, with an (overridden) implicit inline Manifest*
 
-      ^^^ WITH THE CURRENT SETUP, THIS DOESN'T MAKE SENSE
+      ^^^ THIS MAKES SENSE ***IF*** AN EXPLICITLY NAMED CELL REFERENCE CAN OVERRIDE AN IMPLICIT INLINE MANIFEST AND VICE VERSA WITH THE IMPLICIT PRIMECELL.
 
     - `<SB_nextPage (Scotia_Beauty) [#][Markup, Styles, Scripts]>` // *reference to the Implicit **PrimeCell** for an Unmanifested Capsule*
-    - `<SB_nextPage (Scotia_Beauty) [@]Button_Markup [#][Markup="Button_Markup", Styles, Scripts]>` // *reference to a **Named Cell** for a Unmanifested Capsule*
+    - `<SB_nextPage (Scotia_Beauty) [@]Button_Markup [#][Markup, Styles, Scripts]>` // *reference to a **Named Cell** for a Unmanifested Capsule*
 
 
     - ***Capsule Reference***: `<Ash_My_Capsule (Ash:My_Imprint) [#][Markup="Navigation" Styles="Navigation"]>`
