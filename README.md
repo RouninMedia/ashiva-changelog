@@ -430,7 +430,10 @@ as:
     - 
     - `<Button_Markup[@]SB_nextPage>` // *reference to a **Named Cell** for a Manifested Capsule*
     - `<SB_nextPage [@]Button_Markup>` // *alternative reference to a **Named Cell** for a Manifested Capsule*
-    - 
+
+
+       NEXT QUESTION: HOW CAN UNMANIFESTED CAPSULES HAVE PRIMECELLS? CAN THEY? CAN THEY HAVE IMPLICITCELLS INSTEAD? OR NEITHER? OR BOTH?
+
     - `<SB_nextPage (Scotia_Beauty)>` // *reference to a **PrimeCell** for an Unmanifested Capsule, with an implicit inline Manifest*
     - `<SB_nextPage (Scotia_Beauty) [#][Markup, Styles, Scripts]>` // *reference to a **PrimeCell** for an Unmanifested Capsule*
     - 
