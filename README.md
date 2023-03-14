@@ -425,6 +425,12 @@ as:
   - In client-side *Capsule References*, updated Publisher Syntax from `<(Ash:::My_Imprint:::Ash_My_Capsule>` to `<Ash_My_Capsule (Ash:My_Imprint)>`
 
   - Realised I could utilise the syntax of the new *inline CapsuleManifest* to inspect **any existing** *CapsuleCell* on the front-end:
+
+    - `<SB_nextPage>`
+    - `<Markup[@]SB_nextPage>`
+    - `<SB_nextPage (Scotia_Beauty) [@][Markup, Styles, Scripts]>`
+
+
     - ***Capsule Reference***: `<Ash_My_Capsule (Ash:My_Imprint) [@][Markup="Navigation" Styles="Navigation"]>`
     - ***Cell Inspection 1***: `inspectCapsuleCell('<Ash_My_Capsule (Ash:My_Imprint) Markup="Navigation">');`
     - ***Cell Inspection 2***: `inspectCapsuleCell('<Ash_My_Capsule (Ash:My_Imprint) Styles="Navigation">');`
