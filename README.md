@@ -463,7 +463,7 @@ as:
  - Resolved that the demarcator for the *inline* **CapsuleManifest** should be: `[#]`
  - Rearranged CapsuleCell references for Manifested Capsules, such that `<Button_Markup[@]Ashiva_Menu>` is now: `<Ashiva Menu [@]Button_Markup>`
  - Came up with the idea of *implicit* inline **CapsuleManifests** and *implicit* inline **PrimeCells** for front-end, unmanifested **CapsuleReferences**
- - Rewrote the **CapsuleReference** syntax:  `<!--<[ <Scotia_Beauty:::SB_Colour_Charts> ]>-->` is now: `<!--[<SB_Colour_Charts (Scotia Beauty)>]-->`
+ - **CapsuleReference** syntax:  `<!--<[ <Scotia_Beauty:::SB_Colour_Charts> ]>-->` is now: `<!--[<SB_Colour_Charts (Scotia Beauty)>]-->`
  - Resolved to similarly bracket the **CapsuleType**: `<!--[<PoLIS⁵H>][<SB_Colour_Charts (Scotia_Beauty)>]-->`
 
 ______
