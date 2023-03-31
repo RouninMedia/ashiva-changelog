@@ -475,6 +475,13 @@ as:
  - Gave xHAN some special extensions to enable index-references and conditional statements inside inline, declarative CapsuleManifests
  - Found (in `SB_Email_Subscribers` Capsule) some _"LogicCells"_ (now _Transformers_) which were simply included PHP functions. That is, they definitely weren't _Transformers_ but they weren't _"ServerSheets"_ (now _Pages_) either. So I introduced _"Includes"_ as a sixth CapsuleCell category, alongside _Code, Media, Pages, Transformers, Vaults_
 
+
+ - Updated Capsule Attribute Syntax:
+   - changed `LightModifiers` prefix from `##` to `||`
+   - introduced `PrimeCell` prefix: `@@`
+   - introduced `CapsuleManifestEntry` prefix: `##`
+
+
 ______
 
 
