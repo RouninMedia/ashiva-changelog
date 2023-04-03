@@ -481,6 +481,9 @@ as:
    - introduced `PrimeCell` prefix: `@@`
    - introduced `CapsuleManifestEntry` prefix: `##`
 
+ - Introduced the `[&]scan` system attribute to enable **CapsuleReferences** to be as brief as possible
+ - Introduced `[_]` as a `null` value in **CapsuleReferences**
+
 
 ______
 
