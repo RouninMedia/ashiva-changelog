@@ -377,7 +377,7 @@ as:
     2. It may also mean that `Custom CodeCells` are now redundant, since **CodeCells** may now be named *anything*, as long as they have a valid suffix
   - Less keen on `::` as a prefix to `LightModifiers` in HTML Markup, since it's *identical* to the prefix of `StrongModifiers` in Capsule References
     1. Replaced `::` as LightModifier prefix in HTML Element Markup with `:`
-    2. Replaced `:--:` as LightModifier prefix in HTML Element Markup with `:...`
+    2. Replaced `:--:` as Directive (System Attribute) prefix in HTML Element Markup with `:...`
     
   - SIGNIFICANT STEP FORWARD: In front-end capsule references, wondered if I could use something similar to the`CellName Reference` syntax used when referencing individual Cells (like: `<Markup[@]SB_nextPage>`), but then realised that this might require a block of several references (eg. for `markup` & `styles`) or else redundant loading, before seeing that a much more configurable shorthand would be an **Inline CapsuleManifest** (using **xHan**) which plays the same role on the front-end as played by the actual CapsuleManifest file on the server-side filesystem for when *Capsules* are invoked server-side 
   - Renamed `CapsuleLogic` / `Casts` / `LogicCells` / `Logic` etc. as `Transformers` (hopefully this will settle now)
