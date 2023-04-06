@@ -482,7 +482,7 @@ as:
    - introduced `CapsuleManifestEntry` prefix: `##`
 
  - Introduced the `[&]scan` system attribute to enable **CapsuleReferences** to be as brief as possible
- - Introduced `[_]` as a `null` value in **CapsuleReferences**
+ - Introduced `[/]` as a `null` value in **CapsuleReferences**
 
 
 ______
