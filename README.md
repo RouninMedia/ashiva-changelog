@@ -384,7 +384,7 @@ as:
   - Renamed `LockCells` / `Locks` as `Vaults`
   - After several years of intermittent review, completed second, much-revamped version of **henkan** (provisionally named *"Henkan 2020"*...!)
   
-  - Redesigned **CodeSheet References** in **CapsuleManifests** to include 3 parameters (not 2): *Alias Name*, *FileName* + *FileType*, *FilePath*
+  - Redesigned **CodeSheet References** in **CapsuleManifests** to include 3 parameters (*Alias Name*, *FileName* + *FileType*, *FilePath*) rather than 3
 
   
   ### Mar 2023
