@@ -384,22 +384,8 @@ as:
   - Renamed `LockCells` / `Locks` as `Vaults`
   - After several years of intermittent review, completed second, much-revamped version of **henkan** (provisionally named *"Henkan 2020"*...!)
   
-  - Redesigned **CodeSheet References** in **CapsuleManifests**
-      1. There are now *three* parameters (instead of two):
-         1. *CodeSheet Name*
-         2. *CodeSheet Source FileName* + *CodeSheet Source FileType*
-         3. *CodeSheet Source FilePath*
-      2. Of these, *if* the *CodeSheet Name* ends in `Styles`:
-         1. the *FileType* will be assumed to be `__CSS`
-         2. the *FilePath* assumed to be `Styles`
-      3. If the *FileType* is `.scss` and / or the *FilePath* is `New_Styles___2023___Feb` then one and / or both will need to be explicitly stated
-      4. Alternatively, if the *CodeSheetName* does not end in a recognised suffix, then *FileType* and *FilePath* will need to be explicitly stated
-      5. **N.B.** the *CodeSheetName* (and *CodeSheet Filename*) are *not obliged* to end in a recognised suffix; but the *Capsule `CodeCell` Name* is
-      6. To clarify terminology:
-         1. the **CapsuleManifest** imports the named *CodeSheet Source File* (which usually includes a suffix and may include a filepath or filetype)
-         2. the **CapsuleManifest** names and builds the *CodeSheet* (from the static or dynamic *CodeSheet SourceFile* and any *Transformers*)
-         3. the **CapsuleManifest** saves the named, built *CodeSheet* as a namespaced `CodeCell`
-         4. the **CapsuleManifest** locks the `CodeCell` into the **Capsule** 
+  - Redesigned **CodeSheet References** in **CapsuleManifests** to include 3 parameters (not 2): *Alias Name*, *FileName* + *FileType*, *FilePath*
+
   
   ### Mar 2023
    - Updated `Custom Components` (and all other CodeCells) to **Namespace-Suffixed CodeCells** to allow all sorts of formerly unavailable versatility
@@ -487,7 +473,8 @@ as:
   ### APR 2023
  - Introduced the `!` prefix as a negation indicator for PrimeCells and for **CellReferences** in inline **CapsuleManifests**  in **CapsuleReferences**
  - Decided, on reflection, that the redesigned **CodeSheet References** in **CapsuleManifests** were too complex and needed to be simplified:
-     1. Turned the three new parameters back to **two**: i) *CapsuleEntryName* and ii) *FilePath + FileName + FileType* 
+     1. Turned the three new parameters back to **two**: i) *CapsuleEntryName* and ii) *FilePath + FileName + FileType*
+     2. Resolved that all assumed / implicit / hinted-at data (e.g. *FilePath* / *FileType*) needs to be explicitly written out
 
 
 ______
