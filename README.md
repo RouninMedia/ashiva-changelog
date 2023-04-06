@@ -379,10 +379,11 @@ as:
     1. Replaced `::` as LightModifier prefix in HTML Element Markup with `:`
     2. Replaced `:--:` as Directive (System Attribute) prefix in HTML Element Markup with `:...`
     
-  - SIGNIFICANT STEP FORWARD: In front-end capsule references, wondered if I could use something similar to the`CellName Reference` syntax used when referencing individual Cells (like: `<Markup[@]SB_nextPage>`), but then realised that this might require a block of several references (eg. for `markup` & `styles`) or else redundant loading, before seeing that a much more configurable shorthand would be an **Inline CapsuleManifest** (using **xHan**) which plays the same role on the front-end as played by the actual CapsuleManifest file on the server-side filesystem for when *Capsules* are invoked server-side 
+  - SIGNIFICANT STEP FORWARD: In *front-end capsule references*, I wondered if I could use something similar to the`CellName Reference` syntax used when inspecting individual Cells (like: `<Markup[@]SB_nextPage>`), but then realised that this might require a block of multiple references (eg. for `markup` & `styles`) or else redundant loading, before seeing that a much more configurable shorthand would be an **Inline CapsuleManifest** (using **xHan**) which plays the same role on the front-end as played by the actual CapsuleManifest file on the server-side filesystem for when *Capsules* are invoked server-side 
   - Renamed `CapsuleLogic` / `Casts` / `LogicCells` / `Logic` etc. as `Transformers` (hopefully this will settle now)
   - Renamed `LockCells` / `Locks` as `Vaults`
   - After several years of intermittent review, completed second, much-revamped version of **henkan** (provisionally named *"Henkan 2020"*...!)
+  
   - Redesigned **CodeSheet References** in **CapsuleManifests**
       1. There are now *three* parameters (instead of two):
          1. *CodeSheet Name*
@@ -406,7 +407,7 @@ as:
      e.g. *before*, a Capsule might have had `['Markup']`, `['Styles']`, `['Scripts']` and then `['Markup'['CustomComponents']['Menu']`
           *but now*, a Capsule can have `['Markup']['Button_Markup']`, `['Markup']['Menu_Markup']`, `['Styles']['Button_Styles']`, `['Styles']['Menu_Styles']`, `['Scripts']['Button_Scripts']`, `['Scripts']['Menu_Scripts']`, `['Vectors']['Vectors']`
     
-     Amongst other things, this enables a much cleverer setup, where, what used to be two separate Capsules:
+     Amongst other things, this enables a much more flexible, more sophisticated setup, where, what used to be two separate Capsules:
 
        - `Ashiva_Open_Control_Pad` for the inital button; and then
        - `Ashiva_Control_Pad` for the asynchronously loaded interface
@@ -482,7 +483,11 @@ as:
    - introduced `CapsuleManifestEntry` prefix: `##`
 
  - Introduced the `[&]scan` system attribute to enable **CapsuleReferences** to be as brief as possible
+
+  ### APR 2023
  - Introduced the `!` prefix as a negation indicator for PrimeCells and for **CellReferences** in inline **CapsuleManifests**  in **CapsuleReferences**
+ - Decided, on reflection, that the redesigned **CodeSheet References** in **CapsuleManifests** were too complex and needed to be simplified:
+     1. Turned the three new parameters back to **two**: i) *CapsuleEntryName* and ii) *FilePath + FileName + FileType* 
 
 
 ______
