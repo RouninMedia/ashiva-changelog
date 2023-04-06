@@ -482,7 +482,7 @@ as:
    - introduced `CapsuleManifestEntry` prefix: `##`
 
  - Introduced the `[&]scan` system attribute to enable **CapsuleReferences** to be as brief as possible
- - Introduced `[/]` as a `null` value in **CapsuleReferences**
+ - Introduced the `!` prefix as a negation indicator for PrimeCells and for **CellReferences** in inline **CapsuleManifests**  in **CapsuleReferences**
 
 
 ______
@@ -503,7 +503,7 @@ ______
 
  - First JSON serialisation of Javascript (2019)
  - Second JSON serialisation of Javascript (2020)
- - Third JSON serialisation of Javascript (Dec 2021 - Feb 2022)
+ - Third JSON serialisation of Javascript (Dec 2021 - Feb 2022... with additional work in Sept 2022, Dec 2022 & Feb 2023)
  - JSON Sitemap
  - Da3SH Module Version Control
  - ModulePackages
