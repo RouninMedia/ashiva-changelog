@@ -478,7 +478,7 @@ as:
      1. Turned the three new parameters back to **two**: i) *CapsuleEntry* and ii) *FilePath + FileName + FileType*
      2. Resolved that all assumed / implicit / hinted-at data (e.g. *FilePath* / *FileType*) needs to be explicitly written out
      3. Kept feature that every Cell added to the Capsule must be given a unique CellName ending in `Markup`, `Styles`, `Scripts`, `Vectors` or `Data`
-     4. Turned `$Capsule['Markup']`, `$Capsule['Styles']` etc. into arrays containing CapsuleCells, each identified by its own *CapsuleEntry* key
+     4. To bring everything into line with front-end inline Capsule Manifests, turned `$Capsule['Markup']`, `$Capsule['Styles']` etc. into arrays containing CapsuleCells, each identified by its own *CapsuleEntry* key
      5. 
 
 
