@@ -476,7 +476,7 @@ as:
  
  - Decided, on reflection, that the redesigned **CodeSheet References** in **CapsuleManifests** were too complex and needed to be simplified:
      1. Resolved that all assumed / implicit / hinted-at data (e.g. *FilePath* / *FileType*) needs to be explicitly written out
-     2. Instead of (*CellAlias*, *FileName* + *FileType*, *FilePath*), changed the three new parameters to (*FileName* + *FileType*, *FilePath*)
+     2. Instead of (*CellAlias*, *FileName* + *FileType*, *FilePath*), changed the three new parameters to (*FileName*, *FileType*, *FilePath*)
      3. Derived the *CellAlias* automatically by removing any *CapsuleName* prefix from the start and adding a *CellType* suffix to the end
      4. Thus keeping feature that every Cell added to a Capsule must have a unique CellName ending in `Markup`, `Styles`, `Scripts`, `Vectors` or `Data`
      5. To bring everything into line with front-end inline Capsule Manifests, turned `$Capsule['Markup']`, `$Capsule['Styles']` etc. into `arrays` containing CapsuleCells, each identified by its own *CapsuleEntry* key; e.g. `$Capsule['Styles'] = $Button_Styles` becomes `$Capsule['Styles']['Button_Styles'] = $Button_Styles`
