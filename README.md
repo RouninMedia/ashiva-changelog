@@ -385,7 +385,7 @@ as:
   - Renamed `LockCells` / `Locks` as `Vaults`
   - After several years of intermittent review, completed second, much-revamped version of **henkan** (provisionally named *"Henkan 2020"*...!)
   
-  - Redesigned **CodeSheet References** in **CapsuleManifests** to include 3 parameters (*Alias Name*, *FileName* + *FileType*, *FilePath*) rather than 2
+  - Redesigned **CodeSheet References** in **CapsuleManifests** so that instead of two parameters (*CellAlias*, *FileName*) there are now three: (*CellAlias*, *FileName* + *FileType*, *FilePath*)
 
   
   ### Mar 2023
@@ -475,11 +475,12 @@ as:
  - Introduced the `!` prefix as a negation indicator for PrimeCells and for **CellReferences** in inline **CapsuleManifests**  in **CapsuleReferences**
  
  - Decided, on reflection, that the redesigned **CodeSheet References** in **CapsuleManifests** were too complex and needed to be simplified:
-     1. Turned the three new parameters back to **two**: i) *CapsuleEntry* and ii) *FilePath + FileName + FileType*
-     2. Resolved that all assumed / implicit / hinted-at data (e.g. *FilePath* / *FileType*) needs to be explicitly written out
-     3. Kept feature that every Cell added to the Capsule must be given a unique CellName ending in `Markup`, `Styles`, `Scripts`, `Vectors` or `Data`
-     4. To bring everything into line with front-end inline Capsule Manifests, turned `$Capsule['Markup']`, `$Capsule['Styles']` etc. into `arrays` containing CapsuleCells, each identified by its own *CapsuleEntry* key; e.g. `$Capsule['Styles'] = $Button_Styles` becomes `$Capsule['Styles'][] = $Button_Styles`
-     5. 
+     1. Resolved that all assumed / implicit / hinted-at data (e.g. *FilePath* / *FileType*) needs to be explicitly written out
+     2. Instead of (*CellAlias*, *FileName* + *FileType*, *FilePath*), changed the three new parameters to (*FileName* + *FileType*, *FilePath*)
+     3. Derived the *CellAlias* automatically by removing any *CapsuleName* prefix from the start and adding a *CellType* suffix to the end
+     4. Thus keeping feature that every Cell added to a Capsule must have a unique CellName ending in `Markup`, `Styles`, `Scripts`, `Vectors` or `Data`
+     5. To bring everything into line with front-end inline Capsule Manifests, turned `$Capsule['Markup']`, `$Capsule['Styles']` etc. into `arrays` containing CapsuleCells, each identified by its own *CapsuleEntry* key; e.g. `$Capsule['Styles'] = $Button_Styles` becomes `$Capsule['Styles']['Button_Styles'] = $Button_Styles`
+     6. 
 
 
 ______
