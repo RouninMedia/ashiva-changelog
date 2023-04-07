@@ -415,8 +415,7 @@ as:
   - Realised I could utilise the syntax of the new *inline CapsuleManifest* to inspect **any existing** *CapsuleCell* on the front-end:
 
     - `<SB_nextPage>` // *reference to a **PrimeCell** for a Manifested Capsule*
-    - 
-    - `<Button_Markup[@]SB_nextPage>` // *reference to a **Named Cell** for a Manifested Capsule*
+    - `<Button_Markup[@]SB_nextPage>` // *reference to a **Named Cell** for a Manifested Capsule* // <= WILL PROBABLY BE REMOVED
     - `<SB_nextPage [@]Button_Markup>` // *alternative reference to a **Named Cell** for a Manifested Capsule*
 
 
@@ -474,7 +473,7 @@ as:
   ### APR 2023
  - Introduced the `!` prefix as a negation indicator for PrimeCells and for **CellReferences** in inline **CapsuleManifests**  in **CapsuleReferences**
  
- - Decided, on reflection, that the redesigned **CodeSheet References** in **CapsuleManifests** were too complex and needed to be simplified:
+ - Decided, on reflection, that the redesigned **CodeSheet References** in **CapsuleManifests** were too complex and needed to be re-simplified:
      1. Resolved that all assumed / implicit / hinted-at data (e.g. *FilePath* / *FileType* etc.) needs to be explicitly written out
      2. Instead of (*CellAlias*, *FileName* + *FileType*, *FilePath*), changed the three new parameters to (*FileName*, *FileType*, *FilePath*)
      3. Permitted the third parameter to be optional, given that there may not be a *FilePath*
