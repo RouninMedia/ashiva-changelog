@@ -373,8 +373,9 @@ as:
   - Moved `/.assets/site/system/core/` to `/.assets/site/core/`
   - Linux Nautilus orders files differently from Windows. Experimented with prefixing Title Folder with `$` instead of `#`. // *<= NEEDS WORK*
   - Updated `danis3hModule()` PHP function in **Core**: every **CodeCell** name must now end in a suffix: `'Markup'`, `'Styles'`, `'Scripts'`, `'Vectors'` or `'Data'`
-    1. Not least, this now allows *any* cell to be `**PrimeCell**`
-    2. It may also mean that `Custom CodeCells` are now redundant, since **CodeCells** may now be named *anything*, as long as they have a valid suffix
+    1. This means mean `Custom CodeCells` are now redundant, since **CodeCells** may now be named *anything*, as long as they have a valid suffix
+    2. This also allows *any* cell (even former `Custom CodeCells`) to be `**PrimeCell**`
+   
   - Less keen on `::` as a prefix to `LightModifiers` in HTML Markup, since it's *identical* to the prefix of `StrongModifiers` in Capsule References
     1. Replaced `::` as LightModifier prefix in HTML Element Markup with `:`
     2. Replaced `:--:` as Directive (System Attribute) prefix in HTML Element Markup with `:...`
