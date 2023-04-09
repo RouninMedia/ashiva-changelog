@@ -380,8 +380,7 @@ as:
     1. Replaced `::` as LightModifier prefix in HTML Element Markup with `:`
     2. Replaced `:--:` as Directive (System Attribute) prefix in HTML Element Markup with `:...`
     
-  - SIGNIFICANT STEP FORWARD: In *front-end capsule references*, I wondered if I could use something similar to the`CellName Reference` syntax used when inspecting individual Cells (like: `<Markup[@]SB_nextPage>`). But then I realised that this might require a block of multiple references (eg. one for `markup`, one for `styles` etc.) or else redundant loading, before seeing that a much more configurable shorthand would be an **Inline CapsuleManifest** (using **xHan**) which plays the same role on the front-end as played by the actual CapsuleManifest file on the server-side filesystem for when *Capsules* are invoked server-side
-  
+  - Invented the **Front-end CapsuleManifest** (via extended **xHan** attributes) which delivers what **CapsuleManifest Files** achieve on the server-side
   - Renamed `CapsuleLogic` / `Casts` / `LogicCells` / `Logic` etc. as `Transformers` (hopefully this will settle now)
   - Renamed `LockCells` / `Locks` as `Vaults`
   - After several years of intermittent review, completed second, much-revamped version of **henkan** (provisionally named *"Henkan 2020"*...!)
@@ -483,7 +482,7 @@ as:
      6. To bring everything into line with front-end inline Capsule Manifests, turned `$Capsule['Markup']`, `$Capsule['Styles']` etc. into `arrays` containing CapsuleCells, each identified by its own *CapsuleEntry* key; e.g. `$Capsule['Styles'] = $Button_Styles` becomes `$Capsule['Styles']['Button_Styles'] = $Button_Styles`
      7. Required that two *CapsuleCells* of the same *CellType* MAY NOT have the same name, regardless of *FilePath* and *FileType* - this is so every *CellAlias* remains unique
 
-  - Renamed `Transformers` as `Converters`... or possibly `Rewriters`
+  - Renamed `Transformers` as `Converters`... or possibly as `Rewriters`
 
 
 ______
