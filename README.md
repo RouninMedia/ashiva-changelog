@@ -380,7 +380,7 @@ as:
     1. Replaced `::` as LightModifier prefix in HTML Element Markup with `:`
     2. Replaced `:--:` as Directive (System Attribute) prefix in HTML Element Markup with `:...`
     
-  - Invented the **Front-end CapsuleManifest** (via extended **xHan** attributes) which delivers what **CapsuleManifest Files** achieve on the server-side
+  - Invented the **Front-end CapsuleManifest** (via extended **xHan**) which delivers what **CapsuleManifest Files** achieve on the server-side
   - Renamed `CapsuleLogic` / `Casts` / `LogicCells` / `Logic` etc. as `Transformers` (hopefully this will settle now)
   - Renamed `LockCells` / `Locks` as `Vaults`
   - After several years of intermittent review, completed second, much-revamped version of **henkan** (provisionally named *"Henkan 2020"*...!)
