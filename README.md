@@ -470,18 +470,11 @@ as:
 
  - Introduced the `[&]scan` system attribute to enable **CapsuleReferences** to be as brief as possible
 
-  ### APR 2023
+  ### Apr 2023
  - Introduced the `!` prefix as a negation indicator for PrimeCells and for **CellReferences** in inline **CapsuleManifests**  in **CapsuleReferences**
- 
- - Decided, on reflection, that the redesigned **CodeSheet References** in **CapsuleManifests** were too complex and needed to be re-simplified:
-     1. Resolved that all assumed / implicit / hinted-at data (e.g. *FilePath* / *FileType* etc.) needs to be explicitly written out
-     2. Instead of (*CellAlias*, *FileName* + *FileType*, *FilePath*), changed the three new parameters to (*FileName*, *FileType*, *FilePath*)
-     3. Permitted the third parameter to be optional, given that there may not be a *FilePath*
-     4. Derived the *CellAlias* automatically by removing any *CapsuleName* prefix from the start and adding a *CellType* suffix to the end
-     5. Thus kept the feature that every Cell added to a Capsule must have a unique CellName ending in `Markup`, `Styles`, `Scripts`, `Vectors` or `Data`
-     6. To bring everything into line with front-end inline Capsule Manifests, turned `$Capsule['Markup']`, `$Capsule['Styles']` etc. into `arrays` containing CapsuleCells, each identified by its own *CapsuleEntry* key; e.g. `$Capsule['Styles'] = $Button_Styles` becomes `$Capsule['Styles']['Button_Styles'] = $Button_Styles`
-     7. Required that two *CapsuleCells* of the same *CellType* MAY NOT have the same name, regardless of *FilePath* and *FileType* - this is so every *CellAlias* remains unique
-
+ - In **CapsuleManifests** changed the 3 new parameters from (*CellAlias*, *FileName* + *FileType*, *FilePath*) to (*FileName*, *FileType*, *FilePath*)
+ - Derived the *CellAlias* automatically by removing any *CapsuleName* prefix from the start and adding a *CellType* suffix to the end
+ - To bring everything into line with front-end inline Capsule Manifests, turned `$Capsule['Markup']`, `$Capsule['Styles']` etc. into `arrays` containing CapsuleCells, each identified by its own *CapsuleEntry* key; e.g. `$Capsule['Styles'] = $Button_Styles` becomes `$Capsule['Styles']['Button_Styles'] = $Button_Styles`. In order that every *CellAlias* remains unique, this requires that two *CapsuleCells* of the same *CellType* MAY NOT have the same name, regardless of *FilePath* and *FileType*.
   - Renamed `Transformers` as `Converters`... or possibly as `Rewriters`
 
 
