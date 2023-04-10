@@ -1,4 +1,4 @@
-# CMS3 (2016), ashiva (2017) & ashivaModules (2019), Da3SH Modules (2020), Danis³h Modules (2021), Danis³h Capsules (2021) Changelog
+# Changelog for CMS3 (2016), ashiva (2017) & ashivaModules (2019), Da3SH Modules (2020), Danis³h Modules (2021), Danis³h Capsules (2021)
 
 ## 2016
 ### Jan 2016
