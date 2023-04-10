@@ -395,7 +395,7 @@ as:
    - Added `CellName`, `CellType` & `PrimeCell` entries to the `JSON` of individual Danis3h Cells for self-identification
    - Added `pageinsert`, a fourth Capsule Directive (System Attribute) alongside `pagecontext`, `settingslisted` & `conditional`
 
-  - In client-side *Capsule References*, updated Publisher Syntax from `<Ash:::My_Imprint:::Ash_My_Capsule>` to `<Ash_My_Capsule (Ash:My_Imprint)>`
+  - In front-end *Capsule References*, updated Publisher Syntax from `<Ash:::My_Imprint:::Ash_My_Capsule>` to `<Ash_My_Capsule (Ash:My_Imprint)>`
 
   - Realised I could utilise the new *inline CapsuleManifest* syntax to inspect **any existing** *CapsuleCell* on the front-end:
 
