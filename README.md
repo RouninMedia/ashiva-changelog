@@ -389,7 +389,7 @@ as:
 
   
   ### Mar 2023
-   - Changed `CustomComponents` to **Namespace-Suffixed CodeCells** to standardise naming cells and enable formerly unavailable functionality
+   - Changed `CustomComponents` to **Namespace-Suffixed CodeCells** to standardise naming cells & allow formerly unavailable functionality
      
      e.g. *before*, a Capsule might have had `['Markup']`, `['Styles']`, `['Scripts']` and then `['Markup'['CustomComponents']['Menu']`
           *but now*, a Capsule can have `['Markup']['Button_Markup']`, `['Markup']['Menu_Markup']`, `['Styles']['Button_Styles']`, `['Styles']['Menu_Styles']`, `['Scripts']['Button_Scripts']`, `['Scripts']['Menu_Scripts']`, `['Vectors']['Vectors']`
