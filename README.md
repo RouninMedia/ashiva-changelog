@@ -372,9 +372,9 @@ as:
   - Added optional `Section_Editorial` to `PageManifest`
   - Moved `/.assets/site/system/core/` to `/.assets/site/core/`
   - Linux Nautilus orders files differently from Windows. Experimented with prefixing Title Folder with `$` instead of `#`. // *<= NEEDS WORK*
-  - Updated `danis3hModule()` PHP function in **Core**: every **CodeCell** name must now end in a suffix: `'Markup'`, `'Styles'`, `'Scripts'`, `'Vectors'` or `'Data'`
-    1. This means mean `Custom CodeCells` are now redundant, since **CodeCells** may now be named *anything*, as long as they have a valid suffix
-    2. This also allows *any* cell (even former `Custom CodeCells`) to be `**PrimeCell**`
+  - Updated `danis3hModule()` PHP function in **Core**: every **CodeCell** alias must now end in a suffix: `'Markup'`, `'Styles'`, `'Scripts'`, `'Vectors'` or `'Data'`
+    1. This means mean `CustomComponent` aliases are now redundant, since **CodeCells** may now use *any* alias, as long as it has a valid suffix
+    2. This also allows *any* aliased cell (even former `CustomComponents`) to be `**PrimeCell**`
    
   - Less keen on `::` as a prefix to `LightModifiers` in HTML Markup, since it's *identical* to the prefix of `StrongModifiers` in Capsule References
     1. Replaced `::` as LightModifier prefix in HTML Element Markup with `:`
@@ -388,22 +388,8 @@ as:
 
   
   ### Mar 2023
-   - Changed `CustomComponents` to **Namespace-Suffixed CodeCells** to standardise "named cells" & enable formerly unavailable functionality
-     
-     e.g. *before*, a Capsule might have had `['Markup']`, `['Styles']`, `['Scripts']` and then `['Markup'['CustomComponents']['Menu']`
-          *but now*, a Capsule can have `['Markup']['Button_Markup']`, `['Markup']['Menu_Markup']`, `['Styles']['Button_Styles']`, `['Styles']['Menu_Styles']`, `['Scripts']['Button_Scripts']`, `['Scripts']['Menu_Scripts']`, `['Vectors']['Vectors']`
-    
-     Amongst other things, this enables a much more flexible, more sophisticated setup, where, what used to be two separate Capsules:
-
-       - `Ashiva_Open_Control_Pad` for the inital button; and then
-       - `Ashiva_Control_Pad` for the asynchronously loaded interface
-      
-     can now be a *single* Capsule, where, e.g.:
-
-       - `Ashiva_Menu` first loads the intial `Button_Markup`, `Button_Styles` and `Button_Scripts` *CapsuleCells* (according to the initial, static, server-side CapsuleManifest); and later
-       - when the user interacts with the button, the `Button_Scripts` *CapsuleCell* of `Ashiva_Menu` dynamically inserts a `CapsuleReference` into the page (which contains its own inline `CapsuleManifest`) and then parses that `CapsuleReference` which leads to the asynchronous loading of several new `CapsuleCells` from the *same Capsule* (`CapsuleCells` which weren't initially loaded): *menu markup*, *menu styles* and *menu scripts*
-
-  Not least, this can take a lot of pressure off the initial page load - the precise issue which led to `Ashiva_Open_Control_Pad` and `Ashiva_Control_Pad` being separated in the first place.
+   - Brought **CellNames** into line with **Cell Aliases**, standardising "named cells" & enabling formerly unavailable functionality
+   - What used to require two separate Capsules (`Ashiva_Open_Control_Pad` for the inital button; and then `Ashiva_Control_Pad` for the asynchronously loaded interface) can now be a *single* Capsule with arbitrarily referenced **CapsuleCells**. This takes a lot of pressure off the initial page load.
           
    - Updated `page-styles.php` and `page-scripts.php` to handle the new structure of `Capsule CodeCells`
    - Added `CellName`, `CellType` & `PrimeCell` entries to the `JSON` of individual Danis3h Cells for self-identification
