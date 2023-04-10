@@ -381,15 +381,14 @@ as:
     2. Replaced `:--:` as Directive (System Attribute) prefix in HTML Element Markup with `:...`
     
   - Invented the **Front-end CapsuleManifest** (via extended **xHan**) which delivers what **CapsuleManifest Files** achieve on the server-side
-  - Renamed `CapsuleLogic` / `Casts` / `LogicCells` / `Logic` etc. as `Transformers` (hopefully this will settle now)
+  - Renamed `CapsuleLogic` / `Casts` / `LogicCells` / `Logic` etc. as `Transformers` (hopefully this will settle now, finally)
   - Renamed `LockCells` / `Locks` as `Vaults`
   - After several years of intermittent review, completed second, much-revamped version of **henkan** (provisionally named *"Henkan 2020"*...!)
-  
-  - Redesigned **CodeSheet References** in **CapsuleManifests** so that instead of two parameters (*CellAlias*, *FileName*) there are now three: (*CellAlias*, *FileName* + *FileType*, *FilePath*)
+  - Redesigned **CodeSheet References** in **CapsuleManifest** Files so that instead of two parameters (*CellAlias*, *FileName*) there are now three: (*CellAlias*, *FileName* + *FileType*, *FilePath*)
 
   
   ### Mar 2023
-   - Changed `CustomComponents` to **Namespace-Suffixed CodeCells** to standardise naming cells & allow formerly unavailable functionality
+   - Changed `CustomComponents` to **Namespace-Suffixed CodeCells** to standardise "named cells" & enable formerly unavailable functionality
      
      e.g. *before*, a Capsule might have had `['Markup']`, `['Styles']`, `['Scripts']` and then `['Markup'['CustomComponents']['Menu']`
           *but now*, a Capsule can have `['Markup']['Button_Markup']`, `['Markup']['Menu_Markup']`, `['Styles']['Button_Styles']`, `['Styles']['Menu_Styles']`, `['Scripts']['Button_Scripts']`, `['Scripts']['Menu_Scripts']`, `['Vectors']['Vectors']`
