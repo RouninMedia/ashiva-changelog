@@ -389,51 +389,22 @@ as:
   
   ### Mar 2023
    - Brought **CellNames** into line with **Cell Aliases**, standardising "named cells" & enabling formerly unavailable functionality
-   - What used to require two separate Capsules (`Ashiva_Open_Control_Pad` for the inital button; and then `Ashiva_Control_Pad` for the asynchronously loaded interface) can now be a *single* Capsule with arbitrarily referenced **CapsuleCells**. This takes a lot of pressure off the initial page load.
+   - What used to require two separate Capsules (`Ashiva_Open_Control_Pad` for the inital button; and then `Ashiva_Control_Pad` for the asynchronously loaded interface) can now be a *single* Capsule with selectively referenced **CapsuleCells**. This takes a lot of pressure off the initial page load.
           
    - Updated `page-styles.php` and `page-scripts.php` to handle the new structure of `Capsule CodeCells`
    - Added `CellName`, `CellType` & `PrimeCell` entries to the `JSON` of individual Danis3h Cells for self-identification
    - Added `pageinsert`, a fourth Capsule Directive (System Attribute) alongside `pagecontext`, `settingslisted` & `conditional`
 
-  - In client-side *Capsule References*, updated Publisher Syntax from `<(Ash:::My_Imprint:::Ash_My_Capsule>` to `<Ash_My_Capsule (Ash:My_Imprint)>`
+  - In client-side *Capsule References*, updated Publisher Syntax from `<Ash:::My_Imprint:::Ash_My_Capsule>` to `<Ash_My_Capsule (Ash:My_Imprint)>`
 
-  - Realised I could utilise the syntax of the new *inline CapsuleManifest* to inspect **any existing** *CapsuleCell* on the front-end:
+  - Realised I could utilise the new *inline CapsuleManifest* syntax to inspect **any existing** *CapsuleCell* on the front-end:
 
-    - `<SB_nextPage>` // *reference to a **PrimeCell** for a Manifested Capsule*
-    - `<Button_Markup[@]SB_nextPage>` // *reference to a **Named Cell** for a Manifested Capsule* // <= WILL PROBABLY BE REMOVED
-    - `<SB_nextPage [@]Button_Markup>` // *alternative reference to a **Named Cell** for a Manifested Capsule*
-
-
-       NEXT QUESTION: HOW CAN UNMANIFESTED CAPSULES HAVE PRIMECELLS?
-       ANSWER: UNMANIFESTED CAPSULES HAVE PRIMECELLS IMPLICITLY NAMED AFTER THE CAPSULENAME, WHICH CAN ALSO BE OVERRIDDEN BY AN EXPLICIT INLINE MANIFEST.
+    - `<SB_nextPage>` // *reference to a **PrimeCell** within a Manifested Capsule*
+    - `<Button_Markup[@]SB_nextPage>` // *reference to an active **Named Cell** within a Manifested Capsule* // <= WILL PROBABLY BE REMOVED
+    - `<SB_nextPage (Scotia_Beauty) [@]Button_Markup>` // *reference to any **Named Cell** within any Capsule, Manifested or Unmanifested*
        
-       I THINK THE ANSWER IS THAT WHILE PRIMECELLS IN CAPSULEMANIFEST FILES CAN HAVE ANY NAME: `/ashiva-menu/code/markup/button-markup--html.json`
-       PRIMECELLS IN INLINE CAPSULEMANIFESTS ARE IMPLICITLY NAMED AFTER THE CAPSULENAME: `/ashiva-menu/code/markup/ashiva-menu--html.json`
-       IF THE DOCUMENT IS HTML, THE IMPLICIT PRIMECELL WILL BE IN `/markup/`. IF THE DOCUMENT IS SVG, THE IMPLICIT PRIMECELL WILL BE IN `/vectors/`
-       
-       BY THE SAME TOKEN, IMPLICIT HTML INLINE MANIFEST IS: `[#][Markup="SB_NextPage", Styles="SB_NextPage", Scripts="SB_NextPage", Data="SB_NextPage"]`
-       AND THE IMPLICIT SVG INLINE MANIFEST IS: `[#][Vectors="SB_NextPage", Styles="SB_NextPage", Scripts="SB_NextPage", Data="SB_NextPage"]`
-       AND THE SEMI-IMPLICIT INLINE MANIFEST (BELOW) IS: `[#][Markup="SB_NextPage", Styles="SB_NextPage"]`
-
-    - `<SB_nextPage (Scotia_Beauty)>` // *reference to the Implicit **PrimeCell** for an Unmanifested Capsule, with an implicit inline Manifest*
-    - `<SB_nextPage (Scotia_Beauty) [@]Button_Markup>` // *reference to a **Named Cell** for a Unmanifested Capsule, with an (overridden) implicit inline Manifest*
-
-      ^^^ THIS MAKES SENSE ***IF*** AN EXPLICITLY NAMED CELL REFERENCE OVERRIDES AN IMPLICIT INLINE MANIFEST AND VICE VERSA WITH THE IMPLICIT PRIMECELL.
-
-    - `<SB_nextPage (Scotia_Beauty) [#][Markup, Styles]>` // *reference to the Implicit **PrimeCell** for an Unmanifested Capsule*
-    - `<SB_nextPage (Scotia_Beauty) [@]Button_Markup [#][Styles]>` // *reference to a **Named Cell** for an Unmanifested Capsule, with an (overridden) implicit inline Manifest*
-
-
-    - ***Capsule Reference***: `<Ash_My_Capsule (Ash:My_Imprint) [#][Markup="Navigation" Styles="Navigation"]>`
-    - ***Cell Inspection 1***: `inspectCapsuleCell('<Ash_My_Capsule (Ash:My_Imprint) Markup="Navigation">');`
-    - ***Cell Inspection 2***: `inspectCapsuleCell('<Ash_My_Capsule (Ash:My_Imprint) Styles="Navigation">');`
-    - ***Cell Inspection 3***: `inspectCapsuleCell('<SB_Translations (Scotia_Beauty) Markup="Nail_Products_Menu_ES__PUG">');`
-    - ***Cell Inspection 4***: `inspectCapsuleCell('<SB_Translations (Scotia_Beauty) Markup="nail-products-menu-es--pug">');`
-    - ***Cell Inspection 5***: `inspectCapsuleCell('<SB_Translations (Scotia_Beauty) Markup="Menu___Speisekarte___Barsnacks___Nail_Products_Menu_ES">');`
-    - ***Cell Inspection 6***: `inspectCapsuleCell('<SB_Translations (Scotia_Beauty) Markup="menu/speisekarte/barsnacks/nail-products-menu-es">');`
-
  - Resolved that the demarcator for the *inline* **CapsuleManifest** should be: `[#]`
- - Rearranged CapsuleCell references for Manifested Capsules, such that `<Button_Markup[@]Ashiva_Menu>` is now: `<Ashiva Menu [@]Button_Markup>`
+ - Rearranged CellReferences for Manifested Capsules, such that `<Button_Markup[@]Ashiva_Menu>` is now: `<Ashiva Menu (Ashiva) [@]Button_Markup>`
  - Came up with the idea of *implicit* inline **CapsuleManifests** and *implicit* inline **PrimeCells** for front-end, unmanifested **CapsuleReferences**
  - Rewrote the **CapsuleReference** syntax:
  
@@ -453,7 +424,7 @@ as:
    - introduced `PrimeCell` prefix: `@@`
    - introduced `CapsuleManifestEntry` prefix: `##`
 
- - Introduced the `[&]scan` system attribute to enable **CapsuleReferences** to be as brief as possible
+ - Introduced a fifth system attribute, `[&]scan`, to enable **CapsuleReferences** to be as brief as possible
 
   ### Apr 2023
  - Introduced the `!` prefix as a negation indicator for PrimeCells and for **CellReferences** in inline **CapsuleManifests**  in **CapsuleReferences**
