@@ -460,7 +460,7 @@ as:
  - In **CapsuleManifests** changed the 3 new parameters from (*CellAlias*, *FileName* + *FileType*, *FilePath*) to (*FileName*, *FileType*, *FilePath*)
  - Derived the *CellAlias* automatically by removing any *CapsuleName* prefix from the start and adding a *CellType* suffix to the end
  - To bring everything into line with front-end inline Capsule Manifests, turned `$Capsule['Markup']`, `$Capsule['Styles']` etc. into `arrays` containing CapsuleCells, each identified by its own *CapsuleEntry* key; e.g. `$Capsule['Styles'] = $Button_Styles` becomes `$Capsule['Styles']['Button_Styles'] = $Button_Styles`. In order that every *CellAlias* remains unique, this requires that two *CapsuleCells* of the same *CellType* MAY NOT have the same name, regardless of *FilePath* and *FileType*.
-  - Considered renaming `Transformers` as `Converters`. Or (perhaps even better) as `Rewriters`. Eventually settled on `SculptCells` / `Sculpts`
+  - Considered renaming `Transformers` as `Converters`. Or (perhaps better) as `Rewriters`. Eventually settled on `SculptCells` / `Sculpts`
   - Renamed `VaultCells` / `Vaults` as... `ShieldCells` / `Shields`
 
 
