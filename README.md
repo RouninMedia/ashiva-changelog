@@ -395,7 +395,7 @@ as:
    - Added `CellName`, `CellType` & `PrimeCell` entries to the `JSON` of individual Danis3h Cells for self-identification
    - Added `pageinsert`, a fourth Capsule Directive (System Attribute) alongside `pagecontext`, `settingslisted` & `conditional`
 
-  - In front-end *Capsule References*, updated Publisher Syntax from `<Ash:::My_Imprint:::Ash_My_Capsule>` to `<Ash_My_Capsule (Ash:My_Imprint)>`
+  - In front-end *CapsuleReferences*, updated `Publisher` from `<Ash:::My_Imprint:::Ash_My_Capsule>` to `<Ash_My_Capsule (Ash:My_Imprint)>`
 
   - Realised I could utilise the new *inline CapsuleManifest* syntax to inspect **any existing** *CapsuleCell* on the front-end:
 
@@ -404,25 +404,26 @@ as:
     - `<SB_nextPage (Scotia_Beauty) [@]Button_Markup>` // *reference to any **Named Cell** within any Capsule, Manifested or Unmanifested*
        
  - Resolved that the demarcator for the *inline* **CapsuleManifest** should be: `[#]`
- - Rearranged CellReferences for Manifested Capsules, such that `<Button_Markup[@]Ashiva_Menu>` is now: `<Ashiva Menu (Ashiva) [@]Button_Markup>`
- - Came up with the idea of *implicit* inline **CapsuleManifests** and *implicit* inline **PrimeCells** for front-end, unmanifested **CapsuleReferences**
+ - Rewrote CellReferences, such that `<Button_Markup[@]Ashiva_Menu>` is now: `<Ashiva Menu (Ashiva) [@]Button_Markup>`
+ - Came up with the idea of *implicit* inline **CapsuleManifests** and *implicit* inline **PrimeCells** for front-end **CapsuleReferences**
+ - 
  - Rewrote the **CapsuleReference** syntax:
  
-    `<!--<[ <Scotia_Beauty:::SB_Colour_Charts> ]>-->` is now: `<!--[<SB_Colour_Charts (Scotia Beauty)>]-->`
+     <!--<[ <Scotia_Beauty:::SB_Colour_Charts> ]>-->` is now: `<!--[<SB_Colour_Charts (Scotia Beauty)>]-->
     
- - Resolved to bracket the **CapsuleType** the same way as the **CapsuleReference**:
+ - Resolved to bracket the **CapsuleType** prefix the same way as the **CapsuleReference**:
  
-    `<!--[<PoLIS⁵H>][<SB_Colour_Charts (Scotia_Beauty)>]-->`
+     <!--[<PoLIS⁵H>][<SB_Colour_Charts (Scotia_Beauty)>]-->  
     
-    
- - Gave xHAN some special extensions to enable index-references and conditional statements inside inline, declarative CapsuleManifests
+ - Formalised some special extensions in xHAN to enable index-references *and* conditional statements inside inline, declarative CapsuleManifests
+ 
  - Found (in `SB_Email_Subscribers` Capsule) some _"LogicCells"_ (now _Transformers_) which were simply included PHP functions. That is, they definitely weren't _Transformers_ but they weren't _"ServerSheets"_ (now _Pages_) either. So I introduced _"Includes"_ as a sixth CapsuleCell category, alongside _Code, Media, Pages, Transformers, Vaults_
 
 
  - Updated Capsule Attribute Syntax:
    - changed `LightModifiers` prefix from `##` to `||`
-   - introduced `PrimeCell` prefix: `@@`
-   - introduced `CapsuleManifestEntry` prefix: `##`
+   - introduced new `PrimeCell` prefix: `@@`
+   - introduced new `CapsuleManifestEntry` prefix: `##`
 
  - Introduced a fifth system attribute, `[&]scan`, to enable **CapsuleReferences** to be as brief as possible
 
