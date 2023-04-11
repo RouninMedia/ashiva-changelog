@@ -436,7 +436,7 @@ as:
   
   - For this bullet point, see **QUESTIONS TO ANSWER**
   
-  - Removed the `!` prefix from inline *CapsuleManifest* parameters. Changed the _negated PrimeCell_ from `[!@]` to `[/]`
+  - Removed the `!` prefix from inline *CapsuleManifest* parameters and changed the _negated PrimeCell_ from `[!@]` to `[/]`
 
 
 ______
