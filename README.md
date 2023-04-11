@@ -434,7 +434,7 @@ as:
   - Considered renaming `Transformers` as `Converters`. Or as `Rewriters`. Eventually settled on `SculptCells` / `Sculpts`
   - Renamed `VaultCells` / `Vaults` as... `ShieldCells` / `Shields`
   
-  - For this bullet point, see **QUESTIONS TO ANSWER**
+  - For this bullet point, 1) see **QUESTIONS TO ANSWER**, then 2) move to Capsule Inspection, then 3) move to `:.`, then 4) move to `Ashiva_Toggle` on the front-end
   
   - Removed the `!` prefix from inline *CapsuleManifest* parameters and changed the _negated PrimeCell_ from `[!@]` to `[/]`
   - Considered adopting `:.` as the HTML-attribute prefix for the `PrimeCapsule` and `:..` as the HTML-attribute prefix for the `CapsuleManifest`
