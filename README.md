@@ -434,7 +434,7 @@ as:
   - Considered renaming `Transformers` as `Converters`. Or as `Rewriters`. Eventually settled on `SculptCells` / `Sculpts`
   - Renamed `VaultCells` / `Vaults` as... `ShieldCells` / `Shields`
   - Resolved that `CapsuleCells` are _only_ implied when the entire `CapsuleManifest` is absent. Otherwise they are declared (or not referenced).
-  - Consequently, removed the `!` _negation prefix_ from inline *CapsuleManifest* parameters. Changed the _negated PrimeCell_ from `[!@]` to `[/]`
+  - Consequently, removed _negation prefix_ (`!`) from inline *CapsuleManifest* parameters. Changed _negated PrimeCell_ from `[!@]` to `[/]`
   - Renamed _"Includes"_ (`CapsuleCells` containing server-side functions) as _"Service"_ // <= MAYBE UNNECESSARY, AFTER PHP IN Danis3h
   - Considered adopting `:.` as the HTML-attribute prefix for the `PrimeCapsule` and `:..` as the HTML-attribute prefix for the `CapsuleManifest`
 
