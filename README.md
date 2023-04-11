@@ -417,7 +417,7 @@ as:
     
  - Formalised special extensions in xHAN to enable index-references *and* conditional statements inside inline, declarative CapsuleManifests
  
- - Found (in `SB_Email_Subscribers` Capsule) some _"LogicCells"_ (now _Transformers_) which were simply included PHP functions. That is, they definitely weren't _Transformers_ but they weren't _"ServerSheets"_ (now _Pages_) either. So I introduced _"Includes"_ as a sixth CapsuleCell category, alongside _Code, Media, Pages, Transformers, Vaults_ // <= MIGHT RENAME _"Includes"_ AS _"ServerSheets"_ or _"Servers"_
+ - Found (in `SB_Email_Subscribers` Capsule) some _"LogicCells"_ (now _Transformers_) which were simply included PHP functions. That is, they definitely weren't _Transformers_ but they weren't _"ServerSheets"_ (now _Pages_) either. So I introduced _"Includes"_ as a ***sixth*** CapsuleCell category, alongside _Code, Media, Pages, Transformers, Vaults_
 
  - Updated Capsule Attribute Syntax:
    - changed `LightModifiers` prefix from `##` to `||`
@@ -437,6 +437,7 @@ as:
   - For this bullet point, 1) see **QUESTIONS TO ANSWER**, then 2) move to Capsule Inspection, then 3) move to `:.`, then 4) move to `Ashiva_Toggle` on the front-end
   
   - Removed the `!` prefix from inline *CapsuleManifest* parameters and changed the _negated PrimeCell_ from `[!@]` to `[/]`
+  - Renamed _"Includes"_ (which are `CapsuleCells` for including additional server-side functions) as _"Service"_ // <= THIS MIGHT NOT BE NECESSARY ONCE I CAN WRITE PHP IN Danis3h
   - Considered adopting `:.` as the HTML-attribute prefix for the `PrimeCapsule` and `:..` as the HTML-attribute prefix for the `CapsuleManifest`
 
 
