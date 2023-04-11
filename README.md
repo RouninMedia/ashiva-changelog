@@ -433,10 +433,8 @@ as:
  - To bring everything into line with front-end inline Capsule Manifests, turned `$Capsule['Markup']`, `$Capsule['Styles']` etc. into `arrays` containing CapsuleCells, each identified by its own *CapsuleEntry* key; e.g. `$Capsule['Styles'] = $Button_Styles` becomes `$Capsule['Styles']['Button_Styles'] = $Button_Styles`. In order that every *CellAlias* remains unique, this requires that two *CapsuleCells* of the same *CellType* MAY NOT have the same name, regardless of *FilePath* and *FileType*.
   - Considered renaming `Transformers` as `Converters`. Or as `Rewriters`. Eventually settled on `SculptCells` / `Sculpts`
   - Renamed `VaultCells` / `Vaults` as... `ShieldCells` / `Shields`
-  
-  - **QUESTIONS TO ANSWER**
-  
-  - Removed the `!` prefix from inline *CapsuleManifest* parameters and changed the _negated PrimeCell_ from `[!@]` to `[/]`
+  - Resolved that `CapsuleCells` are _only_ implied when the entire `CapsuleManifest` is absent. Otherwise they are declared (or not referenced).
+  - Consequently, removed the `!` _negation prefix_ from inline *CapsuleManifest* parameters. Changed the _negated PrimeCell_ from `[!@]` to `[/]`
   - Renamed _"Includes"_ (`CapsuleCells` containing server-side functions) as _"Service"_ // <= MAYBE UNNECESSARY, AFTER PHP IN Danis3h
   - Considered adopting `:.` as the HTML-attribute prefix for the `PrimeCapsule` and `:..` as the HTML-attribute prefix for the `CapsuleManifest`
 
