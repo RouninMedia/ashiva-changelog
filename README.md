@@ -434,10 +434,10 @@ as:
   - Considered renaming `Transformers` as `Converters`. Or as `Rewriters`. Eventually settled on `SculptCells` / `Sculpts`
   - Renamed `VaultCells` / `Vaults` as... `ShieldCells` / `Shields`
   
-  - For this bullet point, 1) see **QUESTIONS TO ANSWER**, then 2) move to Capsule Inspection, then 3) move to `:.`, then 4) move to `Ashiva_Toggle` on the front-end
+  - **QUESTIONS TO ANSWER**
   
   - Removed the `!` prefix from inline *CapsuleManifest* parameters and changed the _negated PrimeCell_ from `[!@]` to `[/]`
-  - Renamed _"Includes"_ (which are `CapsuleCells` for including additional server-side functions) as _"Service"_ // <= THIS MIGHT NOT BE NECESSARY ONCE I CAN WRITE PHP IN Danis3h
+  - Renamed _"Includes"_ (`CapsuleCells` containing server-side functions) as _"Service"_ // <= MAYBE UNNECESSARY, AFTER PHP IN Danis3h
   - Considered adopting `:.` as the HTML-attribute prefix for the `PrimeCapsule` and `:..` as the HTML-attribute prefix for the `CapsuleManifest`
 
 
