@@ -437,6 +437,12 @@ as:
   - Consequently, removed _negation prefix_ (`!`) from inline *CapsuleManifest* parameters. Changed _negated PrimeCell_ from `[!@]` to `[/]`
   - Renamed _"Includes"_ (`CapsuleCells` containing server-side functions) as _"Service"_ // <= MAYBE UNNECESSARY, AFTER PHP IN Danis3h
   - Considered adopting `:.` as the HTML-attribute prefix for the `PrimeCapsule` and `:..` as the HTML-attribute prefix for the `CapsuleManifest`
+  - Wrote a completely new `inspectCapsule()` function which will inspect *any* capsule on the site, not just those loaded onto the current page
+  - Formalised `Markup` / `Vectors` as the context-dependent *default* `PrimeCell` (and removed the `PrimeCell` parameter from `initialiseModule()`) 
+  - Added `[*]` flag which, if present, overrides any cell to be inspected and requests the entire capsule be inspected instead
+  - Realised I could turn the new-style `CapsuleManifests` from **PHP Functions** into **JSON Data**
+  - Further realised that a single JSON-based `CapsuleManifest` would *then* serve all languages, back-end *and* front-end, which... would then enable *inline* `CapsuleManifests` to be a *stand-in* for *CapsuleManifest* Data when the latter is absent and an *override* when the data is present
+
 
 
 ______
