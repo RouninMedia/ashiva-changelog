@@ -431,12 +431,12 @@ as:
  - In **CapsuleManifests** changed the 3 new parameters from (*CellAlias*, *FileName* + *FileType*, *FilePath*) to (*FileName*, *FileType*, *FilePath*)
  - Derived the *CellAlias* automatically by removing any *CapsuleName* prefix from the start and adding a *CellType* suffix to the end
  - To bring everything into line with front-end inline Capsule Manifests, turned `$Capsule['Markup']`, `$Capsule['Styles']` etc. into `arrays` containing CapsuleCells, each identified by its own *CapsuleEntry* key; e.g. `$Capsule['Styles'] = $Button_Styles` becomes `$Capsule['Styles']['Button_Styles'] = $Button_Styles`. In order that every *CellAlias* remains unique, this requires that two *CapsuleCells* of the same *CellType* MAY NOT have the same name, regardless of *FilePath* and *FileType*.
-  - Considered renaming `Transformers` as `Converters`. Or as `Rewriters`. Eventually settled on `SculptCells` / `Sculpts`
+  - Considered renaming `Transformers` as `Converters`. Or as `Rewriters`. Eventually went back to `SculptCells` / `Sculpts`
   - Renamed `VaultCells` / `Vaults` as... `ShieldCells` / `Shields`
   - Resolved that `CapsuleCells` are _only_ implied when the entire `CapsuleManifest` is absent. Otherwise they are declared (or not referenced).
   - Consequently, removed _negation prefix_ (`!`) from inline *CapsuleManifest* parameters. Changed _negated PrimeCell_ from `[!@]` to `[/]`
   - Renamed _"Includes"_ (`CapsuleCells` containing server-side functions) as _"Service"_ // <= MAYBE UNNECESSARY, AFTER PHP IN Danis3h
-  - Considered adopting `:.` as the HTML-attribute prefix for the `PrimeCapsule` and `:..` as the HTML-attribute prefix for the `CapsuleManifest`
+  - Adopted `:.` as the HTML-attribute prefix for the `PrimeCapsule` and `:..` as the HTML-attribute prefix for the `CapsuleManifest`
   - Wrote a completely new `inspectCapsule()` function which will inspect *any* capsule on the site, not just those loaded onto the current page
   - Formalised `Markup` / `Vectors` as the context-dependent *default* `PrimeCell` (and removed the `PrimeCell` parameter from `initialiseModule()`) 
   - Added `[*]` inspection flag which, if present, overrides any cell to be inspected and requests the entire capsule be inspected instead
