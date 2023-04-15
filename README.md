@@ -435,7 +435,7 @@ as:
   - Renamed `VaultCells` / `Vaults` as... `ShieldCells` / `Shields`
   - Resolved that `CapsuleCells` are _only_ implied when the entire `CapsuleManifest` is absent. Otherwise they are declared (or not referenced).
   - Consequently, removed _negation prefix_ (`!`) from inline *CapsuleManifest* parameters. Changed _negated PrimeCell_ from `[!@]` to `[/]`
-  - Renamed _"Includes"_ (`CapsuleCells` containing server-side functions) as _"ServerIncludes"_ // <= MAYBE UNNECESSARY, AFTER PHP IN Danis3h
+  - Renamed `Includes` (**CapsuleCells** containing server-side functions) as `ServerIncludes` // <= MAYBE UNNECESSARY, AFTER PHP IN Danis3h
   - Adopted `:.` as the HTML-attribute prefix for the `PrimeCapsule` and `:..` as the HTML-attribute prefix for the `CapsuleManifest`
   - Wrote a completely new `inspectCapsule()` function which will inspect *any* capsule on the site, not just those loaded onto the current page
   - Formalised `Markup` / `Vectors` as the context-dependent *default* `PrimeCell` (and removed the `PrimeCell` parameter from `initialiseModule()`) 
