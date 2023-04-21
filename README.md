@@ -442,7 +442,7 @@ as:
   - Added `[*]` inspection flag which, if present, overrides any cell to be inspected and requests the entire capsule be inspected instead
   - Realised I could turn the new-style `CapsuleManifests` from **PHP Functions** into **JSON Data**
   - Further realised that a single JSON-based `CapsuleManifest` would *then* serve all languages, back-end *and* front-end, which... would then enable *inline* `CapsuleManifests` to be a *stand-in* for *CapsuleManifest* Data when the latter is absent and an *override* when the data is present
-  - Invented **LiveSwitches**: key-value `StrongModifiers`, `LightModifiers` & `attributes` which instantly reset the value of *addressables*
+  - Invented **LiveSwitches**: key-value `StrongModifiers`, `LightModifiers` & `attributes` which instantly reset the value of **addressables**
   - Adopted _parens_ to indicate _addresses_ in **Capsules**. e.g. `(0)(elementChildren)(0)(plaintext)`
   - Re-introduced `[:]` as a separator between **Cells** and **Addresses**. e.g. `Button___Button_Markup[:](0)(elementChildren)(0)(plaintext)`
 
