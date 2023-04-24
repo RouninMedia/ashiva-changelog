@@ -445,7 +445,7 @@ as:
   - Invented **LiveSwitches**: key-value `StrongModifiers`, `LightModifiers` & `attributes` which instantly reset the value of **addressables**
   - Adopted _parens_ to indicate _addresses_ in **Capsules**, e.g. `(0)(elementChildren)(0)(plaintext)`
   - Re-introduced `[:]` as a **Cell** to **Address** divider, e.g. `Button___Button_Markup[:](0)(elementChildren)(0)(plaintext)`
-  - Got an *early version* of PHP-based dynamic cells (`--php.php`) working with the new Capsule Architecture. Eventually this will be: (`--php.json`)
+  - *Early version* of PHP-based dynamic cells (`--php.php`) now working in new Capsule Architecture. (Eventually this will be: `--php.json`)
 
 
 
